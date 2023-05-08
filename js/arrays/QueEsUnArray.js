@@ -76,7 +76,6 @@ export function ArraysReferencias () {
     });
 
     console.log(numeroMayorQueDiez); // 15
-
     
 }
 
