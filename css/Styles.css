@@ -64,6 +64,10 @@ img{
     width: 100%;
 }
 
+.Imagen {
+    width: 30vw;
+}
+
 .Home{
     position: fixed;
     bottom: 1rem;
