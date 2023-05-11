@@ -13,30 +13,101 @@
 
     <h1>Tipos de datos</h1>
 
-    <h3>Temario</h3>
+    <p>
+        Existen varios tipos de datos que se utilizan para almacenar diferentes tipos de valores. A continuación, te muestro los tipos de datos más comunes en JavaScript
+    </p>
 
-    <ul>
-        <li>Variables: var VS let</li>
-        <li>Constantes ( const )</li>
-        <li>Cadenas de Texto ( Strings )</li>
-        <li>Plantillas de cadenas de texto ( Template Strings )</li>
-        <li>Números ( Numbers )</li>
-        <li>Booleans</li>
-        <li>undefined, null & NaN</li>
-        <li>Funciones</li>
-        <li>Arreglos ( Arrays )</li>
-        <li>Objetos</li>
-    </ul>
+    <h2>Temario</h2>
 
+    <h3>Variables: var VS let</h3>
+
+    <p>
+        <b>VAR:</b> En JavaScript, la palabra reservada "var" se utiliza para declarar una variable. Antes de la introducción de "let" y "const" en ECMAScript 6 (ES6), "var" era la única forma de declarar una variable en JavaScript.
+    </p>
+
+    <img src="assets/ConceptoVar.png" alt="">
+
+    <p>
+        Es importante destacar que las variables declaradas con "var" tienen ámbito de función, lo que significa que están limitadas al bloque de función en el que se declaran. Si se declaran dentro de una función, no estarán accesibles fuera de ella.
+    </p>
+
+    <p>
+        Otra particularidad de "var" es que no respeta el ámbito de bloque, lo que significa que incluso si se declara una variable dentro de un bloque (por ejemplo, dentro de un "if" o un "for"), la variable será accesible fuera de ese bloque.
+    </p>
+
+    <p>
+        <b>LET:</b> A partir de ES6, se introdujeron las palabras clave "let" y "const" para declarar variables. Estas palabras clave ofrecen un ámbito de bloque más estricto y reemplazaron en gran medida el uso de "var" en la práctica moderna de JavaScript. Se recomienda utilizar "let" y "const" en lugar de "var" siempre que sea posible.
+    </p>
+
+    <img src="assets/ConceptoLet.png">
+
+    <p>
+        En JavaScript, la palabra clave let se utiliza para declarar una variable local en el ámbito de bloque en el que se declara. Antes de la introducción de let en ES6 (también conocido como ECMAScript 2015), solo se podían declarar variables con la palabra clave var, y estas variables eran de ámbito de función o global.
+    </p>
+
+    <p>
+        La diferencia entre let y var es que let declara una variable que es de ámbito de bloque, lo que significa que solo es accesible dentro del bloque en el que se declara. En cambio, var declara una variable de ámbito de función, lo que significa que puede ser accesible dentro de la función en la que se declara o, si no está dentro de una función, globalmente.
+    </p>
+
+    <p>
+        Además, si intentas redeclarar una variable con la palabra clave let dentro del mismo ámbito de bloque, se producirá un error, mientras que con var, se sobrescribirá la variable existente.
+    </p>
+
+    <h3>Constantes ( const )</h3>
+
+    <p>
+        En JavaScript, la palabra clave const se utiliza para declarar variables con valores que no cambiarán después de su asignación. Una vez que una variable ha sido declarada con const y se le ha asignado un valor, ese valor no puede ser cambiado.
+    </p>
+
+    <p>
+        La sintaxis para declarar una variable con const es la siguiente:
+    </p>
+
+    <img src="assets/ConceptoConst.png">
+
+    <h3>Cadenas de Texto ( Strings )</h3>
+
+    <P>
+        En JavaScript, un string (o cadena de caracteres) es una secuencia de caracteres encerrados entre comillas simples (') o dobles ("). Los strings pueden contener cualquier tipo de caracteres, incluyendo letras, números, signos de puntuación y espacios en blanco.
+    </P>
+
+    <P>
+        Aquí hay algunos ejemplos de strings en JavaScript:
+    </P>
+
+    <img src="assets/ConceptosString.png">
+
+    <P>
+        En el primer ejemplo, se declara una variable llamada nombre que contiene el string "Juan". En el segundo ejemplo, se declara una variable llamada mensaje que contiene el string "Hola, ¿cómo estás?". En el tercer ejemplo, se declara una variable llamada direccion que contiene el string 'Calle Mayor, 10'.
+    </P>
+
+    <P>
+        Es importante tener en cuenta que los strings son inmutables en JavaScript, lo que significa que una vez que se crea un string, no se puede cambiar su valor. Sin embargo, se pueden manipular los strings utilizando métodos de string incorporados en JavaScript, como toUpperCase() para convertir un string a mayúsculas o substring() para extraer una parte del string original.
+    </P>
+
+
+    <h3>Plantillas de cadenas de texto ( Template Strings )</h3>
+
+    
+
+    <h3>Números ( Numbers )</h3>
+    <h3>Booleans</h3>
+    <h3>undefined, null & NaN</h3>
+    <h3>Funciones</h3>
+    <h3>Arreglos ( Arrays )</h3>
+    <h3>Objetos</h3>
       
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br>
 
 
 
     </main>
 
+
     <a class="Home" href="Index.html">🏡</a>
+
+    <script src="js/TiposDeDatos.js"></script>
 
 
 </body>
