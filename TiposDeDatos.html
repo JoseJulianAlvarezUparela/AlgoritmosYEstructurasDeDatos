@@ -17,9 +17,7 @@
         Existen varios tipos de datos que se utilizan para almacenar diferentes tipos de valores. A continuación, te muestro los tipos de datos más comunes en JavaScript
     </p>
 
-    <h2>Temario</h2>
-
-    <h3>Variables: var VS let</h3>
+    <h2>Variables: var VS let</h2>
 
     <p>
         <b>VAR:</b> En JavaScript, la palabra reservada "var" se utiliza para declarar una variable. Antes de la introducción de "let" y "const" en ECMAScript 6 (ES6), "var" era la única forma de declarar una variable en JavaScript.
@@ -53,7 +51,7 @@
         Además, si intentas redeclarar una variable con la palabra clave let dentro del mismo ámbito de bloque, se producirá un error, mientras que con var, se sobrescribirá la variable existente.
     </p>
 
-    <h3>Constantes ( const )</h3>
+    <h2>Constantes ( const )</h2>
 
     <p>
         En JavaScript, la palabra clave const se utiliza para declarar variables con valores que no cambiarán después de su asignación. Una vez que una variable ha sido declarada con const y se le ha asignado un valor, ese valor no puede ser cambiado.
@@ -65,7 +63,7 @@
 
     <img src="assets/ConceptoConst.png">
 
-    <h3>Cadenas de Texto ( Strings )</h3>
+    <h2>Cadenas de Texto ( Strings )</h2>
 
     <P>
         En JavaScript, un string (o cadena de caracteres) es una secuencia de caracteres encerrados entre comillas simples (') o dobles ("). Los strings pueden contener cualquier tipo de caracteres, incluyendo letras, números, signos de puntuación y espacios en blanco.
@@ -86,16 +84,137 @@
     </P>
 
 
-    <h3>Plantillas de cadenas de texto ( Template Strings )</h3>
+    <h2>Plantillas de cadenas de texto ( Template Strings )</h2>
+
+    <p>
+        Las template strings (también conocidas como template literals) son una característica de JavaScript que permite crear strings de manera más fácil y legible, especialmente cuando se necesita incluir valores de variables o expresiones en el string.
+    <p>
+
+    <p>
+        Aquí hay un ejemplo de cómo se utiliza una template string:
+    </p>
+
+    <img src="assets/ConceptosTemplateString.png">
+
+    <p>
+        La sintaxis de las template strings utiliza las comillas invertidas o backticks () en lugar de las comillas simples o dobles. Además, se puede incluir cualquier expresión dentro de ${}`, que se evalúa y se concatena dentro del string. 
+    </p>
+
+    <h2>Números ( Numbers )</h2>
+
+    <p>
+        En JavaScript, los números se representan mediante el tipo de datos number. Los números pueden ser enteros (por ejemplo, 10, -5, 0) o números con decimales (por ejemplo, 3.14, -2.5, 0.0).
+    </p>
 
     
+    <p>
+        Aquí te muestro algunos ejemplos de cómo trabajar con números en JavaScript:
+    </p>
 
-    <h3>Números ( Numbers )</h3>
-    <h3>Booleans</h3>
-    <h3>undefined, null & NaN</h3>
-    <h3>Funciones</h3>
-    <h3>Arreglos ( Arrays )</h3>
-    <h3>Objetos</h3>
+    <img src="assets/ConceptosNumeros.png">
+
+    <p>
+        JavaScript admite todas las operaciones matemáticas comunes, como la suma, la resta, la multiplicación y la división, así como algunas operaciones más avanzadas, como el cálculo de potencias y raíces cuadradas.
+    </p>
+
+
+    <h2>Booleans</h2>
+
+    <p>
+        En JavaScript, los valores booleanos se representan mediante el tipo de dat
+        os boolean. Un valor booleano puede ser true (verdadero) o false (falso).
+    </p>
+
+    <p>
+        Aquí te muestro algunos ejemplos de cómo trabajar con valores booleanos en JavaScript:
+    </p>
+
+    <img src="assets/ConceptosBooleanos.png">
+
+    <p>
+        Los valores booleanos son muy útiles en programación, ya que se utilizan frecuentemente en estructuras de control de flujo, como las sentencias if, while y for, para controlar el flujo de ejecución del programa.
+    </p>
+
+
+    <h2>undefined, null & NaN</h2>
+
+    <p>En JavaScript, <code>null</code> es un valor especial que representa la ausencia intencional de cualquier objeto o valor. Por otro lado, <code>undefined</code> es un valor que se utiliza para indicar que una variable no ha sido inicializada o que no tiene ningún valor asignado.</p>
+
+    <p>En términos más simples, <code>null</code> significa que una variable está intencionalmente vacía, mientras que <code>undefined</code> significa que una variable no tiene ningún valor asignado.</p>
+
+    <img src="assets/ConceptosNull.png">
+
+    <p>Es importante tener en cuenta que <code>null</code> y <code>undefined</code> no son lo mismo que una cadena vacía (<code>''</code>) o el número cero (<code>0</code>). Las cadenas vacías y los números cero son valores válidos en JavaScript y se tratan como tales, mientras que <code>null</code> y <code>undefined</code> indican la ausencia de un valor.</p>
+  
+    <p>
+        En JavaScript, NaN es un valor especial que representa "Not a Number" (no es un número). NaN se utiliza cuando se realiza una operación matemática que no tiene un resultado numérico definido, como dividir cero por cero o tomar la raíz cuadrada de un número negativo.
+
+        Aquí te muestro algunos ejemplos de cómo trabajar con NaN en JavaScript:
+    </p>
+
+    <img src="assets/ConceptosNaN.png" alt="">
+
+    <h2>Funciones</h2>
+
+    <p>
+        Las funciones son una parte fundamental de JavaScript. Una función es un bloque de código que se puede llamar en cualquier momento para realizar una tarea específica. Las funciones en JavaScript se definen utilizando la palabra clave function.
+
+ 
+    </p>
+
+    <p>
+        Aquí hay un ejemplo de una función simple en JavaScript:
+    </p>
+
+    <img src="assets/ConceptosFunctions.png">
+
+    <p>
+        En este ejemplo, hemos definido una función llamada greet que toma un parámetro name. La función utiliza la función console.log() para imprimir un mensaje de saludo en la consola del navegador. Luego, hemos llamado la función dos veces, pasando diferentes valores para el parámetro name.
+    </p>
+
+    <p>
+        También es posible que una función devuelva un valor. Aquí hay un ejemplo:
+    </p>
+
+    <img src="assets/ConceptosFunctions2.png">
+
+
+
+    <h2>Arreglos ( Arrays )</h2>
+
+    <p>Un array (también conocido como arreglo o matriz) es una estructura de datos en programación que permite almacenar y organizar un conjunto de valores relacionados del mismo tipo en una sola variable.</p>
+
+    <img src="assets/QueEsUnArray.png" alt="UnArrray">
+
+    <p>En términos simples, un array es una colección ordenada de elementos del mismo tipo (como números, cadenas de texto, objetos, etc.) que se almacenan en una memoria contigua y se acceden mediante un índice numérico. El índice comienza en cero y aumenta en uno para cada elemento adicional en el array.</p>
+
+    <p>Por ejemplo, si queremos almacenar una lista de cinco números enteros, podemos crear un array de cinco elementos donde cada elemento es un número entero. Luego podemos acceder a cada elemento individualmente utilizando su índice correspondiente (0 para el primer elemento, 1 para el segundo elemento, y así sucesivamente).</p>
+
+
+    <h2>Objetos</h2>
+
+    <p>
+        En JavaScript, los objetos son una estructura de datos que nos permiten almacenar y organizar datos relacionados en una sola entidad. Los objetos en JavaScript son colecciones de propiedades y métodos, y se definen utilizando llaves {}.
+
+    </p>
+    
+    <p>
+        Aquí hay un ejemplo de un objeto simple en JavaScript:
+    </p>
+
+    <img src="assets/ConceptosObjetos.png">
+
+    <p>
+        En este ejemplo, hemos cambiado el valor de las propiedades nombre y edad, y hemos agregado una nueva propiedad llamada profesion. Luego, hemos utilizado la función console.log() para imprimir el objeto completo en la consola del navegador.
+    </p>
+
+    <img src="assets/ConceptosObjetos2.png">
+
+    <p>
+        Los objetos en JavaScript son muy flexibles y se pueden utilizar para representar casi cualquier tipo de estructura de datos. También es posible crear objetos anidados y acceder a las propiedades de un objeto utilizando la notación de puntos o la notación de corchetes.
+    </p>
+
+    <img src="assets/ConceptosObjetos3.png">
       
 
     <br><br><br><br><br><br>
