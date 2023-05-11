@@ -139,21 +139,21 @@
 // console.log("*********************************")
 // console.log("Objetos")
 
-let persona = {
-    nombre: 'Juan',
-    edad: 30,
-    saludar: function() {
-      console.log('Hola, mi nombre es ' + this.nombre + ' y tengo ' + this.edad + ' años.');
-    }
-  };
+// let persona = {
+//     nombre: 'Juan',
+//     edad: 30,
+//     saludar: function() {
+//       console.log('Hola, mi nombre es ' + this.nombre + ' y tengo ' + this.edad + ' años.');
+//     }
+//   };
   
-  console.log(persona.nombre); // Juan
-  console.log(persona.edad); // 30
-  persona.saludar(); // Hola, mi nombre es Juan y tengo 30 años.
+//   console.log(persona.nombre); // Juan
+//   console.log(persona.edad); // 30
+//   persona.saludar(); // Hola, mi nombre es Juan y tengo 30 años.
   
 
-persona.nombre = 'María';
-persona.edad = 25;
-persona.profesion = 'Desarrolladora';
+// persona.nombre = 'María';
+// persona.edad = 25;
+// persona.profesion = 'Desarrolladora';
 
-console.log(persona); // { nombre: 'María', edad: 25, saludar: [Function], profesion: 'Desarrolladora' }
+// console.log(persona); // { nombre: 'María', edad: 25, saludar: [Function], profesion: 'Desarrolladora' }
