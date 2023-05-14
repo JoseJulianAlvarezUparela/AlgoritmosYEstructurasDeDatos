@@ -58,8 +58,10 @@ ul, li{
 a{
     color: black;
     font-size: 1.4rem;
-
+    box-shadow: 0px;
 }
+
+a { -webkit-tap-highlight-color: rgba(0,0,0,0)}; 
 
 img{
     width: 100%;
@@ -69,50 +71,6 @@ img{
     width: 30vw;
 } 
 
-
-
-
-
-
-
-
-footer {    
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100px;
-    background-color: white;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0 auto;
-    width: 100%;
-}
-
-footer a{
-    margin-top: 40px;
-    outline: none;
-}
-
-footer a i:focus{
-    outline-offset : transparent;
-}
-
-.box {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0 auto;
-    width: 90%;
-
-    margin-bottom: 35px;
-}
-
-.box i {
-    font-size: 3rem;
-    margin-left: 1rem;
-}
 
 
 
@@ -172,3 +130,62 @@ footer a i:focus{
         padding-bottom: 3rem;
     }
 }
+
+
+
+
+
+
+
+
+
+footer {    
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+footer a{
+    margin-top: 40px;
+    outline: none;
+    border: 0px;
+}
+
+footer a i:focus{
+    outline-offset : transparent;
+}
+
+.box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+
+    margin-bottom: 35px;
+}
+
+.box i {
+    font-size: 3rem;
+    margin-left: 1rem;
+}
+
+
+@media screen and (max-width: 800px) {
+    a {
+        border: 0px;
+    }
+
+    i{
+        border: 0;
+    }
+}
+
