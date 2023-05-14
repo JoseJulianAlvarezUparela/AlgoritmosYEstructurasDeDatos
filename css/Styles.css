@@ -13,7 +13,7 @@ body{
 }
 
 
-footer, main{
+.Nav, footer, main{
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
@@ -146,19 +146,16 @@ footer {
     margin: 0 auto;
     width: 100%;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
+    z-index: 999;
 }
 
-footer a{
+a{
     margin-top: 40px;
     outline: none;
     border: 0px;
 }
 
-footer a i:focus{
-    outline-offset : transparent;
-}
-
-.box {
+.navegation {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -168,19 +165,34 @@ footer a i:focus{
     margin-bottom: 35px;
 }
 
-.box i {
+.navegation i {
     font-size: 3rem;
     margin-left: 1rem;
 }
 
+.Nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 1100px;
+    height: 100vh;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    transition: .5s ease;
+    transform: scale3d(0,0,0);
+}
 
-@media screen and (max-width: 800px) {
-    a {
-        border: 0px;
-    }
+.show-nav{
+    transform: scale3d(1,1,1);
+    overflow-y: hidden;
+}
 
-    i{
-        border: 0;
-    }
+.Nav a{
+    text-decoration: none;
+    font-size: 4rem;
+    text-align: center;
 }
 
