@@ -138,8 +138,8 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100px;
-    background-color: white;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -150,7 +150,7 @@ footer {
 }
 
 a{
-    margin-top: 40px;
+    margin-top: 10px;
     outline: none;
     border: 0px;
 }
@@ -162,12 +162,12 @@ a{
     margin: 0 auto;
     width: 90%;
 
-    margin-bottom: 35px;
+
 }
 
 .navegation i {
-    font-size: 3rem;
-    margin-left: 1rem;
+    font-size: 3.5rem;
+    margin-left: 5rem;
 }
 
 .Nav{
@@ -196,3 +196,11 @@ a{
     text-align: center;
 }
 
+
+
+@media screen and (max-width: 700px) {
+    .navegation i {
+        font-size: 3rem;
+        margin-left: .5rem;
+    }
+}
