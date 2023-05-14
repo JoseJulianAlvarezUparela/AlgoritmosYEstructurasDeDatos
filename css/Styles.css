@@ -58,7 +58,7 @@ ul, li{
 a{
     color: black;
     font-size: 1.4rem;
-    padding-bottom: 3rem;
+
 }
 
 img{
@@ -68,6 +68,13 @@ img{
 .Imagen {
     width: 30vw;
 } 
+
+
+
+
+
+
+
 
 footer {    
     position: fixed;
@@ -85,6 +92,11 @@ footer {
 
 footer a{
     margin-top: 40px;
+    outline: none;
+}
+
+footer a i:focus{
+    outline-offset : transparent;
 }
 
 .box {
