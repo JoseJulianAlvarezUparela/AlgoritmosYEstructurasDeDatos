@@ -59,9 +59,9 @@ a{
     color: black;
     font-size: 1.4rem;
     box-shadow: 0px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
-/* a { -webkit-tap-highlight-color: rgba(0,0,0,0)};  */
 
 img{
     width: 100%;
@@ -130,12 +130,6 @@ img{
         padding-bottom: 3rem;
     }
 }
-
-
-
-
-
-
 
 
 
