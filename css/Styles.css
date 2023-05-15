@@ -1,5 +1,5 @@
 body{
-    font-family:  sans-serif;
+    font-family: sans-serif;
     font-size: 16px;
     box-sizing: content-box;
     overflow-x: hidden;
@@ -44,6 +44,7 @@ h3, h4, h5, h6 {
 }
 
 p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.7rem;
     text-align: justify;
 }
@@ -155,14 +156,14 @@ a{
     border: 0px;
 }
 
+
+
 .navegation {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin: 0 auto;
     width: 90%;
-
-
 }
 
 .navegation i {
@@ -192,12 +193,54 @@ a{
 
 .Nav a{
     text-decoration: none;
-    font-size: 4rem;
+    font-size: 2rem;
     text-align: center;
+    padding: 10px 0px;
 }
 
 
+section .content {
+    overflow: hidden;
+    max-height: 0;
+    text-align: justify;
+    font-family: "Courier New", Courier, monospace;
+    background: #e4e4e4;
+    transition: all 0.2s ease-in;
+  }
+  
+  .submenu {
+    display: block;
+    text-align: left;
+    font-family: "Courier New", Courier, monospace;
+    background-color: #212121;
+    border-bottom: 2px solid gray;
+    color: white;
 
+    margin-top: 0px;
+  }
+  
+  .submenu-content {
+      display: none;
+      background-color: #e4e4e4;
+    }
+    
+.submenu-content a {
+    margin-top: 0px;
+    display: block;
+    color: #212121;
+    padding: 10px 0;
+  }
+  
+  .submenu-content,
+  .submenu-content:hover {
+    display: block;
+  }
+  
+  section:target .content {
+    max-height: 40px;
+    padding: 10px;
+  }
+  
 @media screen and (max-width: 700px) {
     .navegation i {
         font-size: 2.6rem;
