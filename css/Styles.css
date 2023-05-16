@@ -251,6 +251,11 @@ section .content {
     color: #212121;
     padding: 10px 0;
   }
+
+  .submenu-content a:hover {
+    background-color: #212121;
+    color: white;
+  }
   
   .submenu-content,
   .submenu-content:hover {
