@@ -39,6 +39,10 @@ body{
     margin-right: auto;
 }
 
+main {
+    margin-bottom: 90px;
+}
+
 h1{
     font-size: 3.2rem;
     font-weight: bold;
