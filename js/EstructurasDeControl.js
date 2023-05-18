@@ -71,3 +71,45 @@
 
 
 
+// var edad = 18;
+
+// if (edad >= 18) {
+//   console.log("Eres mayor de edad");
+// }
+
+
+// var hora = 12;
+
+// if (hora < 12) {
+//   console.log("Buenos días");
+// } else {
+//   console.log("Buenas tardes");
+// }
+
+
+// var numero = 0;
+
+// if (numero > 0) {
+//   console.log("El número es positivo");
+// } else if (numero < 0) {
+//   console.log("El número es negativo");
+// } else {
+//   console.log("El número es cero");
+// }
+
+// for (var i = 0; i < 5; i++) {
+//     console.log(i);
+//   }
+
+// var i = 0;
+// while (i < 5) {
+//   console.log(i);
+//   i++;
+// }
+
+
+var i = 0;
+do {
+  console.log(i);
+  i++;
+} while (i < 5);
