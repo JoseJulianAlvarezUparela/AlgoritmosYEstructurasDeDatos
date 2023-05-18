@@ -82,50 +82,234 @@
 // console.log(area)
 
 // Convierte 50 Grados Celsius A Fahrenheit Usando La Fórmula: F = C * 9/5 + 32.
+
+// let Celsius = 50;
+// let Fahrenheit = Celsius * (9/5) + 32;
+
+// console.log(Fahrenheit)
+
+
 // Calcula El Promedio De 4 Números: 8, 5, 12 Y 10.
+
+// let Numueros = [8,5,12,10];
+// let suma = 0;
+// let cantidad = Numueros.length;
+
+// for (let i = 0; i < cantidad; i++) {
+//     suma += Numueros[i];
+// }
+
+// let promedio = suma / cantidad;
+
+// console.log(`El promedio de los siguientes numeros es ${promedio}`) // 8.75
+
+
 // Calcula El Valor Absoluto De -9.
+
+// let N = -9;
+// let Vabsoluto = Math.abs(N)
+// console.log(Vabsoluto)
+
 // Comprueba Si El Número 7 Es Par O Impar.
+
+// function esPar(numero) {
+//     if (numero % 2 === 0) {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   }
+  
+//   // Ejemplo de uso
+//   var numero = 7;
+//   if (esPar(numero)) {
+//     console.log(numero + " es un número par.");
+//   } else {
+//     console.log(numero + " es un número impar.");
+//   }
+  
+
 // Calcula El Máximo Entre 10 Y 17.
+
+// let N = [10, 17];
+// let Maximo = Math.max.apply(null,N)
+// console.log(Maximo)
+
 // Calcula El Mínimo Entre 5, 8, 3 Y 9.
+
+// let N = [5,8,3,9];
+// let Maximo = Math.max.apply(null, N)
+// console.log(Maximo)
+
+
 // Calcula El Resultado De La Expresión (2 + 3) * (6 - 4) / 2.
+
+// let Expresion = (1 + 3 ) * (6-4) / 2;
+// console.log(Expresion)
+
 // Calcula La Hipotenusa De Un Triángulo Rectángulo Con Catetos De Longitud 3 Y 4.
+
+// function calcularHipotenusa(cateto1, cateto2) {
+//     var hipotenusa = Math.sqrt(Math.pow(cateto1, 2) + Math.pow(cateto2, 2));
+//     return hipotenusa;
+//   }
+  
+//   // Ejemplo de uso
+//   var cateto1 = 3;
+//   var cateto2 = 4;
+//   var hipotenusa = calcularHipotenusa(cateto1, cateto2);
+//   console.log("La hipotenusa es: " + hipotenusa);
+  
+
 // Calcula El Valor De X En La Ecuación 2x + 5 = 13.
+
+// let constante = 13;
+// let coeficiente = 2;
+// let x = (constante - 5) / coeficiente;
+// console.log(x)
+
 // Comprueba Si El Número 25 Es Divisible Entre 5.
+
+// function esDivisible() {
+//     if(N % 5 === 0) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+// var N = 25;
+
+// if(esDivisible (N)) {
+//     console.log(`${N} es Divisible Entre 5.`)
+// } else {
+//     console.log(`${N} no es Divisible Entre 5.`)
+// }
+
 // Calcula El Resultado De La Expresión (7 + 3) / (2 * 2) + 1.
-// Calcula El Área De Un Triángulo Con Base 6 Y Altura 8.
-// Calcula El Perímetro De Un Rectángulo De Base 10 Y Altura 4.
-// Calcula El Resultado De La Expresión 4 * (3 + 5) - 2.
+
+// let Expresion = (7 + 3) / (2 * 2) + 1;
+// console.log(Expresion);
+
 // Calcula El Resto De La División De 20 Entre 7.
+
+// let  Resto = 20 % 7;
+// console.log(Resto)
+
+
 
 
 
 
 // Operadores De String
+
 // Concatena Dos Cadenas Usando El Operador +.
+
+// let a  = "Hola, ";
+// let b = "¿Como estas?"
+
+// console.log(a +b)
+
 // Asigna Una Cadena A Una Variable Llamada Texto.
+
+// let Texto = "Hola"
+
 // Obtén La Longitud De La Cadena Texto.
+
+// let b = "¿Como estas?"
+// console.log(b.length)
+
 // Convierte La Cadena Texto A Minúsculas.
+
+// let a = "HOLA ¿COMO ESTAS?"
+// console.log(a.toLowerCase());
+
 // Convierte La Cadena Texto A Mayúsculas.
+
+// let b = "¿Como estas?"
+// console.log(b.toUpperCase())
+
+
 // Extrae Una Subcadena De Texto Desde El Índice 2.
+
+// let cadena = "hola mundo";
+// let result = cadena.substring(2);
+// console.log(result)
+
 // Extrae Una Subcadena De Texto Desde El Índice 2 Hasta El 5.
+
+
+
 // Reemplaza Una Parte De La Cadena Texto Por Otra Cadena.
+
+
+
 // Encuentra La Posición De Una Subcadena Dentro De Texto.
+
+
+
 // Verifica Si Texto Comienza Con La Subcadena "Hola".
+
+
+
 // Verifica Si Texto Termina Con La Subcadena "Mundo".
+
+
+
 // Divide Texto En Un Arreglo De Subcadenas Usando Un Separador.
+
+
+
 // Elimina Los Espacios En Blanco Al Inicio Y Al Final De Texto.
+
+
+
 // Obtén El Carácter En El Índice 3 De Texto.
+
+
+
 // Convierte Un Número A Cadena Usando El Método ToString().
+
+
+
 // Verifica Si Una Cadena Contiene Otra Subcadena Usando El Método Includes().
+
+
+
 // Repite La Cadena Texto Tres Veces Usando El Método Repeat().
+
+
+
 // Obtén El Índice De La Primera Aparición De Una Subcadena En Texto.
+
+
+
 // Convierte Una Cadena En Un Arreglo De Caracteres Usando El Método Split().
+
+
+
 // Une Los Elementos De Un Arreglo En Una Cadena Usando El Método Join().
+
+
+
 // Obtén Una Subcadena De Texto Desde El Índice -3.
+
+
+
 // Reemplaza Todas Las Apariciones De Una Subcadena En Texto Por Otra Cadena.
+
+
+
 // Verifica Si Texto Es Igual A Otra Cadena Usando El Operador De Igualdad.
+
+
+
 // Verifica Si Texto Es Diferente A Otra Cadena Usando El Operador De Desigualdad.
+
+
+
 // Obtén Una Subcadena De Texto Con Un Rango De Índices Invertido.
+
 
 // Arreglos
 // Declara Un Arreglo Llamado Numeros Con Los Valores [1, 2, 3, 4, 5].
