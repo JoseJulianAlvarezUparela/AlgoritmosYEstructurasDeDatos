@@ -108,8 +108,48 @@
 // }
 
 
-var i = 0;
-do {
-  console.log(i);
-  i++;
-} while (i < 5);
+// var i = 0;
+// do {
+//   console.log(i);
+//   i++;
+// } while (i < 5);
+
+
+// switch (valor) {
+//   case caso1:
+//     // código a ejecutar si el valor coincide con caso1
+//     break;
+//   case caso2:
+//     // código a ejecutar si el valor coincide con caso2
+//     break;
+//   case caso3:
+//     // código a ejecutar si el valor coincide con caso3
+//     break;
+//   // puedes agregar más casos si es necesario
+//   default:
+//     // código a ejecutar si ninguno de los casos coincide con el valor
+//     break;
+// }
+
+
+// let dia = "lunes";
+// let mensaje;
+
+// switch (dia) {
+//   case "lunes":
+//   case "martes":
+//   case "miércoles":
+//   case "jueves":
+//   case "viernes":
+//     mensaje = "Es un día de la semana laboral.";
+//     break;
+//   case "sábado":
+//   case "domingo":
+//     mensaje = "Es un fin de semana.";
+//     break;
+//   default:
+//     mensaje = "No es un día válido.";
+//     break;
+// }
+
+// console.log(mensaje); // Salida: "Es un día de la semana laboral."

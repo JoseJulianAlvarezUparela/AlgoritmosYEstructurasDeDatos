@@ -562,3 +562,6 @@
 // Verifica Si Una Variable Es De Tipo Cadena De Texto O Booleano.
 // Verifica Si Una Variable Es De Tipo Número O Indefinido.
 // Verifica Si Una Variable Es De Tipo Nulo O Símbolo.
+
+
+
