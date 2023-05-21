@@ -157,6 +157,47 @@
 
 
     <h2>Manejo de Errores</h2>
+
+    <p>
+      En JavaScript, puedes manejar errores utilizando las declaraciones try y catch. El bloque try se utiliza para envolver el código que podría generar una excepción, y el bloque catch se utiliza para capturar y manejar esa excepción. Aquí tienes algunos ejemplos de manejo de errores en JavaScript:
+    </p>
+    
+    <p>
+      Ejemplo 1: Capturar un error específico 
+    </p>
+    
+    <img src="assets/ManejoErrores.png">
+
+    <p>
+      En este ejemplo, se intenta dividir 10 por cero, lo cual genera una excepción de división por cero. El bloque catch captura la excepción y muestra un mensaje de error en la consola.
+    </p>
+    
+    <p>
+      Ejemplo 2: Capturar diferentes tipos de errores
+    </p>
+
+    <img src="assets/ManejoErroresDos.png">
+
+    <p>
+      En este ejemplo, se intenta acceder al índice 5 de un arreglo que solo tiene elementos hasta el índice 2. Esto genera una excepción de rango (RangeError). El bloque catch captura la excepción y verifica su tipo utilizando la instrucción instanceof. Luego, muestra un mensaje de error específico dependiendo del tipo de error capturado.
+
+    </p>
+    
+    <p>
+      Ejemplo 3: Lanzar una excepción personalizada
+    </p>
+
+    <img src="assets/ManejoErroresTres.png">
+
+    <p>
+      En este ejemplo, se define una función dividir que verifica si el divisor es cero. Si es cero, se lanza una excepción personalizada utilizando la palabra clave throw. El bloque catch captura la excepción y muestra el mensaje de error asociado.
+
+    </p>
+    
+    <p>
+      Estos son solo ejemplos básicos de manejo de errores en JavaScript. Puedes adaptar estas técnicas a tus necesidades y realizar acciones adicionales dentro del bloque catch, como registrar los errores, notificar al usuario, o tomar medidas correctivas.
+    </p>
+
     <h2>break & continue</h2>
     <h2>Destructuración</h2>
     <h2>Objetos Literales</h2>

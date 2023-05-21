@@ -153,3 +153,46 @@
 // }
 
 // console.log(mensaje); // Salida: "Es un día de la semana laboral."
+
+
+// try {
+//     // Código que podría generar una excepción
+//     const resultado = 10 / 0;
+//     console.log(resultado);
+//   } catch (error) {
+//     // Capturar y manejar la excepción
+//     console.log('Se produjo un error:', error);
+//   }
+  
+
+// try {
+//     // Código que podría generar una excepción
+//     const arreglo = [1, 2, 3];
+//     console.log(arreglo[5]);
+//   } catch (error) {
+//     // Capturar y manejar la excepción
+//     if (error instanceof TypeError) {
+//       console.log('Error de tipo:', error);
+//     } else if (error instanceof RangeError) {
+//       console.log('Error de rango:', error);
+//     } else {
+//       console.log('Error no identificado:', error);
+//     }
+//   }
+  
+
+// try {
+//     // Código que podría generar una excepción
+//     const arreglo = [1, 2, 3];
+//     console.log(arreglo[5]);
+//   } catch (error) {
+//     // Capturar y manejar la excepción
+//     if (error instanceof TypeError) {
+//       console.log('Error de tipo:', error);
+//     } else if (error instanceof RangeError) {
+//       console.log('Error de rango:', error);
+//     } else {
+//       console.log('Error no identificado:', error);
+//     }
+//   }
+  

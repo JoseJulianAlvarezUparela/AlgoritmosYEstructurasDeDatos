@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
   toggleMenu.addEventListener('click', function() {
     nav.classList.toggle('show-nav');
 
-    var body = document.querySelector('body');
+      let body = document.querySelector('body');
 
     if (nav.classList.contains('show-nav')) {
       // Se activó el menú de navegación, deshabilitar scroll
@@ -57,5 +57,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
-
-
