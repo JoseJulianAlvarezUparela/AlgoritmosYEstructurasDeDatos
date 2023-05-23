@@ -278,7 +278,7 @@ section .content {
     }
 
     .Nav a{
-        font-size: 1rem;
+        font-size: 1.8rem;
     }
 
     ::-webkit-scrollbar {
