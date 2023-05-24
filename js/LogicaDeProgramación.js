@@ -238,30 +238,64 @@
 
 // Extrae Una Subcadena De Texto Desde El Índice 2 Hasta El 5.
 
-
+// let cadena = "Hola mundo"
+// let result = cadena.slice(2,5)
+// console.log(result)
 
 // Reemplaza Una Parte De La Cadena Texto Por Otra Cadena.
 
-
+// let cadena = "Hola Mundo"
+// let NuevaCadena = cadena.replace("Mundo", "Amigo")
+// console.log(NuevaCadena)
 
 // Encuentra La Posición De Una Subcadena Dentro De Texto.
 
+// let texto = "El sol brilla en el cielo azul mientras las aves vuelan en círculos. El aire fresco llena mis pulmones y la tranquilidad me invade. Es un hermoso día para disfrutar de la naturaleza y relajarse."
 
+// let SubCadena = "El sol brilla"
+
+// if(texto.includes(SubCadena)) {
+//     console.log("Perfecto, la encontraste")
+// }else {
+//     console.log("Sigue intnetandolo")
+// }
 
 // Verifica Si Texto Comienza Con La Subcadena "Hola".
 
+// let texto = "Hola Mundo"
+// let Palabra = "Hola"
+
+// if(texto.startsWith("Hola")){
+//     console.log("Afirmativo")
+// }else {
+//     console.log("Negativo")
+// }
 
 
 // Verifica Si Texto Termina Con La Subcadena "Mundo".
 
+// let texto = "Hola Mundo"
+// let Palabra = "Mundo"
+
+// if(texto.endsWith("Mundo")){
+//     console.log("Bien")
+// }else{
+//     console.log("Mal")
+// }
 
 
 // Divide Texto En Un Arreglo De Subcadenas Usando Un Separador.
 
+// let texto = "El sol brilla en el cielo azul mientras las aves vuelan en círculos. El aire fresco llena mis pulmones y la tranquilidad me invade. Es un hermoso día para disfrutar de la naturaleza y relajarse."
 
+// let Arreglo = texto.split();
+// console.log(Arreglo)
 
 // Elimina Los Espacios En Blanco Al Inicio Y Al Final De Texto.
 
+// let texto = "Hola     mundo   feliz";
+// let textoSinEspacios = texto.replace(/ /g, "");
+// console.log(textoSinEspacios);
 
 
 // Obtén El Carácter En El Índice 3 De Texto.
@@ -312,32 +346,117 @@
 
 
 // Arreglos
+
+
 // Declara Un Arreglo Llamado Numeros Con Los Valores [1, 2, 3, 4, 5].
+
+// let Numeros = [1,2,3,4,5]
+// console.log(Numeros)
+
 // Accede Al Segundo Elemento Del Arreglo Numeros.
+
+// let Numeros = [1,2,3,4,5]
+// console.log(Numeros[1])
+
+
 // Modifica El Tercer Elemento Del Arreglo Numeros Y Asígnale El Valor 10.
+
+// let Numeros = [1,2,3,4,5]
+// Numeros[2] = 6;
+// console.log(Numeros)
+
+
+
 // Agrega Un Nuevo Elemento Con El Valor 6 Al Final Del Arreglo Numeros.
+
+
+
 // Elimina El Último Elemento Del Arreglo Numeros.
+
+
+
 // Declara Un Arreglo Vacío Llamado Frutas.
+
+
+
 // Agrega Los Elementos 'Manzana', 'Banana' Y 'Naranja' Al Arreglo Frutas.
+
+
+
 // Obtén La Longitud Del Arreglo Frutas.
+
+
+
 // Concatena Los Arreglos Numeros Y Frutas.
+
+
+
 // Ordena El Arreglo Numeros De Forma Ascendente.
+
+
+
 // Invierte El Orden De Los Elementos Del Arreglo Frutas.
+
+
+
 // Verifica Si El Elemento 'Banana' Existe En El Arreglo Frutas.
+
+
+
 // Encuentra La Posición Del Elemento 'Naranja' En El Arreglo Frutas.
+
+
+
 // Obtén Los Primeros 3 Elementos Del Arreglo Numeros.
+
+
+
 // Obtén Los Últimos 2 Elementos Del Arreglo Frutas.
+
+
+
 // Remueve El Segundo Elemento Del Arreglo Numeros.
+
+
+
 // Reemplaza El Primer Elemento Del Arreglo Frutas Con El Valor 'Pera'.
+
+
+
 // Une Los Elementos Del Arreglo Frutas En Un String Separado Por Comas.
+
+
+
 // Verifica Si Todos Los Elementos Del Arreglo Numeros Son Mayores A 0.
+
+
+
 // Verifica Si Al Menos Un Elemento Del Arreglo Frutas Comienza Con La Letra 'M'.
+
+
+
 // Multiplica Cada Elemento Del Arreglo Numeros Por 2.
+
+
+
 // Obtén El Valor Máximo Del Arreglo Numeros.
+
+
+
 // Obtén El Valor Mínimo Del Arreglo Numeros.
+
+
+
 // Crea Una Copia Del Arreglo Frutas.
+
+
+
 // Vacía El Arreglo Numeros.
+
+
+
 // Verifica Si El Arreglo Frutas Es Vacío.
+
 
 
 // Template String
@@ -497,7 +616,7 @@
 // Verifica Si Al Menos Uno De Los Siguientes Es Verdadero: 0, False, Null.
 // Verifica Si Todos Los Siguientes Son Verdaderos: "Hola", True, 1.
 // Verifica Si Al Menos Uno De Los Siguientes Es Falso: "", 0, Undefined.
-// Verifica Si Todos Los Siguientes Son Falsos: NaN, False, Null.
+// Verifica Si Todos Los Siguientes Son Falsos: NaN, False, Null. 
 // Verifica Si Al Menos Uno De Los Siguientes Es Verdadero: !True, !!False, !!!True.
 // Verifica Si Todos Los Siguientes Son Verdaderos: !False, !!True, !!!False.
 // Verifica Si Al Menos Uno De Los Siguientes Es Falso: !True, !!False, !!!False.
