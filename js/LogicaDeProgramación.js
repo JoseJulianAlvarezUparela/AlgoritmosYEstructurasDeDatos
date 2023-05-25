@@ -300,49 +300,99 @@
 
 // Obtén El Carácter En El Índice 3 De Texto.
 
-
+// let texto = "Hola Mundo"
+// let caracter = "3";
+// let indice = texto.indexOf(caracter);
+// console.log(indice)
 
 // Convierte Un Número A Cadena Usando El Método ToString().
 
-
+// let numero = 123;
+// let texto = numero.toString();
+// console.log(texto)
 
 // Verifica Si Una Cadena Contiene Otra Subcadena Usando El Método Includes().
 
+// let texto = "El sol brilla en el cielo azul mientras las aves vuelan en círculos. El aire fresco llena mis pulmones y la tranquilidad me invade. Es un hermoso día para disfrutar de la naturaleza y relajarse."
 
+// let Incluye= texto.includes("sol");
+// console.log(Incluye)
 
 // Repite La Cadena Texto Tres Veces Usando El Método Repeat().
 
-
+// let texto = "El sol brilla en el cielo azul mientras las aves vuelan en círculos. El aire fresco llena mis pulmones y la tranquilidad me invade. Es un hermoso día para disfrutar de la naturaleza y relajarse. .........................."
+// let repetir = texto.repeat(3)
+// console.log(repetir)
 
 // Obtén El Índice De La Primera Aparición De Una Subcadena En Texto.
 
-
+// let texto = "El sol brilla en el cielo azul mientras las aves vuelan en círculos. El aire fresco llena mis pulmones y la tranquilidad me invade. Es un hermoso día para disfrutar de la naturaleza y relajarse."
+// let subcadena = "disfrutar"
+// let indice = texto.indexOf(subcadena);
+// console.log(indice)
 
 // Convierte Una Cadena En Un Arreglo De Caracteres Usando El Método Split().
 
-
+// let texto = "Hola Mundo"
+// let Arreglo = texto.split()
+// console.log(Arreglo)
 
 // Une Los Elementos De Un Arreglo En Una Cadena Usando El Método Join().
 
-
+// let arreglo = ["Hola", " Mundo"]
+// let unir = arreglo.join()
+// console.log(unir)
 
 // Obtén Una Subcadena De Texto Desde El Índice -3.
 
-
+// let texto = "Hola Mundo"
+// let IndiceNegativo = -3;
+// let subcadena = texto.substring(IndiceNegativo)
+// console.log(subcadena)
 
 // Reemplaza Todas Las Apariciones De Una Subcadena En Texto Por Otra Cadena.
+
+// let texto = "Hola mundo, hola universo!";
+// let subcadena = "hola";
+// let nuevaSubcadena = "adiós";
+
+// let nuevoTexto = texto.replace(new RegExp(subcadena, "gi"), nuevaSubcadena);
+// console.log(nuevoTexto);
+
 
 
 
 // Verifica Si Texto Es Igual A Otra Cadena Usando El Operador De Igualdad.
 
+// let texto = "Hola Mundo"
+// let textoN2 = "Hola Mundo"
 
+// if(texto == textoN2){
+//     console.log("Es ingual")
+// } else {
+//     console.log("No es igual")
+// }
 
 // Verifica Si Texto Es Diferente A Otra Cadena Usando El Operador De Desigualdad.
 
+// let texto = "Hola Mundo"
+// let textoN2 = "Hola Mundo"
+
+// if(texto != textoN2){
+//     console.log("Es ingual")
+// } else {
+//     console.log("No es igual")
+// }
 
 
 // Obtén Una Subcadena De Texto Con Un Rango De Índices Invertido.
+
+let texto = "Hola, mundo!";
+let indiceInicio = -5;
+let indiceFin = -2;
+
+let subcadena = texto.substring(indiceInicio, indiceFin);
+console.log(subcadena);
 
 
 // Arreglos
