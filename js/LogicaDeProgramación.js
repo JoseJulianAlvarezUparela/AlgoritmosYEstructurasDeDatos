@@ -387,12 +387,12 @@
 
 // Obtén Una Subcadena De Texto Con Un Rango De Índices Invertido.
 
-let texto = "Hola, mundo!";
-let indiceInicio = -5;
-let indiceFin = -2;
+// let texto = "Hola, mundo!";
+// let indiceInicio = -5;
+// let indiceFin = -2;
 
-let subcadena = texto.substring(indiceInicio, indiceFin);
-console.log(subcadena);
+// let subcadena = texto.substring(indiceInicio, indiceFin);
+// console.log(subcadena);
 
 
 // Arreglos
@@ -419,59 +419,94 @@ console.log(subcadena);
 
 // Agrega Un Nuevo Elemento Con El Valor 6 Al Final Del Arreglo Numeros.
 
-
+// let Numeros = [1,2,3,4,5]
+// let Poner = Numeros.push(6)
+// console.log(Numeros)
 
 // Elimina El Último Elemento Del Arreglo Numeros.
 
-
+// let Numeros = [1,2,3,4,5]
+// let Quitar = Numeros.pop()
+// console.log(Quitar)
+// console.log(Numeros)
 
 // Declara Un Arreglo Vacío Llamado Frutas.
 
+// let Numeros = [4,5,1,2,3]
+// let Cadena = []
+
+// // Agrega Los Elementos 'Manzana', 'Banana' Y 'Naranja' Al Arreglo Frutas.
+
+// let Agregar = Cadena.push("Banana","Manzana","Naranja")
+// console.log(Agregar)
+// console.log(Cadena)
+
+// // Obtén La Longitud Del Arreglo Frutas.
+
+// let Contar = Cadena.length;
+// console.log(Cadena)
 
 
-// Agrega Los Elementos 'Manzana', 'Banana' Y 'Naranja' Al Arreglo Frutas.
+// // Concatena Los Arreglos Numeros Y Frutas.
+
+// let Unir = Numeros.concat(Cadena)
+// console.log(Unir)
 
 
+// // Ordena El Arreglo Numeros De Forma Ascendente.
 
-// Obtén La Longitud Del Arreglo Frutas.
-
-
-
-// Concatena Los Arreglos Numeros Y Frutas.
-
+// Numeros.sort(function(a,b) {
+//     return a - b;
+// })
 
 
-// Ordena El Arreglo Numeros De Forma Ascendente.
+// console.log(Numeros)
 
+// // Invierte El Orden De Los Elementos Del Arreglo Frutas.
 
-
-// Invierte El Orden De Los Elementos Del Arreglo Frutas.
-
-
+// let frutas = ["Banana","Manzana","Naranja"]
+// console.log(frutas)
+// let Inviertir = frutas.reverse()
+// console.log(Inviertir)
 
 // Verifica Si El Elemento 'Banana' Existe En El Arreglo Frutas.
 
+// let frutas = ["Banana","Manzana","Naranja"]
+// let Incluye = frutas.includes("Banana")
+// console.log(Incluye)
 
 
 // Encuentra La Posición Del Elemento 'Naranja' En El Arreglo Frutas.
 
-
+// let frutas = ["Banana","Manzana","Naranja"]
+// let Index = frutas.indexOf("Naranja")
+// console.log(Index)
 
 // Obtén Los Primeros 3 Elementos Del Arreglo Numeros.
 
-
+// let Numeros = [4,5,1,2,3]
+// let Incluir = Numeros.slice(0,3)
+// console.log(Incluir)
 
 // Obtén Los Últimos 2 Elementos Del Arreglo Frutas.
 
-
+// let frutas = ["Banana","Manzana","Naranja"]
+// let terminaEn =  frutas.slice(-2)
+// console.log(terminaEn)
 
 // Remueve El Segundo Elemento Del Arreglo Numeros.
 
-
+// let frutas = ["Banana","Manzana","Naranja"]
+// let Remover = frutas.splice(1,1)
+// console.log(frutas)
 
 // Reemplaza El Primer Elemento Del Arreglo Frutas Con El Valor 'Pera'.
 
-
+// let frutas = ["Banana","Manzana","Naranja"]
+// let fruta = "Banana"
+// let Nuevo = "Pera"
+// frutas[fruta] = Nuevo
+// console.log(frutas)
 
 // Une Los Elementos Del Arreglo Frutas En Un String Separado Por Comas.
 
