@@ -14,12 +14,150 @@
     
     <h1>Programación Orientada a Objetos</h1>
 
+    <p>La programación orientada a objetos (POO) en JavaScript es un enfoque de programación que se basa en el concepto de objetos y sus interacciones para resolver problemas. Aunque JavaScript es un lenguaje de programación basado en prototipos, también se puede utilizar para implementar paradigmas de programación orientada a objetos.</p>
+
+    <p>En la POO, los objetos son entidades que encapsulan datos y comportamientos relacionados. Estos objetos se crean a partir de una plantilla llamada clase, que define las propiedades y métodos que los objetos de esa clase pueden tener. Aquí tienes un ejemplo básico de cómo se puede utilizar la POO en JavaScript:</p>
+
+    <img src="assets/POO.png">
+
+    <p>En el ejemplo anterior, creamos una clase llamada <code>Persona</code> con un constructor que recibe el nombre y la edad como parámetros. La clase también tiene un método llamado <code>saludar()</code> que muestra un mensaje en la consola utilizando los datos de la instancia.</p>
+
+    <p>Luego, creamos dos objetos (<code>persona1</code> y <code>persona2</code>) a partir de la clase <code>Persona</code> utilizando la palabra clave <code>new</code>. Podemos acceder a las propiedades de los objetos utilizando la notación de punto (<code>nombre</code> y <code>edad</code>) y llamar a los métodos de los objetos (<code>saludar()</code>).</p>
+
+    <p>La programación orientada a objetos en JavaScript también permite la herencia, donde una clase puede heredar propiedades y métodos de otra clase. Esto se logra utilizando la palabra clave <code>extends</code>. Aquí tienes un ejemplo:</p>
+
+    <img src="assets/POO_2.png">
+
+    <p>En este ejemplo, creamos una clase <code>Estudiante</code> que hereda de la clase <code>Persona</code> utilizando la palabra clave <code>extends</code>. La clase <code>Estudiante</code> agrega una nueva propiedad <code>grado</code> y un nuevo método <code>estudiar()</code>. Al crear un objeto <code>estudiante1</code> a partir de la clase <code>Estudiante</code>, podemos acceder tanto a los métodos heredados de la clase <code>Persona</code> como a los propios de la clase <code>Estudiante</code>.</p>
+
+    <p>La programación orientada a objetos en JavaScript ofrece muchas posibilidades y ventajas, como la reutilización de código, la organización de la lógica en entidades lógicas y la encapsulación de datos. Sin embargo, también es importante tener en cuenta las particularidades de JavaScript y cómo se implementa la POO en este lenguaje, basado en prototipos.</p>
+
+
     <h2>Prototipos</h2>
+
+      <p>Los prototipos son una parte fundamental de JavaScript y juegan un papel central en su modelo de programación orientada a prototipos. En JavaScript, cada objeto tiene un prototipo, que es otro objeto al que se le pueden agregar propiedades y métodos. Cuando intentas acceder a una propiedad o método en un objeto, JavaScript primero busca esa propiedad en el objeto en sí. Si no la encuentra, continúa buscando en el prototipo del objeto y así sucesivamente, hasta llegar al prototipo final llamado "Object.prototype". Esto se conoce como cadena de prototipos.</p>
+
+      <p>Prototipo de un objeto simple:</p>
+
+      <img src="assets/Prototipos.png">
+
+  <p>En JavaScript, los prototipos se pueden crear de varias formas:</p>
+
+  <ul>
+    <li>Prototipos implícitos: Todos los objetos en JavaScript tienen un prototipo implícito que es el objeto base para el objeto en sí. Por ejemplo, los objetos creados mediante llaves {} tienen un prototipo implícito de Object.prototype.</li>
+    <li>Funciones constructoras: Puedes definir una función constructora y luego crear objetos usando el operador new. La función constructora actúa como una plantilla para crear objetos y su prototipo se define automáticamente a través de la propiedad prototype.</li>
+    <li>Clases (a partir de ES6): A partir de ECMAScript 2015 (ES6), JavaScript introdujo la sintaxis de clases, que es una forma más declarativa de crear objetos y establecer prototipos. Las clases en JavaScript todavía están basadas en prototipos, y la herencia se logra a través de la herencia de prototipos utilizando la palabra clave extends.</li>
+  </ul>
+
+  <p>La propiedad prototype es una propiedad que se encuentra en las funciones constructoras y se utiliza para establecer el prototipo de los objetos creados a través de la función constructora. Esta propiedad es un objeto que actúa como el prototipo de los objetos creados, y se pueden agregar propiedades y métodos a este prototipo para que estén disponibles en todos los objetos creados a través de la función constructora.</p>
+
+  <p>La herencia de prototipos permite la reutilización de código y la organización jerárquica de objetos. Al establecer el prototipo de un objeto en otro objeto, el objeto hereda automáticamente todas las propiedades y métodos del prototipo. Esto se logra mediante la cadena de prototipos y la palabra clave extends en las clases (a partir de ES6).</p>
+
+  <img src="assets/Prototipos_2.png">
+
+  <p>En resumen, los prototipos en JavaScript son una parte fundamental de su modelo de programación orientada a prototipos. Permiten la herencia y la reutilización de código, y se pueden crear y establecer de diferentes formas. Los prototipos son una característica poderosa que diferencia a JavaScript de otros lenguajes de programación orientados a objetos.</p>
+
+  <p>Prototipo de una clase más compleja:</p>
+
+  <img src="assets/Prototipos_3.png">
+
+  <p>
+    Estos son solo algunos ejemplos para mostrar cómo se pueden crear prototipos en JavaScript. Los prototipos son una parte fundamental de la programación orientada a objetos en JavaScript y permiten la reutilización de código a través de la herencia y la extensión de objetos.
+  </p>
+
+
     <h2>Herencia Prototípica</h2>
+
+    <p>
+      La herencia prototípica es un concepto fundamental en JavaScript y se basa en la idea de que los objetos pueden heredar propiedades y métodos de otros objetos. A diferencia de los lenguajes de programación tradicionales que utilizan una estructura de clase, JavaScript utiliza la herencia prototípica para lograr la reutilización de código.
+    </p>
+
+    <p>
+      En JavaScript, cada objeto tiene un enlace interno llamado "prototipo" que apunta a otro objeto. Cuando se busca una propiedad o método en un objeto, si no se encuentra en el propio objeto, JavaScript lo buscará en su prototipo. Este proceso continuará hasta llegar al objeto base llamado "Object.prototype".
+    </p>
+
+    <p>
+      Aquí tienes un ejemplo que ilustra la herencia prototípica en JavaScript:
+    </p>
+
+    <img src="assets/Prototipos_4.png">
+
+    <p>
+      En este ejemplo, creamos un objeto animal que actúa como el objeto padre. Luego, utilizamos Object.create(animal) para crear un nuevo objeto perro que hereda todas las propiedades y métodos de animal. Posteriormente, agregamos una propiedad tipo específica para el perro y un método ladrar exclusivo del perro.
+    </p>
+
+    <p>
+      Al llamar a los métodos describir y ladrar en el objeto perro, podemos acceder tanto a los métodos heredados del objeto animal como a los métodos propios del objeto perro.
+    </p>
+
+    <p>    
+      La herencia prototípica permite la creación de relaciones jerárquicas entre objetos y facilita la reutilización de código en JavaScript. Es importante comprender este concepto para aprovechar al máximo el poder y la flexibilidad de JavaScript como lenguaje de programación.
+    </p>
+
     <h2>Clases y Herencia</h2>
+
+    <p>
+      JavaScript introdujo la sintaxis de clases en ECMAScript 2015 (también conocido como ES6) para facilitar la programación orientada a objetos. Aunque JavaScript sigue siendo un lenguaje basado en prototipos, las clases en JavaScript son solo una sintaxis más clara y conveniente para trabajar con prototipos.
+    </p>
+
+    <p>
+      Aquí tienes un ejemplo de cómo se pueden definir clases y lograr la herencia en JavaScript utilizando la sintaxis de clases:
+    </p>
+
+    <img src="assets/Clases.png">
+
+    <p>
+      En este ejemplo, hemos definido la clase Animal como la clase padre y la clase Perro como la clase hija que hereda de Animal. Utilizamos la palabra clave extends para establecer la herencia y la función super() para llamar al constructor de la clase padre.
+    </p>
+
+    <p>
+      La clase Perro tiene su propio constructor para inicializar las propiedades específicas del perro, en este caso, la raza. También puede tener métodos adicionales, como el método ladrar().
+    </p>
+
+    <p>
+      Al crear una instancia de la clase Perro, podemos llamar a los métodos heredados de la clase Animal, como describir(), así como a los métodos específicos de la clase Perro, como ladrar(). Además, podemos acceder a las propiedades específicas de la clase Perro, como raza.
+    </p>
+
+    <p>   
+      La introducción de la sintaxis de clases en JavaScript hace que sea más fácil y claro trabajar con la programación orientada a objetos y la herencia. Sin embargo, es importante tener en cuenta que, en última instancia, JavaScript sigue utilizando prototipos en su núcleo.
+    </p>
+
     <h2>Métodos estáticos, getters y setters</h2>
 
-      
+    <p>
+      En JavaScript, las clases pueden contener métodos estáticos, getters y setters que proporcionan funcionalidades adicionales. Aquí tienes una explicación de cada uno de ellos:   
+    </p>
+
+    <p>    
+      Métodos estáticos:
+      Los métodos estáticos son funciones que se definen en la clase en sí misma, en lugar de estar asociadas a las instancias de la clase. Estos métodos son accesibles directamente desde la clase, sin necesidad de crear una instancia de la misma.
+    </p>
+
+    <img src="assets/MetodosEstaticos.png" alt="">
+
+    <p>
+      En este ejemplo, la clase Utilidades contiene un método estático llamado duplicar que simplemente duplica un número. Puedes llamar a este método directamente desde la clase sin crear una instancia de la misma.
+    </p>
+
+    <p>
+      Getters y setters:
+      Los getters y setters son métodos especiales que permiten acceder y modificar propiedades de un objeto de forma controlada. Los getters se utilizan para obtener el valor de una propiedad, mientras que los setters se utilizan para establecer el valor de una propiedad.
+    </p>
+
+    <img src="assets/Get_Y_Set.png">
+
+    <p>
+      En este ejemplo, la clase Persona tiene una propiedad privada _nombre y utiliza un getter y un setter para acceder y modificar el valor de esa propiedad. El getter nombre devuelve el nombre en mayúsculas, mientras que el setter nombre permite establecer un nuevo nombre para la persona.
+    </p>
+
+
+    <p>
+      Al crear una instancia de la clase Persona, podemos utilizar el getter y el setter como si fueran propiedades normales.
+    </p>
+
+    <p>
+      Los métodos estáticos, los getters y los setters proporcionan flexibilidad adicional en la programación orientada a objetos en JavaScript. Los métodos estáticos son útiles cuando se necesita una funcionalidad que no está asociada a instancias específicas, mientras que los getters y setters permiten un control más preciso sobre el acceso y la modificación de las propiedades de un objeto.
+    </p>
 
 
     <div class="Nav">
@@ -75,28 +213,29 @@
 
         </section>
 
-        <section id="menu4">
-          <a href="#menu4" class="submenu">Ejercicios Logicos y pracicos</a>
-          <div class="submenu-content">
-              <a href="OperadoresString.html">Operadores string</a>
-              <a href="EjerciciosArrays.html">Ejercicios Arrays</a>
-              <a href="EjerciciosTemplateString.html">Ejercicios Template String</a>
-              <a href="EjercicosObjetos.html">Ejercicios Objetos</a>
-              <a href="EjerciciosFunciones.html">Ejercicios Funciones</a>
-              <a href="EjerciciosAritmeticos.html">Ejercicios Aritmeticos</a>
-              <a href="OperadoresDeAsignacion.html">Operadores De Asignacion</a>
-              <a href="OperadoresDeComparacion.html">Operadores De Comparacion</a>
-              <a href="OperadoresLogicos.html">Operadores Logicos</a>
-              <a href="OperadoresTernarios.html">Operadores Ternarios</a>
-              <a href="OperadoresDeTipo.html">Operadores de Tipo</a>
-              <a href="CondicionalIf.html">Condicional If</a>
-              <a href="CondicionalIfElse.html">Codicional If Else</a>
-              <a href="CicloFor.html">Ciclo For</a>
-              <a href="CicloWhile.html">Ciclo While</a>
-              <a href="CicloDoWhile.html">Ciclo Do While</a>
-              <a href="CicloSwitch.html">Ciclo Switch</a>
-          </div>
-      </section>
+      <section id="menu4">
+        <a href="#menu4" class="submenu">Ejercicios Logicos y pracicos</a>
+        <div class="submenu-content">
+            <a href="OperadoresString.html">Operadores string</a>
+            <a href="EjerciciosArrays.html">Ejercicios Arrays</a>
+            <a href="EjerciciosTemplateString.html">Ejercicios Template String</a>
+            <a href="EjercicosObjetos.html">Ejercicios Objetos</a>
+            <a href="EjerciciosFunciones.html">Ejercicios Funciones</a>
+            <a href="EjerciciosAritmeticos.html">Ejercicios Aritmeticos</a>
+            <a href="OperadoresDeAsignacion.html">Operadores De Asignacion</a>
+            <a href="OperadoresDeComparacion.html">Operadores De Comparacion</a>
+            <a href="OperadoresLogicos.html">Operadores Logicos</a>
+            <a href="OperadoresTernarios.html">Operadores Ternarios</a>
+            <a href="OperadoresDeTipo.html">Operadores de Tipo</a>
+            <a href="CondicionalIf.html">Condicional If</a>
+            <a href="CondicionalIfElse.html">Codicional If Else</a>
+            <a href="CicloFor.html">Ciclo For</a>
+            <a href="CicloWhile.html">Ciclo While</a>
+            <a href="CicloDoWhile.html">Ciclo Do While</a>
+            <a href="CicloSwitch.html">Ciclo Switch</a>
+            <a href="EjerciciosPOO.html">Ejericios Progrmacion Orientada A Objetos</a>
+        </div>
+    </section>
 
     </div>
       

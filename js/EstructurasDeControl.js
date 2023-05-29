@@ -196,3 +196,126 @@
 //     }
 //   }
   
+
+
+// for (let i = 0; i < 5; i++) {
+//     if (i === 3) {
+//       break; // Sale del bucle cuando i es igual a 3
+//     }
+//     console.log(i);
+//   }
+//   // Salida: 0, 1, 2
+  
+
+
+
+// for (let i = 0; i < 5; i++) {
+//     if (i === 2) {
+//       continue; // Salta la iteración cuando i es igual a 2
+//     }
+//     console.log(i);
+//   }
+//   // Salida: 0, 1, 3, 4
+  
+
+
+// const persona = {
+//     nombre: 'John',
+//     apellido: 'Doe',
+//     edad: 30
+//   };
+  
+//   // Destructuración de un objeto
+//   const { nombre, apellido, edad } = persona;
+  
+//   console.log(nombre);   // Output: John
+//   console.log(apellido); // Output: Doe
+//   console.log(edad);     // Output: 30
+  
+
+// const numeros = [1, 2, 3, 4, 5];
+
+// // Destructuración de un arreglo
+// const [primero, segundo, ...resto] = numeros;
+
+// console.log(primero); // Output: 1
+// console.log(segundo); // Output: 2
+// console.log(resto);   // Output: [3, 4, 5]
+
+
+
+
+// Definición de un objeto literal
+// const persona = {
+//     nombre: 'John',
+//     apellido: 'Doe',
+//     edad: 30,
+//     saludar: function() {
+//       console.log(`Hola, mi nombre es ${this.nombre} ${this.apellido}. Tengo ${this.edad} años.`);
+//     }
+//   };
+  
+
+
+// console.log(persona.nombre);     // Output: John
+// console.log(persona['apellido']); // Output: Doe
+
+// persona.saludar(); // Output: Hola, mi nombre es John Doe. Tengo 30 años.
+
+
+// persona.ocupacion = 'Desarrollador';
+// persona.edad = 31;
+
+// console.log(persona.ocupacion); // Output: Desarrollador
+// console.log(persona.edad);      // Output: 31
+
+
+// function sumar(...numeros) {
+//     let total = 0;
+//     for (let numero of numeros) {
+//       total += numero;
+//     }
+//     return total;
+//   }
+  
+//   console.log(sumar(1, 2, 3)); // Output: 6
+//   console.log(sumar(4, 5, 6, 7)); // Output: 22
+  
+
+// const numeros = [1, 2, 3];
+// const copiaNumeros = [...numeros];
+
+// console.log(copiaNumeros); // Output: [1, 2, 3]
+
+// const nombres1 = ['Juan', 'María'];
+// const nombres2 = ['Pedro', 'Ana'];
+// const todosLosNombres = [...nombres1, ...nombres2];
+
+// console.log(todosLosNombres); // Output: ['Juan', 'María', 'Pedro', 'Ana']
+
+
+// Sintaxis básica de una arrow function
+// const miFuncion = (parametro1, parametro2) => {
+//     // Cuerpo de la función
+//     // Puedes hacer múltiples operaciones aquí
+//     return resultado;
+//   };
+  
+
+// Arrow function simple
+// const saludar = nombre => console.log(`Hola, ${nombre}!`);
+
+// saludar("Juan"); // Output: Hola, Juan!
+
+
+// Arrow function con una sola expresión
+// const duplicar = numero => numero * 2;
+
+// console.log(duplicar(5)); // Output: 10
+
+// // Arrow function sin parámetros
+// const obtenerFechaActual = () => new Date();
+
+// console.log(obtenerFechaActual()); // Output: Fecha actual
+
+

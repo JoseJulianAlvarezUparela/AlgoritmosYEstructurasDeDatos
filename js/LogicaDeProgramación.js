@@ -567,40 +567,131 @@
 
 // Verifica Si El Arreglo Frutas Es Vacío.
 
-let arreglo = [];
+// let arreglo = [];
 
-if (arreglo.length === 0) {
-  console.log("El arreglo está vacío");
-} else {
-  console.log("El arreglo no está vacío");
-}
+// if (arreglo.length === 0) {
+//   console.log("El arreglo está vacío");
+// } else {
+//   console.log("El arreglo no está vacío");
+// }
 
 
 // Template String
+
 // Concatena Dos Variables Nombre Y Apellido Utilizando Template Strings.
+
+// let Nombre = 'Jose Julian'
+// let Apellidos = "Alvarez Uparela"
+// console.log(`Me llamo ${Nombre} ${Apellidos}`)
+
 // Utiliza Un Template String Para Mostrar Un Mensaje Con El Resultado De Una Operación Matemática.
+
+// let suma = 3 + 2
+// console.log(`La suma de 3 + 2 es: ${suma}`)
+
+
 // Combina Un String Estático Con El Valor De Una Variable Utilizando Template Strings.
+
+// let nombre = "Juan";
+// let mensaje = `Hola, ${nombre}! Bienvenido al sitio.`;
+
+// console.log(mensaje);
+
 // Crea Una Plantilla De URL Utilizando Variables Y Template Strings.
+
+// let baseURL = "https://www.example.com";
+// let endpoint = "api/users";
+// let userId = 12345;
+
+// let url = `${baseURL}/${endpoint}/${userId}`;
+
+// console.log(url);
+
 // Genera Un Mensaje Personalizado Utilizando Template Strings Y Variables.
+
+// let Planeta = "Tierra"
+// console.log(`Vivo en el planeta ${Planeta}`)
+
 // Concatena Múltiples Variables Utilizando Template Strings.
+
+// let Uno = 1
+// let dos = 2
+// let tres = 3
+
+// console.log(`Los numeros son ${Uno}, ${dos}, ${tres} y ...`)
+
 // Crea Un Mensaje De Bienvenida Utilizando Template Strings Y El Valor De Una Variable.
+
+
+
 // Combina Texto Y El Resultado De Una Expresión Matemática Utilizando Template Strings.
+
+
+
 // Utiliza Template Strings Para Mostrar El Contenido De Un Objeto Con Sus Propiedades.
+
+
+
 // Crea Un Mensaje Utilizando Template Strings Y Una Variable Booleana.
+
+
+
 // Concatena Un String Con El Valor Numérico De Una Variable Utilizando Template Strings.
+
+
+
 // Crea Una Lista Desordenada De Elementos Utilizando Template Strings Y Un Array De Datos.
+
+
+
 // Genera Una Tabla HTML Utilizando Template Strings Y Un Array De Objetos.
+
+
+
 // Utiliza Template Strings Para Mostrar Un Mensaje De Error Con Detalles Adicionales.
+
+
+
 // Crea Una Lista Ordenada Numerada Utilizando Template Strings Y Un Array De Datos.
+
+
+
 // Concatena Varios Strings Utilizando Template Strings Y Operadores De Concatenación.
+
+
+
 // Combina Texto Estático Y El Resultado De Una Función Utilizando Template Strings.
+
+
+
 // Utiliza Template Strings Para Mostrar Información De Un Usuario Con Sus Propiedades.
+
+
+
 // Crea Una Tabla HTML Con Filas Dinámicas Utilizando Template Strings Y Un Array De Datos.
+
+
+
 // Genera Un Mensaje Utilizando Template Strings Y Operadores Ternarios.
+
+
+
 // Crea Un Enlace HTML Con Texto Y URL Dinámicos Utilizando Template Strings Y Variables.
+
+
+
 // Concatena El Resultado De Una Función Con Un String Utilizando Template Strings.
+
+
+
 // Utiliza Template Strings Para Mostrar Una Lista De Elementos Con Su Posición Y Valor.
+
+
+
 // Crea Un Mensaje Utilizando Template Strings Y Un Array De Palabras.
+
+
+
 // Combina Texto Y El Resultado De Una Expresión Booleana Utilizando Template Strings.
 
 // Obejtos

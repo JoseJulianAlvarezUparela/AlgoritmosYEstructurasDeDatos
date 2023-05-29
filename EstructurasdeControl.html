@@ -199,11 +199,169 @@
     </p>
 
     <h2>break & continue</h2>
+
+    <p>
+      En JavaScript, las palabras clave "break" y "continue" se utilizan para controlar el flujo de ejecución dentro de bucles (como "for" o "while") y estructuras condicionales (como "switch").
+    </p>
+
+    <p>
+      La palabra clave "break" se utiliza para salir de un bucle o una estructura de control. Cuando se encuentra la instrucción "break", el programa se salta el resto del bucle o la estructura de control y continúa con la ejecución del código después del bloque. Aquí tienes un ejemplo de cómo se usa:
+    </p>
+
+    <img src="assets/Break.png">
+
+    <p>
+      En este ejemplo, el bucle "for" se ejecuta hasta que la variable "i" sea igual a 3. En ese punto, se encuentra la instrucción "break" y se sale del bucle.
+    </p>
+
+    <p>
+      La palabra clave "continue" se utiliza para saltar una iteración en un bucle y continuar con la siguiente iteración. Cuando se encuentra la instrucción "continue", el programa ignora el resto del bloque actual y pasa a la siguiente iteración del bucle. Aquí tienes un ejemplo de cómo se usa:
+    </p>
+
+    <img src="assets/Continue.png">
+
+    <p>
+      En este ejemplo, cuando la variable "i" es igual a 2, se encuentra la instrucción "continue" y se salta esa iteración del bucle. Luego, continúa con la siguiente iteración.
+      Ambas palabras clave "break" y "continue" son útiles para controlar el flujo de ejecución dentro de bucles y estructuras condicionales, permitiéndote controlar cuándo salir de un bucle o saltar una iteración específica.
+    </p>
+
+
     <h2>Destructuración</h2>
+
+    <p>
+      La destructuración en JavaScript es una característica que te permite extraer valores de un objeto o un arreglo de una manera más concisa y conveniente. Puedes utilizar la sintaxis de la destructuración para asignar valores a variables individuales de forma directa.
+
+    </p>
+    
+    <p>
+      Aquí tienes un ejemplo de destructuración de un objeto:
+    </p>
+
+    <img src="assets/Destructuracion.png">
+
+    <p>
+      En este ejemplo, el objeto persona tiene propiedades como nombre, apellido y edad. Al usar la sintaxis de la destructuración, podemos extraer los valores de esas propiedades y asignarlos a variables correspondientes (nombre, apellido, edad).
+
+    </p>
+    
+    <p>
+      También puedes realizar la destructuración en arreglos:
+    </p>
+
+    <img src="assets/DestructuracionDos.png">
+
+    <p>
+      En este ejemplo, el arreglo numeros contiene varios elementos. Usando la sintaxis de la destructuración, extraemos los primeros dos elementos y los asignamos a las variables primero y segundo. Además, utilizamos el operador ... (spread) para asignar el resto de los elementos a la variable resto.
+    </p>
+
+    <p>
+      La destructuración es una forma útil de acceder y asignar valores de objetos y arreglos de manera más legible y eficiente en JavaScript. Puedes aplicarla en diversas situaciones para simplificar tu código y trabajar con los datos de manera más conveniente.
+    </p>
+
     <h2>Objetos Literales</h2>
+
+    <p>
+      En JavaScript, los objetos literales son una forma de crear y definir objetos de manera concisa utilizando la sintaxis de llaves ({}). Un objeto literal puede contener propiedades y métodos, que son pares de clave-valor separados por dos puntos (:). Aquí tienes un ejemplo de cómo se crea un objeto literal:
+    </p>
+
+    <img src="assets/ObjetosLiterales.png">
+
+    <p>
+      En este ejemplo, hemos creado un objeto literal llamado persona con tres propiedades: nombre, apellido y edad. Además, hemos definido un método llamado saludar, que muestra un saludo utilizando los valores de las propiedades del objeto.
+    </p>
+
+    <p>
+      Puedes acceder a las propiedades de un objeto utilizando la sintaxis de punto (objeto.propiedad) o la sintaxis de corchetes (objeto['propiedad']). Aquí tienes ejemplos de cómo acceder a las propiedades y llamar al método del objeto persona:
+    </p>
+
+    <img src="assets/ObjetosLiteralesDos.png">
+
+    <p>
+      También es posible agregar nuevas propiedades a un objeto literal o modificar las existentes:
+    </p>
+
+    <img src="assets/ObjetosLiteralesTres.png">
+
+    <p>
+      En este ejemplo, hemos agregado la propiedad ocupacion al objeto persona y también hemos modificado el valor de la propiedad edad.
+    </p>
+
+    <p>
+      Los objetos literales son una forma poderosa y flexible de trabajar con datos estructurados en JavaScript. Puedes utilizarlos para crear y manipular objetos con propiedades y métodos de una manera sencilla y legible.
+    </p>
+
     <h2>Parámetros REST & Operador Spread</h2>
+
+    <p>
+      Los parámetros REST y el operador spread son características de JavaScript que te permiten trabajar con un número variable de elementos, ya sea agrupándolos como parámetros de una función o expandiéndolos en diferentes contextos. A continuación, te explico cada uno de ellos:
+    </p>
+
+    <p>
+      Parámetros REST:
+      El parámetro REST se representa con tres puntos (...) seguidos del nombre del parámetro y se utiliza en la declaración de una función para indicar que puede aceptar un número variable de argumentos como un arreglo. Dentro de la función, el parámetro REST se comporta como un arreglo que contiene todos los argumentos pasados. Aquí tienes un ejemplo:
+    </p>
+
+    <img src="assets/ParametroREST.png">
+
+    <p>
+      En este ejemplo, la función sumar utiliza el parámetro REST numeros para aceptar un número variable de argumentos. Dentro de la función, iteramos sobre los elementos del arreglo numeros y los sumamos para obtener el resultado.
+    </p>
+
+    <p>
+      Operador Spread:
+      El operador spread, representado por tres puntos (...), se utiliza para expandir elementos en diferentes contextos. Puede ser utilizado para crear copias de arreglos o combinar elementos de varios arreglos. Aquí tienes algunos ejemplos:
+    </p>
+
+    <img src="assets/ParametroSPREAD.png">
+
+    <p>
+      En el primer ejemplo, utilizamos el operador spread para crear una copia del arreglo numeros en copiaNumeros. Esto nos permite tener una nueva referencia al arreglo original sin modificarlo.
+    </p>
+
+    <p>
+      En el segundo ejemplo, utilizamos el operador spread para combinar los elementos de los arreglos nombres1 y nombres2 en el arreglo todosLosNombres. De esta manera, obtenemos un nuevo arreglo que contiene todos los nombres en un solo arreglo.
+    </p>
+
+    <p>
+      El uso de los parámetros REST y el operador spread proporciona flexibilidad y conveniencia al trabajar con un número variable de elementos en JavaScript. Estas características son especialmente útiles en situaciones donde no conoces de antemano la cantidad exacta de elementos con los que vas a trabajar.
+    </p>
+
     <h2>Arrow Functions</h2>
       
+    <p>
+      Las arrow functions, o funciones flecha, son una forma más concisa de escribir funciones en JavaScript. Estas funciones tienen una sintaxis más compacta y ofrecen algunas características especiales. Aquí tienes un ejemplo de cómo se definen las arrow functions:
+    </p>
+
+    <img src="assets/ArrowFunctions.png">
+
+    <p>
+      Las arrow functions se definen utilizando una sintaxis que consiste en paréntesis () alrededor de los parámetros, seguidos de la flecha => y luego el cuerpo de la función entre llaves {}. A continuación, se muestra un ejemplo más simple sin utilizar llaves ni la palabra clave "return":
+    </p>
+
+    <img src="assets/ArrowFunctionsDos.png">
+
+    <p>
+      En este ejemplo, la arrow function saludar toma un parámetro nombre y muestra un saludo en la consola utilizando la interpolación de cadenas.
+    </p>
+
+    <p>
+      Las arrow functions tienen algunas características especiales:
+    </p>
+
+    <p>  
+      Si la función tiene solo una expresión, puedes omitir las llaves y la palabra clave "return". La expresión se evaluará y se devolverá automáticamente como resultado.
+
+      <br><br>
+
+      Si la función no tiene parámetros, debes utilizar paréntesis vacíos () en su lugar.
+      Aquí tienes un ejemplo que ilustra estas características:
+    </p>
+
+    <img src="assets/ArrowFunctionsTres.png">
+
+    <p>
+      Las arrow functions son útiles cuando necesitas escribir funciones más concisas y legibles en JavaScript. Son especialmente útiles cuando se utilizan como argumentos de otras funciones, como en los métodos de arreglo (por ejemplo, map, filter, reduce) o cuando se trabaja con el ámbito de this.
+    </p>
 
 
     <div class="Nav">
@@ -258,28 +416,29 @@
 
         </section>
 
-        <section id="menu4">
-          <a href="#menu4" class="submenu">Ejercicios Logicos y pracicos</a>
-          <div class="submenu-content">
-              <a href="OperadoresString.html">Operadores string</a>
-              <a href="EjerciciosArrays.html">Ejercicios Arrays</a>
-              <a href="EjerciciosTemplateString.html">Ejercicios Template String</a>
-              <a href="EjercicosObjetos.html">Ejercicios Objetos</a>
-              <a href="EjerciciosFunciones.html">Ejercicios Funciones</a>
-              <a href="EjerciciosAritmeticos.html">Ejercicios Aritmeticos</a>
-              <a href="OperadoresDeAsignacion.html">Operadores De Asignacion</a>
-              <a href="OperadoresDeComparacion.html">Operadores De Comparacion</a>
-              <a href="OperadoresLogicos.html">Operadores Logicos</a>
-              <a href="OperadoresTernarios.html">Operadores Ternarios</a>
-              <a href="OperadoresDeTipo.html">Operadores de Tipo</a>
-              <a href="CondicionalIf.html">Condicional If</a>
-              <a href="CondicionalIfElse.html">Codicional If Else</a>
-              <a href="CicloFor.html">Ciclo For</a>
-              <a href="CicloWhile.html">Ciclo While</a>
-              <a href="CicloDoWhile.html">Ciclo Do While</a>
-              <a href="CicloSwitch.html">Ciclo Switch</a>
-          </div>
-      </section>
+      <section id="menu4">
+        <a href="#menu4" class="submenu">Ejercicios Logicos y pracicos</a>
+        <div class="submenu-content">
+            <a href="OperadoresString.html">Operadores string</a>
+            <a href="EjerciciosArrays.html">Ejercicios Arrays</a>
+            <a href="EjerciciosTemplateString.html">Ejercicios Template String</a>
+            <a href="EjercicosObjetos.html">Ejercicios Objetos</a>
+            <a href="EjerciciosFunciones.html">Ejercicios Funciones</a>
+            <a href="EjerciciosAritmeticos.html">Ejercicios Aritmeticos</a>
+            <a href="OperadoresDeAsignacion.html">Operadores De Asignacion</a>
+            <a href="OperadoresDeComparacion.html">Operadores De Comparacion</a>
+            <a href="OperadoresLogicos.html">Operadores Logicos</a>
+            <a href="OperadoresTernarios.html">Operadores Ternarios</a>
+            <a href="OperadoresDeTipo.html">Operadores de Tipo</a>
+            <a href="CondicionalIf.html">Condicional If</a>
+            <a href="CondicionalIfElse.html">Codicional If Else</a>
+            <a href="CicloFor.html">Ciclo For</a>
+            <a href="CicloWhile.html">Ciclo While</a>
+            <a href="CicloDoWhile.html">Ciclo Do While</a>
+            <a href="CicloSwitch.html">Ciclo Switch</a>
+            <a href="EjerciciosPOO.html">Ejericios Progrmacion Orientada A Objetos</a>
+        </div>
+    </section>
 
     </div>
       
