@@ -510,38 +510,70 @@
 
 // Une Los Elementos Del Arreglo Frutas En Un String Separado Por Comas.
 
-
+// let frutas = ["Banana","Manzana","Naranja"]
+// let frutaString = frutas.join(" - ")
+// console.log(frutaString)
 
 // Verifica Si Todos Los Elementos Del Arreglo Numeros Son Mayores A 0.
 
+// let Numeros = [3,4,5,6,7,8,9]
 
+// if(Numeros > 9){
+//     console.log("Son Mayores")
+// }else{
+//     console.log("Son menores")
+// }
 
 // Verifica Si Al Menos Un Elemento Del Arreglo Frutas Comienza Con La Letra 'M'.
 
+// let frutas = ["Banana","Manzana","Naranja"]
+// let Letra = frutas.some(frutas => frutas.startsWith("M") || frutas.startsWith("m"));
 
+// if (Letra) {
+//     console.log("Hay frutas que comienzan con 'M'");
+//   } else {
+//     console.log("No hay frutas que comiencen con 'M'");
+//   }
 
 // Multiplica Cada Elemento Del Arreglo Numeros Por 2.
 
-
+// let Numeros = [3,4,5,6,7,8,9]
+// let Multiplicacion = Numeros.map(Numeros => Numeros * 2)
+// console.log(Multiplicacion)
 
 // Obtén El Valor Máximo Del Arreglo Numeros.
 
-
+// let Numeros = [3,4,5,6,7,8,9]
+// let MasGrande = Math.max(...Numeros)
+// console.log(MasGrande)
 
 // Obtén El Valor Mínimo Del Arreglo Numeros.
 
-
+// let Numeros = [3,4,5,6,7,8,9]
+// let MasPequeño = Math.min(...Numeros)
+// console.log(MasPequeño)
 
 // Crea Una Copia Del Arreglo Frutas.
 
-
+// let frutas = ["Banana","Manzana","Naranja"]
+// let Copia = [...frutas]
+// console.log(`Esta es la copia del array ${frutas}`)
 
 // Vacía El Arreglo Numeros.
 
-
+// let Numeros = [3,4,5,6,7,8,9]
+// Numeros.splice(0, Numeros.length)
+// console.log(Numeros)
 
 // Verifica Si El Arreglo Frutas Es Vacío.
 
+let arreglo = [];
+
+if (arreglo.length === 0) {
+  console.log("El arreglo está vacío");
+} else {
+  console.log("El arreglo no está vacío");
+}
 
 
 // Template String
@@ -766,6 +798,34 @@
 // Verifica Si Una Variable Es De Tipo Cadena De Texto O Booleano.
 // Verifica Si Una Variable Es De Tipo Número O Indefinido.
 // Verifica Si Una Variable Es De Tipo Nulo O Símbolo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
