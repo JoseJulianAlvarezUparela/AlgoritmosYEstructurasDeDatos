@@ -622,77 +622,177 @@
 
 // Crea Un Mensaje De Bienvenida Utilizando Template Strings Y El Valor De Una Variable.
 
+// let Nombre = "Julian"
+// console.log(`Te damos la bienvenida ${Nombre}`)
 
 
 // Combina Texto Y El Resultado De Una Expresión Matemática Utilizando Template Strings.
 
 
+// let suma = 2 + 5;
+// console.log(`El resultado es ${suma}`)
 
 // Utiliza Template Strings Para Mostrar El Contenido De Un Objeto Con Sus Propiedades.
 
-
+// const persona = {
+//     nombre: 'Juan',
+//     edad: 30,
+//     profesion: 'Ingeniero'
+//   };
+  
+//   // Utilizando template strings para mostrar el contenido del objeto
+//   const mensaje = `Nombre: ${persona.nombre}, Edad: ${persona.edad}, Profesión: ${persona.profesion}`;
+  
+//   console.log(mensaje);
+  
 
 // Crea Un Mensaje Utilizando Template Strings Y Una Variable Booleana.
 
+// const esDiaSoleado = true;
+
+// const mensaje = `Hoy está ${esDiaSoleado ? 'soleado' : 'nublado'}.`;
+
+// console.log(mensaje);
 
 
 // Concatena Un String Con El Valor Numérico De Una Variable Utilizando Template Strings.
 
+// const cantidad = 10;
+
+// const mensaje = `La cantidad es: ${cantidad}`;
+
+// console.log(mensaje);
 
 
 // Crea Una Lista Desordenada De Elementos Utilizando Template Strings Y Un Array De Datos.
 
+// const frutas = ['Manzana', 'Banana', 'Naranja', 'Fresa'];
+
+// const lista = `
+//   <ul>
+//     ${frutas.map(fruta => `<li>${fruta}</li>`).join('')}
+//   </ul>
+// `;
+
+// console.log(lista);
 
 
 // Genera Una Tabla HTML Utilizando Template Strings Y Un Array De Objetos.
 
+// const personas = [
+//     { nombre: 'Juan', edad: 25, profesion: 'Ingeniero' },
+//     { nombre: 'María', edad: 30, profesion: 'Doctora' },
+//     { nombre: 'Pedro', edad: 28, profesion: 'Abogado' },
+//   ];
+  
 
+//   const tabla = `
+//     <table>
+//       <thead>
+//         <tr>
+//           <th>Nombre</th>
+//           <th>Edad</th>
+//           <th>Profesión</th>
+//         </tr>
+//       </thead>
+//       <tbody>
+//         ${personas.map(persona => `
+//           <tr>
+//             <td>${persona.nombre}</td>
+//             <td>${persona.edad}</td>
+//             <td>${persona.profesion}</td>
+//           </tr>
+//         `).join('')}
+//       </tbody>
+//     </table>
+//   `;
+  
+//   console.log(tabla);
+  
 
 // Utiliza Template Strings Para Mostrar Un Mensaje De Error Con Detalles Adicionales.
 
-
+// const error = {
+//     mensaje: 'Error de conexión',
+//     codigo: 500,
+//     detalles: 'La conexión ha fallado debido a un problema en el servidor.'
+//   };
+  
+//   const mensajeError = `Se ha producido un ${error.mensaje} (${error.codigo}). Detalles: ${error.detalles}`;
+  
+//   console.log(mensajeError);
+  
 
 // Crea Una Lista Ordenada Numerada Utilizando Template Strings Y Un Array De Datos.
 
+// const numeros = [10, 20, 30, 40, 50];
 
+// const listaNumerada = `
+//   <ol>
+//     ${numeros.map(numero => `<li>${numero}</li>`).join('')}
+//   </ol>
+// `;
+
+// console.log(listaNumerada);
 
 // Concatena Varios Strings Utilizando Template Strings Y Operadores De Concatenación.
 
+// const nombre = 'Juan';
+// const apellido = 'Pérez';
+// const profesion = 'Ingeniero';
+
+// const mensaje = `Hola, mi nombre es ${nombre} ${apellido} y soy ${profesion}.`;
+
+// console.log(mensaje);
 
 
 // Combina Texto Estático Y El Resultado De Una Función Utilizando Template Strings.
 
-
+// function obtenerFechaActual() {
+//     const fecha = new Date();
+//     return fecha.toLocaleDateString();
+//   }
+  
+//   const mensaje = `Hoy es ${obtenerFechaActual()}, bienvenido a nuestro sitio.`;
+  
+//   console.log(mensaje);
+  
 
 // Utiliza Template Strings Para Mostrar Información De Un Usuario Con Sus Propiedades.
 
-
+const usuario = {
+    nombre: 'Ana',
+    edad: 28,
+    ciudad: 'Madrid'
+  };
+  
+  const mensaje = `Nombre: ${usuario.nombre}, Edad: ${usuario.edad}, Ciudad: ${usuario.ciudad}`;
+  
+  console.log(mensaje);
+  
 
 // Crea Una Tabla HTML Con Filas Dinámicas Utilizando Template Strings Y Un Array De Datos.
 
-
+// const usuario = {
+//     nombre: 'Ana',
+//     edad: 28,
+//     ciudad: 'Madrid'
+//   };
+  
+//   const mensaje = `Nombre: ${usuario.nombre}, Edad: ${usuario.edad}, Ciudad: ${usuario.ciudad}`;
+  
+//   console.log(mensaje);
+  
 
 // Genera Un Mensaje Utilizando Template Strings Y Operadores Ternarios.
 
+// const saldo = 100;
+// const mensaje = `Tu saldo es ${saldo > 0 ? 'positivo' : 'negativo'}.`;
 
-
-// Crea Un Enlace HTML Con Texto Y URL Dinámicos Utilizando Template Strings Y Variables.
-
-
-
-// Concatena El Resultado De Una Función Con Un String Utilizando Template Strings.
+// console.log(mensaje);
 
 
 
-// Utiliza Template Strings Para Mostrar Una Lista De Elementos Con Su Posición Y Valor.
-
-
-
-// Crea Un Mensaje Utilizando Template Strings Y Un Array De Palabras.
-
-
-
-// Combina Texto Y El Resultado De Una Expresión Booleana Utilizando Template Strings.
 
 // Obejtos
 // Crear Un Objeto Llamado Persona Con Propiedades Nombre Y Edad.
