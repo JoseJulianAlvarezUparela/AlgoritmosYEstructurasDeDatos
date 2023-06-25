@@ -760,15 +760,15 @@
 
 // Utiliza Template Strings Para Mostrar Información De Un Usuario Con Sus Propiedades.
 
-const usuario = {
-    nombre: 'Ana',
-    edad: 28,
-    ciudad: 'Madrid'
-  };
+// const usuario = {
+//     nombre: 'Ana',
+//     edad: 28,
+//     ciudad: 'Madrid'
+//   };
   
-  const mensaje = `Nombre: ${usuario.nombre}, Edad: ${usuario.edad}, Ciudad: ${usuario.ciudad}`;
+//   const mensaje = `Nombre: ${usuario.nombre}, Edad: ${usuario.edad}, Ciudad: ${usuario.ciudad}`;
   
-  console.log(mensaje);
+//   console.log(mensaje);
   
 
 // Crea Una Tabla HTML Con Filas Dinámicas Utilizando Template Strings Y Un Array De Datos.
@@ -795,34 +795,158 @@ const usuario = {
 
 
 // Obejtos
+
+
+
 // Crear Un Objeto Llamado Persona Con Propiedades Nombre Y Edad.
+
+// const Persona = {
+//     Nombre: "Julian",
+//     Apellido: "Alvarez",
+//     edad: 30
+// }
+
+// console.log(Persona)
+
 // Acceder Al Valor De La Propiedad Nombre Del Objeto Persona.
+
+// const Persona = {
+//     Nombre: "Julian",
+//     Apellido: "Alvarez",
+//     edad: 30
+// }
+
+// console.log(Persona.Nombre)
+
 // Modificar El Valor De La Propiedad Edad Del Objeto Persona.
+
+// const Persona = {
+//     Nombre: "Julian",
+//     Apellido: "Alvarez",
+//     edad: 30
+// }
+
+// console.log(Persona.edad)
+
 // Agregar Una Nueva Propiedad Llamada Ciudad Al Objeto Persona.
+
+// const Persona = {
+//     Nombre: "Julian",
+//     Apellido: "Alvarez",
+//     Ciudad: "Montelibano",
+//     edad: 30
+// }
+
+// console.log(Persona.Ciudad)
+
 // Eliminar La Propiedad Edad Del Objeto Persona.
+
+// const Persona = {
+//         Nombre: "Julian",
+//         Apellido: "Alvarez",
+//         Ciudad: "Montelibano",
+//         edad: 30
+// }
+    
+// delete Persona["edad"]
+// console.log(Persona)
+
 // Crear Un Objeto Llamado Libro Con Propiedades Titulo, Autor Y Año.
+
+const Libro = {
+    Autor: "",
+    Autor: "",
+    Año: 0
+}
+
 // Acceder Al Valor De La Propiedad Autor Del Objeto Libro.
+
+
+
 // Modificar El Valor De La Propiedad Año Del Objeto Libro.
+
+
+
 // Agregar Una Nueva Propiedad Llamada Editorial Al Objeto Libro.
+
+
+
 // Eliminar La Propiedad Titulo Del Objeto Libro.
+
+
+
 // Crear Un Objeto Llamado Producto Con Propiedades Nombre, Precio Y Cantidad.
+
+
+
 // Acceder Al Valor De La Propiedad Precio Del Objeto Producto.
+
+
+
 // Modificar El Valor De La Propiedad Cantidad Del Objeto Producto.
+
+
+
 // Agregar Una Nueva Propiedad Llamada Descripcion Al Objeto Producto.
+
+
+
 // Eliminar La Propiedad Nombre Del Objeto Producto.
+
+
+
 // Crear Un Objeto Llamado Coche Con Propiedades Marca, Modelo Y Año.
+
+
+
 // Acceder Al Valor De La Propiedad Marca Del Objeto Coche.
+
+
+
 // Modificar El Valor De La Propiedad Modelo Del Objeto Coche.
+
+
+
 // Agregar Una Nueva Propiedad Llamada Color Al Objeto Coche.
+
+
+
 // Eliminar La Propiedad Año Del Objeto Coche.
+
+
+
 // Crear Un Objeto Llamado Fruta Con Propiedades Nombre Y Precio.
+
+
+
 // Acceder Al Valor De La Propiedad Nombre Del Objeto Fruta.
+
+
+
 // Modificar El Valor De La Propiedad Precio Del Objeto Fruta.
+
+
+
 // Agregar Una Nueva Propiedad Llamada Color Al Objeto Fruta.
+
+
+
 // Eliminar La Propiedad Nombre Del Objeto Fruta.
+
+
+
 // Crear Un Objeto Llamado Usuario Con Propiedades Nombre, Email Y Contraseña.
+
+
+
 // Acceder Al Valor De La Propiedad Email Del Objeto Usuario.
+
+
+
 // Modificar El Valor De La Propiedad Contraseña Del Objeto Usuario.
+
+
+
 // Agregar Una Nueva Propiedad Llamada Telefono Al Objeto Usuario.
 // Eliminar La Propiedad Nombre Del Objeto Usuario.
 
