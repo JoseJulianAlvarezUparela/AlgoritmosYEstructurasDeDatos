@@ -193,3 +193,4 @@
 //   persona.nombre = 'Pedro';
 //   console.log(persona.nombre); // Imprime: PEDRO
   
+
