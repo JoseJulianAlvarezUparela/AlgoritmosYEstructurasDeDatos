@@ -853,102 +853,96 @@
 
 // Crear Un Objeto Llamado Libro Con Propiedades Titulo, Autor Y Año.
 
-const Libro = {
-    Autor: "",
-    Autor: "",
-    Año: 0
-}
+// const Libro = {
+//     Autor: "",
+//     Autor: "",
+//     Año: 0
+// }
 
 // Acceder Al Valor De La Propiedad Autor Del Objeto Libro.
 
+// const Libro = {
+//     Autor: "Autora",
+//     Titulo: "Titulo",
+//     Año: 2000
+// }
 
+// console.log(Libro.Autor)
 
 // Modificar El Valor De La Propiedad Año Del Objeto Libro.
 
+// const Libro = {
+//     Autor: "Autora",
+//     Titulo: "Titulo",
+//     Año: 2000
+// }
 
+// Libro.Año = 2015;
+// console.log(Libro.Año)
 
 // Agregar Una Nueva Propiedad Llamada Editorial Al Objeto Libro.
 
+// const Libro = {
+//     Autor: "Autora",
+//     Titulo: "Titulo",
+//     Año: 2000
+// }
 
+// Libro["Editorial"] = "Editorial";
+
+// console.log(Libro)
 
 // Eliminar La Propiedad Titulo Del Objeto Libro.
 
 
+// const Libro = {
+//     Autor: "Autora",
+//     Titulo: "Titulo",
+//     Año: 2000
+// }
+
+// delete Libro.Titulo
+
+// console.log(Libro)
 
 // Crear Un Objeto Llamado Producto Con Propiedades Nombre, Precio Y Cantidad.
 
-
+// let producto = {
+//     nombre: "Producto A",
+//     precio: 10,
+//     cantidad: 5
+//   };
+  
 
 // Acceder Al Valor De La Propiedad Precio Del Objeto Producto.
 
+// let producto = {
+//     nombre: "Producto A",
+//     precio: 10,
+//     cantidad: 5
+//   };
 
+//   let precioProducto = producto.precio;
+//   console.log(precioProducto);
+  
 
 // Modificar El Valor De La Propiedad Cantidad Del Objeto Producto.
 
+// producto.cantidad = 8;
+// console.log(producto.cantidad);
 
 
 // Agregar Una Nueva Propiedad Llamada Descripcion Al Objeto Producto.
 
+// producto.descripcion = "Descripción del producto";
+// console.log(producto);
 
 
 // Eliminar La Propiedad Nombre Del Objeto Producto.
 
+// delete producto.nombre;
+// console.log(producto);
 
-
-// Crear Un Objeto Llamado Coche Con Propiedades Marca, Modelo Y Año.
-
-
-
-// Acceder Al Valor De La Propiedad Marca Del Objeto Coche.
-
-
-
-// Modificar El Valor De La Propiedad Modelo Del Objeto Coche.
-
-
-
-// Agregar Una Nueva Propiedad Llamada Color Al Objeto Coche.
-
-
-
-// Eliminar La Propiedad Año Del Objeto Coche.
-
-
-
-// Crear Un Objeto Llamado Fruta Con Propiedades Nombre Y Precio.
-
-
-
-// Acceder Al Valor De La Propiedad Nombre Del Objeto Fruta.
-
-
-
-// Modificar El Valor De La Propiedad Precio Del Objeto Fruta.
-
-
-
-// Agregar Una Nueva Propiedad Llamada Color Al Objeto Fruta.
-
-
-
-// Eliminar La Propiedad Nombre Del Objeto Fruta.
-
-
-
-// Crear Un Objeto Llamado Usuario Con Propiedades Nombre, Email Y Contraseña.
-
-
-
-// Acceder Al Valor De La Propiedad Email Del Objeto Usuario.
-
-
-
-// Modificar El Valor De La Propiedad Contraseña Del Objeto Usuario.
-
-
-
-// Agregar Una Nueva Propiedad Llamada Telefono Al Objeto Usuario.
-// Eliminar La Propiedad Nombre Del Objeto Usuario.
 
 // Funciones
 // Suma Dos Números: Sum(A, B)
