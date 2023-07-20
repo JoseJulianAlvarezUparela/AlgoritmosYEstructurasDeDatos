@@ -1,3 +1,5 @@
+
+
 //Suma: Calcula La Suma De 5 Y 7.
 
 // let a = 5;
@@ -944,32 +946,108 @@
 // console.log(producto);
 
 
+
 // Funciones
+
 // Suma Dos Números: Sum(A, B)
+
+    
+
 // Resta Dos Números: Subtract(A, B)
+
+
+
 // Multiplica Dos Números: Multiply(A, B)
+
+
+
 // Divide Dos Números: Divide(A, B)
+
+
+
 // Obtiene El Residuo De La División De Dos Números: Modulo(A, B)
+
+
+
 // Calcula El Valor Absoluto De Un Número: AbsoluteValue(Num)
+
+
+
 // Calcula La Potencia De Un Número: Power(Base, Exponent)
+
+
+
 // Calcula La Raíz Cuadrada De Un Número: SquareRoot(Num)
+
+
+
 // Calcula El Seno De Un Ángulo En Radianes: Sin(Angle)
+
+
+
 // Calcula El Coseno De Un Ángulo En Radianes: Cos(Angle)
+
+
+
 // Calcula La Tangente De Un Ángulo En Radianes: Tan(Angle)
+
+
+
 // Calcula El Valor Máximo Entre Dos Números: Max(A, B)
+
+
+
 // Calcula El Valor Mínimo Entre Dos Números: Min(A, B)
+
+
+
 // Redondea Un Número Hacia Abajo Al Entero Más Cercano: Floor(Num)
+
+
+
 // Redondea Un Número Hacia Arriba Al Entero Más Cercano: Ceil(Num)
+
+
+
 // Redondea Un Número Al Entero Más Cercano: Round(Num)
+
+
+
 // Calcula El Valor Absoluto Más Grande Entre Dos Números: MaxAbsolute(A, B)
+
+
+
 // Calcula El Valor Mínimo Absoluto Entre Dos Números: MinAbsolute(A, B)
+
+
+
 // Genera Un Número Aleatorio Entre 0 Y 1: Random()
+
+
+
 // Genera Un Número Aleatorio Entre Dos Valores Dados: RandomInRange(Min, Max)
+
+
+
 // Convierte Un Ángulo De Grados A Radianes: DegreesToRadians(Degrees)
+
+
+
 // Convierte Un Ángulo De Radianes A Grados: RadiansToDegrees(Radians)
+
+
+
 // Calcula El Logaritmo Natural De Un Número: NaturalLog(Num)
+
+
+
 // Calcula El Logaritmo En Base 10 De Un Número: Log10(Num)
+
+
+
 // Calcula El Logaritmo En Base 2 De Un Número: Log2(Num)
+
+
 
 
 // Operadores De Asignacion
@@ -1026,6 +1104,9 @@
 // Compara Si False Es Estrictamente Mayor O Igual Que 0.
 // Compara Si Undefined Es Estrictamente Igual A Null.
 // Compara Si "Azul" Es Estrictamente Menor O Igual Que "Azul".
+
+
+
 // Operaciones Logicas
 // Verifica Si 5 Es Mayor Que 3.
 // Verifica Si 10 Es Igual A 10.
