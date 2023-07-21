@@ -1167,7 +1167,7 @@
 let a = 5;
 let b = 3; 
 
-if (a < 3) {
+if (a > 3) {
     console.log("Verdad")
 } else {
     console.log("falso")
