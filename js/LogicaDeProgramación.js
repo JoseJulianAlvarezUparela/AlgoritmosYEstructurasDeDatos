@@ -1163,6 +1163,16 @@
 
 // Operaciones Logicas
 // Verifica Si 5 Es Mayor Que 3.
+
+let a = 5;
+let b = 3; 
+
+if (a < 3) {
+    console.log("Verdad")
+} else {
+    console.log("falso")
+}
+
 // Verifica Si 10 Es Igual A 10.
 // Verifica Si 7 Es Menor O Igual Que 9.
 // Verifica Si 4 Es Distinto De 6.
