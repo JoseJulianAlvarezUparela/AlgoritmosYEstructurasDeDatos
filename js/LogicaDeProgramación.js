@@ -1049,33 +1049,87 @@
 
 
 
+// let x;
 
-// Operadores De Asignacion
-// Asigna El Valor 5 A Una Variable Llamada X.
-// Incrementa En 2 El Valor De X.
-// Multiplica X Por 3.
-// Divide X Por 4.
-// Resta 1 A X.
-// Asigna El Valor De X A Una Variable Llamada Y.
-// Incrementa Y En 10.
-// Multiplica Y Por 2.
-// Divide Y Por 5.
-// Resta 3 A Y.
-// Asigna El Valor 7 A Una Variable Llamada Z.
-// Suma X Y Z, Y Asigna El Resultado A X.
-// Resta Y Y Z, Y Asigna El Resultado A Y.
-// Multiplica X Por Y Y Asigna El Resultado A X.
-// Incrementa Z En 1.
-// Divide X Entre Z Y Asigna El Resultado A X.
-// Resta Y De X Y Asigna El Resultado A Y.
-// Multiplica X Por 5 Y Asigna El Resultado A X.
-// Divide Y Por 2 Y Asigna El Resultado A Y.
-// Incrementa X En 1 Usando El Operador De Incremento.
-// Resta 1 A Y Usando El Operador De Decremento.
-// Asigna El Valor 2 A X Usando El Operador De Asignación.
-// Multiplica Y Por 3 Usando El Operador De Asignación.
-// Divide X Por 2 Usando El Operador De Asignación.
-// Calcula El Módulo De Y Entre 4 Usando El Operador De Asignación.
+// // Asigna el valor 5 a una variable llamada x.
+// x = 5;
+
+// // Incrementa en 2 el valor de x.
+// x += 2;
+
+// // Multiplica x por 3.
+// x *= 3;
+
+// // Divide x por 4.
+// x /= 4;
+
+// // Resta 1 a x.
+// x -= 1;
+
+// let y;
+
+// // Asigna el valor de x a una variable llamada y.
+// y = x;
+
+// // Incrementa y en 10.
+// y += 10;
+
+// // Multiplica y por 2.
+// y *= 2;
+
+// // Divide y por 5.
+// y /= 5;
+
+// // Resta 3 a y.
+// y -= 3;
+
+// let z;
+
+// // Asigna el valor 7 a una variable llamada z.
+// z = 7;
+
+// // Suma x y z, y asigna el resultado a x.
+// x += z;
+
+// // Resta y y z, y asigna el resultado a y.
+// y -= z;
+
+// // Multiplica x por y y asigna el resultado a x.
+// x *= y;
+
+// // Incrementa z en 1.
+// z++;
+
+// // Divide x entre z y asigna el resultado a x.
+// x /= z;
+
+// // Resta y de x y asigna el resultado a y.
+// y = x - y;
+
+// // Multiplica x por 5 y asigna el resultado a x.
+// x *= 5;
+
+// // Divide y por 2 y asigna el resultado a y.
+// y /= 2;
+
+// // Incrementa x en 1 usando el operador de incremento.
+// x++;
+
+// // Resta 1 a y usando el operador de decremento.
+// y--;
+
+// // Asigna el valor 2 a x usando el operador de asignación.
+// x = 2;
+
+// // Multiplica y por 3 usando el operador de asignación.
+// y *= 3;
+
+// // Divide x por 2 usando el operador de asignación.
+// x /= 2;
+
+// // Calcula el módulo de y entre 4 usando el operador de asignación.
+// y %= 4;
+
 
 // Operaciones De Comparacion
 // Compara Si 5 Es Igual A 5.
