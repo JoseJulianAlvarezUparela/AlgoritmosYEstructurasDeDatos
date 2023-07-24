@@ -298,26 +298,75 @@
 //   })();
 
 
-const miModulo = (function() {
-    const privadoVariable = "Soy una variable privada.";
+// const miModulo = (function() {
+//     const privadoVariable = "Soy una variable privada.";
   
-    function privadoFuncion() {
-      console.log("Soy una función privada.");
-    }
+//     function privadoFuncion() {
+//       console.log("Soy una función privada.");
+//     }
   
-    return {
-      publicoFuncion: function() {
-        console.log("Soy una función pública.");
-      }
-    };
-  })();
+//     return {
+//       publicoFuncion: function() {
+//         console.log("Soy una función pública.");
+//       }
+//     };
+//   })();
   
-  miModulo.publicoFuncion(); // Output: "Soy una función pública."
-  miModulo.privadoVariable; // Output: undefined (no accesible desde fuera de la IIFE)
-  miModulo.privadoFuncion; // Output: undefined (no accesible desde fuera de la IIFE)
+//   miModulo.publicoFuncion(); // Output: "Soy una función pública."
+//   miModulo.privadoVariable; // Output: undefined (no accesible desde fuera de la IIFE)
+//   miModulo.privadoFuncion; // Output: undefined (no accesible desde fuera de la IIFE)
   
   
   
+// setTimeout(function() {
+//     console.log("Este mensaje se mostrará en la consola de depuración del navegador después de 5 segundos.");
+//   }, 5000);
+
+
+
+//   setInterval(function() {
+//     console.log("Este mensaje se mostrará en la consola de depuración del navegador cada 5 segundos.");
+//   }, 5000);
+
+// function asincrono() {
+//     // Este es un ejemplo de una función asíncrona.
+//     return new Promise(function(resolve, reject) {
+//       setTimeout(function() {
+//         resolve("La función se ejecutó con éxito.");
+//       }, 1000);
+//     });
+//   }
+  
+//   asincrono().then(function(resultado) {
+//     // Esta función se ejecutará cuando la función asincrona se haya completado.
+//     console.log(resultado);
+//   });
+
+
+//   document.querySelector("#button").addEventListener("click", function() {
+//     // Este es un ejemplo de un evento.
+//     fetch("https://api.example.com/").then(function(response) {
+//       response.json().then(function(data) {
+//         console.log(data);
+//       });
+//     });
+//   });
+
+
+
+// document.querySelector("#button").addEventListener("click", function() {
+//     // Este es un ejemplo de un evento.
+//     fetch("https://api.example.com/").then(function(response) {
+//       response.json().then(function(data) {
+//         console.log(data);
+//       });
+//     });
+//   });
+
+
+
+
+
 
 
 
