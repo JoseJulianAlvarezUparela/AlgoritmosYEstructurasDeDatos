@@ -951,7 +951,7 @@
 
 // Suma Dos Números: Sum(A, B)
 
-    
+
 
 // Resta Dos Números: Subtract(A, B)
 
@@ -1131,32 +1131,109 @@
 // y %= 4;
 
 
+
 // Operaciones De Comparacion
+
 // Compara Si 5 Es Igual A 5.
+
+
+
 // Compara Si 10 Es Mayor Que 7.
+
+
+
 // Compara Si 3 Es Menor Que 5.
+
+
+
 // Compara Si "Hola" Es Igual A "Hola".
+
+
+
 // Compara Si True Es Igual A False.
+
+
+
 // Compara Si 10 Es Mayor O Igual Que 8.
+
+
+
 // Compara Si 4 Es Menor O Igual Que 2.
+
+
+
 // Compara Si "Perro" Es Distinto De "Gato".
+
+
+
 // Compara Si True Es Estrictamente Igual A True.
+
+
+
 // Compara Si 7 Es Estrictamente Menor Que "7".
+
+
+
 // Compara Si False Es Estrictamente Distinto De 0.
+
+
+
 // Compara Si "Hola" Es Estrictamente Igual A "Hola".
+
+
+
 // Compara Si 12 Es Estrictamente Mayor Que 12.
+
+
+
 // Compara Si 6 Es Estrictamente Menor O Igual Que 6.
+
+
+
 // Compara Si "Verde" Es Estrictamente Distinto De "Azul".
+
+
+
 // Compara Si True Es Igual A 1.
+
+
+
 // Compara Si 9 Es Mayor Que "8".
+
+
+
 // Compara Si Null Es Igual A Undefined.
+
+
+
 // Compara Si "Hola" Es Menor O Igual Que "Adios".
+
+
+
 // Compara Si NaN Es Distinto De NaN.
+
+
+
 // Compara Si True Es Estrictamente Igual A 1.
+
+
+
 // Compara Si 15 Es Estrictamente Menor Que 10.
+
+
+
 // Compara Si "Manzana" Es Estrictamente Distinto De "Manzana".
+
+
+
 // Compara Si False Es Estrictamente Mayor O Igual Que 0.
+
+
+
 // Compara Si Undefined Es Estrictamente Igual A Null.
+
+
+
 // Compara Si "Azul" Es Estrictamente Menor O Igual Que "Azul".
 
 
@@ -1164,14 +1241,14 @@
 // Operaciones Logicas
 // Verifica Si 5 Es Mayor Que 3.
 
-let a = 5;
-let b = 3; 
+// let a = 5;
+// let b = 3; 
 
-if (a > 3) {
-    console.log("Verdad")
-} else {
-    console.log("falso")
-}
+// if (a > b) {
+//     console.log("Verdad")
+// } else {
+//     console.log("falso")
+// }
 
 // Verifica Si 10 Es Igual A 10.
 // Verifica Si 7 Es Menor O Igual Que 9.

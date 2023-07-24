@@ -23,13 +23,202 @@
     </p>
 
     <h2>Objeto console</h2>
+
+    <p><code>console</code> es un objeto global que proporciona métodos para interactuar con la consola del navegador o el entorno de ejecución en el que se esté ejecutando JavaScript.</p>
+
+    <p><code>console.log()</code>: Este método se utiliza para imprimir mensajes en la consola.</p>
+
+    <img src="assets/Console_1.png">
+  
+    <p><code>console.error()</code>: Este método se utiliza para mostrar mensajes de error en la consola.</p>
+
+    <img src="assets/Console_2.png">
+    
+    <p><code>console.warn()</code>: Este método se utiliza para mostrar mensajes de advertencia en la consola.</p>
+
+    <img src="assets/Console_3.png">
+    
+    <p><code>console.info()</code>: Este método se utiliza para mostrar mensajes informativos en la consola.</p>
+
+    <img src="assets/Console_5.png" alt="">
+    
+    <p><code>console.table()</code>: Este método muestra datos tabulares en la consola.</p>
+
+    <img src="assets/Console_4.png">
+  
+    <p>Estos son solo algunos de los métodos más comunes del objeto <code>console</code>, pero hay otros disponibles, como <code>console.debug()</code>, <code>console.time()</code>, <code>console.group()</code>, etc. El uso de <code>console</code> es una práctica valiosa para depurar y entender el flujo de ejecución de tu código durante el desarrollo.</p>
+    
+    <p>Recuerda eliminar o comentar las declaraciones de <code>console</code> antes de lanzar tu aplicación en producción, ya que estas declaraciones pueden ralentizar la ejecución y mostrar información confidencial en la consola del navegador.</p>
+    
     <h2>Objeto Date</h2>
+
+    <p>El objeto <code>Date</code> en JavaScript se utiliza para trabajar con fechas y horas. Proporciona métodos para crear, manipular y formatear fechas.</p>
+  
+    <h2>Ejemplos de uso:</h2>
+    
+    <p>1. Obtener la fecha y hora actual:</p>
+
+    <img src="assets/Date_1.png">
+    
+    <p>2. Crear una fecha específica:</p>
+
+    <img src="assets/Date_2.png">
+    
+    <p>3. Obtener el año, mes y día de una fecha:</p>
+
+    <img src="assets/Date_3.png">
+    
+    <p>4. Obtener el día de la semana de una fecha:</p>
+
+    <img src="assets/Date_4.png">
+
+    <p>5. Formatear una fecha como una cadena de texto:</p>
+
+    <img src="assets/Date_5.png">
+
+    
+    <p>Estos son solo algunos ejemplos básicos del uso del objeto <code>Date</code> en JavaScript. El objeto <code>Date</code> también tiene métodos para realizar operaciones matemáticas con fechas, como sumar días, restar horas, etc. Es importante tener en cuenta que el objeto <code>Date</code> en JavaScript utiliza el horario local del usuario, por lo que puede haber diferencias en las fechas y horas dependiendo de la ubicación del usuario. Si necesitas trabajar con zonas horarias o fechas en formato UTC, hay métodos adicionales para ello en el objeto <code>Date</code>.</p>
+  </body>
+
     <h2>Objeto Math</h2>
+
+    <p>El objeto <code>Math</code> en JavaScript es un objeto incorporado que proporciona propiedades y métodos para realizar operaciones matemáticas.</p>
+  
+    <h2>Ejemplos de uso:</h2>
+    
+    <p>1. Obtener el valor absoluto de un número:</p>
+
+    <img src="assets/Math_1.png">
+
+    <p>2. Redondear un número al entero más cercano:</p>
+
+    <img src="assets/Math_2.png">
+    
+    <p>3. Obtener el número mayor entre varios números:</p>
+
+    <img src="assets/Math_3.png">
+
+    <p>4. Obtener el número menor entre varios números:</p>
+
+    <img src="assets/Math_4.png">
+    
+    <p>5. Generar un número aleatorio entre 0 (inclusive) y 1 (exclusivo):</p>
+
+    <img src="assets/Math_5.png">
+    
+    <p>6. Obtener el valor de PI:</p>
+
+    <img src="assets/Math_6.png">
+
+    <p>Estos son solo algunos ejemplos del uso del objeto <code>Math</code> en JavaScript. Además de estos, <code>Math</code> proporciona otros métodos y constantes matemáticas, como <code>Math.sqrt()</code> para calcular la raíz cuadrada de un número, <code>Math.pow()</code> para elevar un número a una potencia, <code>Math.sin()</code>, <code>Math.cos()</code>, <code>Math.tan()</code> para calcular funciones trigonométricas, entre otros. El objeto <code>Math</code> es una herramienta útil para realizar operaciones matemáticas complejas en JavaScript.</p>
+  
+
     <h2>Operador de Cortocircuito</h2>
+
+    <p>El operador de cortocircuito, también conocido como operador lógico de cortocircuito, es una característica de JavaScript que permite realizar evaluaciones lógicas eficientes en ciertas circunstancias.</p>
+
+  <h3>Operador lógico && (AND lógico)</h3>
+
+  <p>- Si el primer operando es <code>false</code>, el resultado será <code>false</code>, y la segunda expresión no se evaluará porque ya se sabe que el resultado será <code>false</code>.</p>
+  <p>- Si el primer operando es <code>true</code>, el resultado dependerá del valor de la segunda expresión. Si la segunda expresión también es <code>true</code>, el resultado será <code>true</code>. Si la segunda expresión es <code>false</code>, el resultado será <code>false</code>.</p>
+
+  <img src="assets/Corto_1.png">
+
+  <h3>Operador lógico || (OR lógico)</h3>
+
+  <p>- Si el primer operando es <code>true</code>, el resultado será <code>true</code>, y la segunda expresión no se evaluará porque ya se sabe que el resultado será <code>true</code>.</p>
+  <p>- Si el primer operando es <code>false</code>, el resultado dependerá del valor de la segunda expresión. Si la segunda expresión también es <code>false</code>, el resultado será <code>false</code>. Si la segunda expresión es <code>true</code>, el resultado será <code>true</code>.</p>
+
+  <img src="assets/Corto_2.png">
+
+  <p>Es importante tener en cuenta que las expresiones que no son de tipo booleano también se evalúan en contexto de cortocircuito. En JavaScript, los valores que se consideran falsy son <code>false</code>, <code>null</code>, <code>undefined</code>, <code>0</code>, <code>NaN</code> y una cadena vacía <code>''</code>. Todos los demás valores, incluidos objetos y arreglos no vacíos, se consideran truthy.</p>
+
+  <p>El uso adecuado del operador de cortocircuito puede ayudar a mejorar la eficiencia y claridad del código, pero también es esencial comprender cómo funciona para evitar resultados inesperados.</p>
+
     <h2>alert, confirm y prompt</h2>
+
+    <p>En JavaScript, `alert()`, `confirm()` y `prompt()` son funciones que se utilizan para interactuar con el usuario a través de cuadros de diálogo en el navegador.</p>
+
+  <h3>1. Alert()</h3>
+  <p>La función <code>alert()</code> muestra un cuadros de diálogo con un mensaje y un botón de "Aceptar". Es útil para mostrar mensajes informativos o alertas simples al usuario.</p>
+
+  <img src="assets/Alert_1.png">
+
+  <h3>2. Confirm()</h3>
+  <p>La función <code>confirm()</code> muestra un cuadro de diálogo con un mensaje, un botón de "Aceptar" y otro de "Cancelar". El usuario puede hacer clic en "Aceptar" o "Cancelar", y la función devuelve <code>true</code> si se selecciona "Aceptar" y <code>false</code> si se selecciona "Cancelar".</p>
+
+  <img src="assets/Alert_2.png">
+
+
+  <h3>3. Prompt()</h3>
+  <p>La función <code>prompt()</code> muestra un cuadro de diálogo con un mensaje, un campo de entrada de texto y dos botones: "Aceptar" y "Cancelar". El usuario puede ingresar un valor en el campo de entrada y hacer clic en "Aceptar" o "Cancelar". Si se selecciona "Aceptar", la función devuelve el valor ingresado por el usuario como una cadena de texto. Si se selecciona "Cancelar", la función devuelve <code>null</code>.</p>
+
+  <img src="assets/Alert_3.png">
+
+
+  <p>Es importante tener en cuenta que el uso de `alert()`, `confirm()` y `prompt()` puede interrumpir el flujo normal de la aplicación y bloquear la interacción del usuario hasta que se cierre el cuadro de diálogo. Por esta razón, es fundamental utilizar estas funciones con moderación y de manera adecuada para proporcionar una experiencia de usuario fluida y agradable.</p>
+
     <h2>Expresiones Regulares</h2>
+
+    <p>En JavaScript, las expresiones regulares, también conocidas como regex o RegExp, son patrones que se utilizan para buscar y manipular cadenas de texto. Permiten realizar búsquedas avanzadas y operaciones de reemplazo de forma flexible y poderosa. Las expresiones regulares son objetos específicos de JavaScript y se crean utilizando la clase <code>RegExp</code> o utilizando la sintaxis literal entre barras diagonales <code>//</code>.</p>
+
+    <h3>Metacaracteres comunes:</h3>
+    <p>Las expresiones regulares utilizan caracteres especiales y metacaracteres para definir los patrones que se deben encontrar en las cadenas. Algunos de los metacaracteres comunes incluyen:</p>
+    <ul>
+      <li><code>^</code>: Representa el inicio de una cadena.</li>
+      <li><code>$</code>: Representa el final de una cadena.</li>
+      <li><code>.</code>: Representa cualquier carácter, excepto una nueva línea.</li>
+      <li><code>*</code>: Representa cero o más ocurrencias del elemento anterior.</li>
+      <li><code>+</code>: Representa una o más ocurrencias del elemento anterior.</li>
+      <li><code>?</code>: Representa cero o una ocurrencia del elemento anterior.</li>
+      <li><code>[]</code>: Representa una clase de caracteres, donde se busca un carácter que coincida con cualquiera de los caracteres dentro de los corchetes.</li>
+      <li><code>()</code>: Agrupa elementos juntos y permite aplicar modificadores a un conjunto de caracteres.</li>
+    </ul>
+  
+    <h3>Ejemplos de uso:</h3>
+  
+    <p>1. Buscar una palabra específica en una cadena:</p>
+  
+    <img src="assets/Regular_1.png" alt="">
+  
+    <p>2. Reemplazar una palabra en una cadena:</p>
+  
+    <img src="assets/Regular_2.png" alt="">
+  
+    <p>3. Validar un formato específico en una cadena (por ejemplo, un correo electrónico):</p>
+   
+    <img src="assets/Regular_3.png" alt="">
+
+    <p>Estos son solo algunos ejemplos básicos del uso de expresiones regulares en JavaScript. Las expresiones regulares pueden volverse muy complejas y poderosas para realizar tareas avanzadas de búsqueda y manipulación de cadenas. Es una habilidad valiosa para cualquier desarrollador web que desee trabajar con cadenas de texto de manera efectiva y eficiente.</p>
+
     <h2>Funciones Anónimas Autoejecutables</h2>
+
+    <p>Las funciones anónimas autoejecutables, también conocidas como IIFE (Immediately Invoked Function Expressions), son una construcción en JavaScript que permite definir y ejecutar una función al mismo tiempo. Estas funciones son útiles para encapsular código y evitar que las variables y funciones definidas en ellas contaminen el ámbito global del código.</p>
+  
+    <h3>Sintaxis:</h3>
+    <p>Las IIFE se crean utilizando una función anónima envuelta entre paréntesis, seguida de otro par de paréntesis vacíos para invocar la función de inmediato.</p>
+
+    <img src="assets/FuncionAnonima_!.png">
+    
+    <h3>Ejemplo:</h3>
+    
+    <p>En este ejemplo, se define una función anónima autoejecutable que simplemente muestra un mensaje en la consola.</p>
+  
+    <h3>Uso en Módulos:</h3>
+    <p>Las funciones anónimas autoejecutables también se pueden usar para crear módulos y evitar la contaminación del espacio de nombres global.</p>
+
+    <img src="assets/FuncionAnonima_2.png">
+  
+    
+    <p>En este ejemplo, la IIFE crea un módulo que contiene variables y funciones privadas, así como una función pública que es accesible desde fuera de la IIFE.</p>
+
+    <img src="assets/FuncionAnonima_3.png">
+  
+    <p>Las funciones anónimas autoejecutables son una técnica común en JavaScript para mantener un código más limpio, modular y protegido, y se utilizan en muchos proyectos y librerías populares.</p>
+
     <h2>Módulos ( import / export )</h2>
+
+    
 
 
 
@@ -129,6 +318,8 @@
     
     
     <script src="js/Script.js"></script>
+
+    <script src="js/TiposDeDatos.js"></script>
 
 
 </body>

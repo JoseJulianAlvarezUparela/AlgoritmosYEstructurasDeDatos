@@ -157,3 +157,168 @@
 // persona.profesion = 'Desarrolladora';
 
 // console.log(persona); // { nombre: 'María', edad: 25, saludar: [Function], profesion: 'Desarrolladora' }
+
+
+// console.log('Hola, esto es un mensaje de prueba.');
+// console.log(42);
+// console.log({ nombre: 'Juan', edad: 30 });
+
+
+// console.error('¡Algo salió mal!');
+
+// console.warn('Cuidado, esto podría no funcionar como se espera.');
+
+// console.info('Información importante: el servidor está funcionando correctamente.');
+
+// const usuarios = [{ nombre: 'Juan', edad: 30 }, { nombre: 'María', edad: 25 }];
+// console.table(usuarios);
+
+
+// const fechaActual = new Date();
+// console.log(fechaActual);
+
+// const fechaEspecifica = new Date('2023-07-24T12:00:00');
+// console.log(fechaEspecifica);
+
+// const fecha = new Date('2023-07-24');
+// const año = fecha.getFullYear();
+// const mes = fecha.getMonth(); // Los meses comienzan desde 0 (enero = 0, febrero = 1, ...)
+// const día = fecha.getDate();
+
+// console.log(año, mes, día);
+
+
+// const fecha = new Date('2023-07-24');
+// const díaSemana = fecha.getDay(); // Los días de la semana van de 0 (domingo) a 6 (sábado)
+
+// console.log(díaSemana); // Output: 0 (domingo)
+
+
+// const fecha = new Date('2023-07-24');
+// const opciones = { year: 'numeric', month: 'long', day: 'numeric' };
+// const fechaFormateada = fecha.toLocaleDateString('es-ES', opciones);
+
+// console.log(fechaFormateada); // Output: "24 de julio de 2023"
+
+
+// const numero = -5;
+// const valorAbsoluto = Math.abs(numero);
+
+// console.log(valorAbsoluto); // Output: 5
+
+// const numero = 3.6;
+// const redondeado = Math.round(numero);
+
+// console.log(redondeado); // Output: 4
+
+
+// const numero1 = 10;
+// const numero2 = 25;
+// const numero3 = 15;
+
+// const numeroMayor = Math.max(numero1, numero2, numero3);
+
+// console.log(numeroMayor); // Output: 25
+
+
+// const numero1 = 10;
+// const numero2 = 25;
+// const numero3 = 15;
+
+// const numeroMenor = Math.min(numero1, numero2, numero3);
+
+// console.log(numeroMenor); // Output: 10
+
+// const numeroAleatorio = Math.random();
+
+// console.log(numeroAleatorio);
+
+
+// const pi = Math.PI;
+
+// console.log(pi); // Output: 3.141592653589793
+
+
+// const a = true;
+// const b = false;
+// const result = a && b; // El resultado es 'false', y 'b' no se evalúa.
+
+// const a = false;
+// const b = true;
+// const result = a || b; // El resultado es 'true', y 'b' no se evalúa.
+
+
+// alert('¡Hola! Bienvenido a nuestra página.');
+
+// const resultado = confirm('¿Estás seguro de que quieres eliminar este elemento?');
+// if (resultado) {
+//   // Código para eliminar el elemento
+// } else {
+//   // Código para cancelar la eliminación
+// }
+
+
+// const nombre = prompt('Por favor, ingresa tu nombre:');
+// if (nombre !== null) {
+//   alert('¡Hola, ' + nombre + '! Bienvenido.');
+// } else {
+//   alert('No ingresaste tu nombre.');
+// }
+
+
+// const cadena = "La expresión regular es poderosa.";
+// const patron = /expresión/;
+// const resultado = cadena.match(patron);
+
+// console.log(resultado); // Output: ["expresión"]
+
+
+// const cadena = "El gato es un animal, pero también el gatito.";
+// const patron = /gato/g;
+// const resultado = cadena.replace(patron, "perro");
+
+// console.log(resultado); // Output: "El perro es un animal, pero también el perrito."
+
+// const correo = "usuario@example.com";
+// const patron = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+// const esValido = patron.test(correo);
+
+// console.log(esValido); // Output: true
+
+
+
+// (function() {
+//     // Código de la función
+//   })();
+
+
+// (function() {
+//     const mensaje = "¡Hola desde la IIFE!";
+//     console.log(mensaje);
+//   })();
+
+
+const miModulo = (function() {
+    const privadoVariable = "Soy una variable privada.";
+  
+    function privadoFuncion() {
+      console.log("Soy una función privada.");
+    }
+  
+    return {
+      publicoFuncion: function() {
+        console.log("Soy una función pública.");
+      }
+    };
+  })();
+  
+  miModulo.publicoFuncion(); // Output: "Soy una función pública."
+  miModulo.privadoVariable; // Output: undefined (no accesible desde fuera de la IIFE)
+  miModulo.privadoFuncion; // Output: undefined (no accesible desde fuera de la IIFE)
+  
+  
+  
+
+
+
+
