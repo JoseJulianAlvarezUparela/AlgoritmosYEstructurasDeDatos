@@ -12,12 +12,32 @@
 
     <main>
 
-    <h1>this en JavaScript</h1>
+    <h1>This en JavaScript</h1>
+    <p>En JavaScript, la palabra clave <code>this</code> se refiere al objeto en el cual se está ejecutando el código en un momento dado. El valor de <code>this</code> es determinado por cómo se invoca una función, y puede variar dependiendo del contexto de ejecución. Entender el valor de <code>this</code> es esencial para escribir código JavaScript efectivo.</p>
+  
+    <h2>Funciones Call, Apply & Bind</h2>
+    <p>JavaScript proporciona tres métodos para controlar explícitamente el valor de <code>this</code> al llamar a una función: <code>call</code>, <code>apply</code> y <code>bind</code>.</p>
+  
+    <h2>1. Función Call:</h2>
+    
+    <img src="assets/This.png">
+    
+    <p>El método <code>call</code> permite llamar a una función con un valor específico para <code>this</code>. En el ejemplo anterior, al llamar <code>saludar.call(persona1)</code>, el valor de <code>this</code> dentro de la función <code>saludar</code> se establece en el objeto <code>persona1</code>.</p>
+  
+    <h2>2. Función Apply:</h2>
+    
+    <img src="assets/Apply.png" alt="">
 
-    <h2>this</h2>
-    <h2>call, apply & bind</h2>
-
-      
+    <p>El método <code>apply</code> es similar a <code>call</code>, pero recibe los argumentos de la función como un array. En el ejemplo, pasamos el argumento 'Hola' como primer elemento del array, y <code>this</code> se establece en el objeto <code>persona2</code>.</p>
+  
+    <h2>3. Función Bind:</h2>
+    
+    <img src="assets/Bind.png">
+    
+    <p>El método <code>bind</code> crea una nueva función que tiene <code>this</code> preestablecido al valor pasado como argumento. En el ejemplo, creamos una nueva función <code>funcionSaludar</code> que tiene su <code>this</code> vinculado al objeto <code>persona3</code>.</p>
+  
+    <p>El uso adecuado de <code>this</code> y las funciones <code>call</code>, <code>apply</code> y <code>bind</code> permite controlar y manipular correctamente el contexto de ejecución de las funciones en JavaScript, lo que facilita el desarrollo de aplicaciones más sólidas y mantenibles.</p>
+  
 
 
     <div class="Nav">

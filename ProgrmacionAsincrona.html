@@ -47,7 +47,6 @@
   
     <h2>JavaScript Asíncrono</h2>
 
-    <h3>Definición</h3>
 
   <p>La programación asíncrona en JavaScript es una forma de programar en la que las funciones no se ejecutan de forma secuencial, sino que se ejecutan en paralelo. Esto significa que varias funciones pueden ejecutarse a la vez, en lugar de esperar a que una función termine antes de que la siguiente se ejecute.</p>
 
@@ -57,36 +56,111 @@
 
   <h3>Implementación</h3>
 
-  <p>Hay varias formas de implementar la programación asíncrona en JavaScript. Una forma es utilizar funciones asíncronas, que son funciones que devuelven promesas. Las promesas son objetos que pueden utilizarse para representar el resultado de una función asíncrona.</p>
+    <p>Hay varias formas de implementar la programación asíncrona en JavaScript. Una forma es utilizar funciones asíncronas, que son funciones que devuelven promesas. Las promesas son objetos que pueden utilizarse para representar el resultado de una función asíncrona.</p>
 
-  <p>Otra forma de implementar la programación asíncrona en JavaScript es utilizar eventos. Los eventos son notificaciones que se envían a una aplicación cuando ocurre algo, como cuando el usuario hace clic en un botón o cuando se completa una carga de red.</p>
+    <p>Otra forma de implementar la programación asíncrona en JavaScript es utilizar eventos. Los eventos son notificaciones que se envían a una aplicación cuando ocurre algo, como cuando el usuario hace clic en un botón o cuando se completa una carga de red.</p>
 
-  <h3>Ejemplos</h3>
+    <h3>Ejemplos</h3>
 
-  <p>Aquí hay algunos ejemplos de programación asíncrona en JavaScript:</p>
+    <p>Aquí hay algunos ejemplos de programación asíncrona en JavaScript:</p>
 
-  <h3>Utilizando funciones asíncronas:</h3>
+    <h3>Utilizando funciones asíncronas:</h3>
 
-  <img src="assets/Asincronia_1.png">
+    <img src="assets/Asincronia_1.png">
 
-  <h3>Utilizando eventos</h3>
+    <h3>Utilizando eventos</h3>
 
-  <img src="assets/Asincronia_2.png">
-
-  <h3>Conclusión</h3>
-
-<p>La programación asíncrona es una herramienta poderosa que puede utilizarse para mejorar el rendimiento y la reactividad de las aplicaciones JavaScript.</p>
-
-
+    <img src="assets/Asincronia_2.png">
 
 
     <h2>Asincronía y el Event Loop</h2>
+    
+    <p>La asincronía y el Event Loop son conceptos fundamentales en JavaScript que nos permiten manejar tareas que toman tiempo en ejecutarse, como operaciones de red, lectura y escritura de archivos o consultas a bases de datos, sin bloquear el hilo principal de ejecución.</p>
 
+    <h3>Asincronía:</h3>
+    <p>JavaScript permite realizar operaciones asincrónicas mediante el uso de callbacks, promesas o async/await (introducido en ES2017). Estos mecanismos permiten que una tarea se ejecute en segundo plano mientras el hilo principal continúa con otras tareas.</p>
+
+    <img src="assets/Asincronia_3.png" alt="">
+    
+    <p>En este ejemplo, <code>setTimeout()</code> es una función asincrónica que toma un callback y un tiempo en milisegundos. La función se ejecutará después de 2000 ms (2 segundos) y no bloqueará el hilo principal. Por lo tanto, verás el mensaje "Inicio", luego "Fin" y, finalmente, "Tarea asincrónica completada." después de 2 segundos.</p>
+  
+    <h3>Event Loop:</h3>
+    <p>El Event Loop es un bucle que se ejecuta continuamente en el hilo principal y está a cargo de manejar las tareas asincrónicas. Mientras haya tareas asincrónicas pendientes, el Event Loop revisará la cola de tareas y las ejecutará una por una. Cuando no haya más tareas asincrónicas en la cola, el Event Loop esperará hasta que haya nuevas tareas encoladas antes de continuar su ejecución.</p>
+    
+    <p>Este mecanismo garantiza que el hilo principal permanezca receptivo y no se bloquee mientras se manejan tareas que toman tiempo.</p>
+  
+    <p>En resumen, la asincronía y el Event Loop permiten que JavaScript maneje operaciones lentas sin bloquear el hilo principal, lo que mejora el rendimiento y la capacidad de respuesta de las aplicaciones. Es fundamental comprender estos conceptos al desarrollar aplicaciones modernas en JavaScript y aprovechar al máximo su potencial asincrónico.</p>
+  
     
 
     <h2>Callbacks</h2>
+
+    <p>Los callbacks son una de las formas más comunes de manejar la asincronía en JavaScript. Un callback es simplemente una función que se pasa como argumento a otra función y que se invoca después de que la función original ha terminado su ejecución o ha completado una tarea específica. Los callbacks son ampliamente utilizados en operaciones asincrónicas, como solicitudes a servidores, lectura de archivos o animaciones, para asegurarse de que ciertas acciones se realicen en el momento adecuado.</p>
+
+  <h3>Estructura típica de un callback:</h3>
+
+  <img src="assets/Asincronia_4.png" alt="">
+
+  <p>El callback se invoca con el resultado o los datos relevantes una vez que la operación asincrónica ha sido completada.</p>
+
+  <h3>Ejemplo de uso de un callback:</h3>
+  
+  <img src="assets/Asincronia_5.png" alt="">
+
+  <p>En este ejemplo, tenemos una función <code>obtenerDatosDeServidor</code> que simula una solicitud a un servidor con un tiempo de espera de 2 segundos. Una vez que la solicitud ha terminado, se invoca al callback <code>mostrarDatos</code> con los datos obtenidos.</p>
+
+  <p>Los callbacks son una poderosa herramienta en JavaScript para manejar tareas asincrónicas y garantizar que las operaciones se realicen en el momento adecuado. Sin embargo, cuando se trabaja con múltiples callbacks o en situaciones muy anidadas, el código puede volverse difícil de leer y mantener. Aquí es donde entran en juego las promesas y async/await, que ofrecen una sintaxis más elegante y estructurada para trabajar con asincronía.</p>
+
+
     <h2>Promesas</h2>
+
+    <p>Las Promesas son una forma más elegante y estructurada de manejar la asincronía en JavaScript en comparación con los callbacks. Una Promesa representa un valor que puede estar disponible ahora, en el futuro o nunca. Permite realizar operaciones asincrónicas de manera más legible y fácil de mantener.</p>
+
+  <h3>Creación de una Promesa:</h3>
+
+  <img src="assets/Asincronia_6.png" alt="">
+
+  <p>Una Promesa se crea pasando una función como argumento al constructor de la Promesa. Esta función toma dos parámetros: <code>resolve</code> y <code>reject</code>. Dentro de la función, realizamos la operación asincrónica y llamamos a <code>resolve</code> con el resultado si se completa correctamente, o a <code>reject</code> con un error si ocurre algún problema.</p>
+
+  <h3>Manejo de Promesas:</h3>
+
+  <img src="assets/Asincronia_7.png" alt="">
+
+  <p>Una vez creada la Promesa, podemos encadenar los métodos <code>then</code> y <code>catch</code> para manejar el resultado o el error. El método <code>then</code> se ejecutará si la Promesa se resuelve correctamente y recibirá el valor resuelto como argumento. El método <code>catch</code> se ejecutará si la Promesa es rechazada y recibirá el error como argumento.</p>
+
+  <h3>Ejemplo de uso de Promesas:</h3>
+
+  <img src="assets/Asincronia_8.png" alt="">
+
+  <p>En este ejemplo, tenemos una función <code>obtenerDatosDeServidor</code> que retorna una Promesa que simula una solicitud a un servidor con un tiempo de espera de 2 segundos. Usamos <code>then</code> para manejar los datos obtenidos si la Promesa se resuelve correctamente y <code>catch</code> para manejar cualquier error que pueda ocurrir.</p>
+
+  <p>Las Promesas son una herramienta poderosa para trabajar con operaciones asincrónicas y permiten un código más limpio y legible al evitar el anidamiento excesivo de callbacks. Además, son la base de async/await, una sintaxis aún más amigable para el manejo de asincronía introducida en ES2017.</p>
+
+
     <h2>Funciones Asíncronas (Async / Await)</h2>
+
+    <p>Las funciones asíncronas, introducidas en ES2017, son una forma más sencilla y legible de trabajar con código asincrónico en JavaScript en comparación con las Promesas y los callbacks. La combinación de las palabras clave <code>async</code> y <code>await</code> permite escribir código asincrónico de manera similar al código síncrono, lo que lo hace más fácil de entender y mantener.</p>
+
+  <h3>Declaración de una función asíncrona:</h3>
+
+  <img src="assets/Asincronia_9.png" alt="">
+
+  <p>Para declarar una función como asíncrona, simplemente precede la palabra clave <code>async</code> antes de la palabra clave <code>function</code>. Esto indica que la función contendrá código asincrónico y puede usar la palabra clave <code>await</code> dentro de ella.</p>
+
+  <h3>Uso de await:</h3>
+
+  <img src="assets/Asincronia_10.png" alt="">
+
+  <p>La palabra clave <code>await</code> se utiliza dentro de una función asíncrona para indicar que se debe esperar a que una operación asíncrona, generalmente una Promesa, se resuelva antes de continuar la ejecución del código. Esto evita la necesidad de encadenar múltiples <code>then</code> y <code>catch</code> como se hace con las Promesas.</p>
+
+  <h3>Ejemplo de uso de una función asíncrona:</h3>
+
+  <img src="assets/Asincronia_11.png" alt="">
+
+  <p>En este ejemplo, tenemos una función asíncrona <code>mostrarDatos</code> que utiliza la función asíncrona <code>obtenerDatos</code> para obtener datos de una API. El uso de <code>await</code> dentro de <code>mostrarDatos</code> asegura que la obtención de datos se complete antes de mostrarlos en la consola.</p>
+
+  <p>Las funciones asíncronas y el uso de <code>await</code> simplifican el manejo de código asincrónico, mejorando la legibilidad y facilitando el manejo de errores. Es una poderosa herramienta para trabajar con operaciones asincrónicas en JavaScript y se ha convertido en una práctica común en el desarrollo moderno.</p>
+
 
 
     <div class="Nav">
@@ -185,6 +259,7 @@
     
     
     <script src="js/Script.js"></script>
+    <script src="js/TiposDeDatos.js"></script>
 
 </body>
 </html>

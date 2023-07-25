@@ -367,6 +367,336 @@
 
 
 
+// console.log("Inicio");
+  
+//   setTimeout(() => {
+//     console.log("Tarea asincrónica completada.");
+//   }, 2000);
+  
+//   console.log("Fin");
+
+
+
+
+// function operacionAsincronica(parametro, callback) {
+//   // Realizar la operación asincrónica aquí
+//   // ...
+
+//   // Llamar al callback al finalizar la operación
+//   callback(resultado);
+// }
+
+
+
+// function obtenerDatosDeServidor(id, callback) {
+//   // Simulamos una solicitud a un servidor con un tiempo de espera
+//   setTimeout(() => {
+//     const datos = {
+//       id: id,
+//       nombre: "Ejemplo de dato"
+//     };
+//     callback(datos);
+//   }, 2000); // Esperar 2 segundos antes de obtener los datos
+// }
+
+// function mostrarDatos(datos) {
+//   console.log("Datos obtenidos:", datos);
+// }
+
+// obtenerDatosDeServidor(123, mostrarDatos);
+
+
+// const miPromesa = new Promise((resolve, reject) => {
+//   // Lógica de la operación asincrónica
+//   // Si se completa con éxito, se llama a resolve(valor)
+//   // Si ocurre un error, se llama a reject(error)
+// });
+
+// miPromesa
+//   .then((resultado) => {
+//     // Manejo del resultado si la Promesa se resuelve correctamente
+//   })
+//   .catch((error) => {
+//     // Manejo del error si la Promesa es rechazada
+//   });
+
+
+// function obtenerDatosDeServidor(id) {
+//   return new Promise((resolve, reject) => {
+//     // Simulamos una solicitud a un servidor con un tiempo de espera
+//     setTimeout(() => {
+//       const datos = {
+//         id: id,
+//         nombre: "Ejemplo de dato"
+//       };
+//       resolve(datos);
+//     }, 2000); // Esperar 2 segundos antes de obtener los datos
+//   });
+// }
+
+// obtenerDatosDeServidor(123)
+//   .then((datos) => {
+//     console.log("Datos obtenidos:", datos);
+//   })
+//   .catch((error) => {
+//     console.error("Error al obtener los datos:", error);
+//   });
+
+
+// console.log("funcciono")
+
+// async function miFuncionAsincrona() {
+//   // Código asincrónico usando await
+//   const resultado = await algunaOperacionAsincrona();
+//   return resultado;
+// }
+
+
+// async function obtenerDatos() {
+//   try {
+//     const respuesta = await fetch('https://api.example.com/datos');
+//     const datos = await respuesta.json();
+//     return datos;
+//   } catch (error) {
+//     console.error('Error al obtener los datos:', error);
+//     throw error;
+//   }
+// }
+
+
+
+
+
+
+// async function mostrarDatos() {
+//   try {
+//     const datos = await obtenerDatos();
+//     console.log('Datos obtenidos:', datos);
+//   } catch (error) {
+//     console.error('Error al mostrar los datos:', error);
+//   }
+// }
+
+// mostrarDatos();
+
+
+// const simbolo = Symbol('descripcion');
+// const otroSimbolo = Symbol('descripcion');
+
+// console.log(simbolo === otroSimbolo); // false
+// console.log(typeof simbolo); // "symbol"
+
+// const objeto = {
+//   [simbolo]: 'valor del símbolo'
+// };
+
+// console.log(objeto[simbolo]); // "valor del símbolo"
+
+
+// const miSet = new Set();
+
+// miSet.add(1);
+// miSet.add('Hola');
+// miSet.add(true);
+// miSet.add({ nombre: 'John' });
+
+// console.log(miSet.size); // 4
+// console.log(miSet.has('Hola')); // true
+
+// miSet.delete(true);
+// console.log(miSet.size); // 3
+
+// miSet.clear();
+// console.log(miSet.size); // 0
+
+
+// const miMap = new Map();
+
+// const clave1 = 'clave1';
+// const clave2 = { id: 2 };
+
+// miMap.set(clave1, 'valor1');
+// miMap.set(clave2, 'valor2');
+
+// console.log(miMap.size); // 2
+// console.log(miMap.get(clave1)); // "valor1"
+
+// miMap.delete(clave1);
+// console.log(miMap.size); // 1
+
+// miMap.clear();
+// console.log(miMap.size); // 0
+
+
+
+// let objeto1 = { nombre: 'John' };
+// let objeto2 = { edad: 30 };
+
+// const weakSet = new WeakSet([objeto1, objeto2]);
+
+// console.log(weakSet.has(objeto1)); // true
+
+// objeto1 = null; // Eliminamos la referencia original al objeto1
+
+// // El objeto1 ha sido recolectado por el recolector de basura, por lo que ya no existe en el WeakSet.
+// console.log(weakSet.has(objeto1)); // false
+
+
+// let clave1 = { id: 1 };
+// let clave2 = { id: 2 };
+
+// const weakMap = new WeakMap();
+
+// weakMap.set(clave1, 'valor1');
+// weakMap.set(clave2, 'valor2');
+
+// console.log(weakMap.get(clave1)); // "valor1"
+
+// clave1 = null; // Eliminamos la referencia original a clave1
+
+// // La clave1 ha sido recolectada por el recolector de basura, por lo que ya no existe en el WeakMap.
+// console.log(weakMap.get(clave1)); // undefined
+
+
+// const miArray = [1, 2, 3, 4, 5];
+
+// // Iterar utilizando un Iterador (utilizando el método .next())
+// const iterador = miArray[Symbol.iterator]();
+// console.log(iterador.next().value); // 1
+// console.log(iterador.next().value); // 2
+
+// // Iterar utilizando un Iterador con un bucle for...of
+// for (const elemento of miArray) {
+//   console.log(elemento);
+// }
+
+
+
+// function* generador() {
+//   yield 1;
+//   yield 2;
+//   yield 3;
+// }
+
+// const miGenerador = generador();
+
+// console.log(miGenerador.next().value); // 1
+// console.log(miGenerador.next().value); // 2
+// console.log(miGenerador.next().value); // 3
+// console.log(miGenerador.next().value); // undefined
+
+
+
+// const objetoOriginal = {
+//   nombre: 'John',
+//   edad: 30
+// };
+
+// const manejador = {
+//   get: function(target, propiedad) {
+//     return propiedad in target ? target[propiedad] : 'Propiedad no encontrada';
+//   },
+//   set: function(target, propiedad, valor) {
+//     if (propiedad === 'edad') {
+//       if (typeof valor !== 'number' || valor < 0) {
+//         throw new TypeError('La edad debe ser un número positivo');
+//       }
+//     }
+//     target[propiedad] = valor;
+//   }
+// };
+
+// const objetoProxy = new Proxy(objetoOriginal, manejador);
+
+// console.log(objetoProxy.nombre); // "John"
+// console.log(objetoProxy.ocupacion); // "Propiedad no encontrada"
+
+// objetoProxy.edad = 35; // Cambio de valor permitido
+// console.log(objetoProxy.edad); // 35
+
+// objetoProxy.edad = -5; // Esto lanzará un error debido al manejador de set
+
+
+
+// const miObjeto = {};
+
+// // Agregar propiedades dinámicamente
+// miObjeto.nombre = 'John';
+// miObjeto['edad'] = 30;
+
+// // Eliminar propiedades dinámicamente
+// delete miObjeto.edad;
+
+// console.log(miObjeto); // { nombre: 'John' }
+
+
+
+// function saludar() {
+//   console.log('Hola, mi nombre es ' + this.nombre);
+// }
+
+// const persona1 = {
+//   nombre: 'John'
+// };
+
+// saludar.call(persona1); // Hola, mi nombre es John
+
+
+// function saludar(saludo) {
+//   console.log(saludo + ', mi nombre es ' + this.nombre);
+// }
+
+// const persona2 = {
+//   nombre: 'Alice'
+// };
+
+// saludar.apply(persona2, ['Hola']); // Hola, mi nombre es Alice
+
+
+
+// function saludar() {
+//   console.log('Hola, mi nombre es ' + this.nombre);
+// }
+
+// const persona3 = {
+//   nombre: 'Jane'
+// };
+
+// const funcionSaludar = saludar.bind(persona3);
+// funcionSaludar(); // Hola, mi nombre es Jane
+
+
+// {
+//   "nombre": "John",
+//   "edad": 30,
+//   "soltero": true,
+//   "hobbies": ["programar", "leer", "viajar"],
+//   "direccion": {
+//     "calle": "123 Main St",
+//     "ciudad": "Ciudad de Ejemplo"
+//   }
+// }
+
+
+// [
+//   "rojo",
+//   "verde",
+//   "azul",
+//   {
+//     "nombre": "John",
+//     "edad": 30
+//   }
+// ]
+
+
+// const jsonString = '{"nombre": "John", "edad": 30}';
+// const objeto = JSON.parse(jsonString);
+// console.log(objeto.nombre); // "John"
+
+// const otroObjeto = { nombre: "Alice", edad: 25 };
+// const jsonString2 = JSON.stringify(otroObjeto);
+// console.log(jsonString2); // '{"nombre":"Alice","edad":25}'
+
 
 
 
