@@ -951,103 +951,196 @@
 
 // Suma Dos Números: Sum(A, B)
 
+// function sum(a,b){
+//     return a + b
+// }
+
+// let result = sum( 3, 5)
+// console.log(result)
 
 
 // Resta Dos Números: Subtract(A, B)
 
+// function rest (a,b) {
+//     return a - b
+// }
 
+// let result = rest(6,2)
+// console.log(result)
 
 // Multiplica Dos Números: Multiply(A, B)
 
+// function Mult(a,b){
+//     return a * b
+// }
 
+// let result = Mult(2,4)
+// console.log(result)
 
 // Divide Dos Números: Divide(A, B)
 
+// function Divide(a,b){
+//     return a / b
+// }
 
+// let result = Divide(15,5)
+// console.log(result)
 
 // Obtiene El Residuo De La División De Dos Números: Modulo(A, B)
 
+// function Divide(a,b){
+//     return a % b
+// }
 
+// let result = Divide(15,2)
+// console.log(result)
 
 // Calcula El Valor Absoluto De Un Número: AbsoluteValue(Num)
 
-
+// let a = -10
+// let ValorAbsoluto = Math.abs(a)
+// console.log(ValorAbsoluto)
 
 // Calcula La Potencia De Un Número: Power(Base, Exponent)
 
+// function Potencia(a,b){
+//     return a ** b
+// }
 
+// let result = Potencia(2,6)
+// console.log(result)
 
 // Calcula La Raíz Cuadrada De Un Número: SquareRoot(Num)
 
-
+// let numero = 25;
+// let raizCuadrada = Math.sqrt(numero);
+// console.log(raizCuadrada);
 
 // Calcula El Seno De Un Ángulo En Radianes: Sin(Angle)
 
+// let anguloEnRadianes = Math.PI / 6; 
+// let senoDelAngulo = Math.sin(anguloEnRadianes);
+// console.log(senoDelAngulo); 
 
 
 // Calcula El Coseno De Un Ángulo En Radianes: Cos(Angle)
 
-
+// let Angulo = Math.PI / 3;
+// let cos = Math.cos(Angulo)
+// console.log(cos)
 
 // Calcula La Tangente De Un Ángulo En Radianes: Tan(Angle)
 
+// let Tangente = Math.PI / 4;
+// let tan = Math.tan(Tangente)
+// console.log(tan)
 
 
 // Calcula El Valor Máximo Entre Dos Números: Max(A, B)
 
+// let a = 1;
+// let b = 2;
 
+// let max = Math.max(a,b)
+// console.log(max)
 
 // Calcula El Valor Mínimo Entre Dos Números: Min(A, B)
 
+// let a = 1;
+// let b = 2;
+
+// let min = Math.min(a,b)
+// console.log(min)
 
 
 // Redondea Un Número Hacia Abajo Al Entero Más Cercano: Floor(Num)
 
+// let a = 4.9
+// let Cerca = Math.floor(a)
+// console.log(Cerca)
 
 
 // Redondea Un Número Hacia Arriba Al Entero Más Cercano: Ceil(Num)
 
-
+// let a = 4.2
+// let Cerca = Math.ceil(a)
+// console.log(Cerca)
 
 // Redondea Un Número Al Entero Más Cercano: Round(Num)
 
-
+// let a = 4.5
+// let Cerca = Math.round(a)
+// console.log(Cerca)
 
 // Calcula El Valor Absoluto Más Grande Entre Dos Números: MaxAbsolute(A, B)
 
+// let a = 4
+// let b = 7
 
+// let Cerca = Math.max(a,b)
+// console.log(Cerca)
 
 // Calcula El Valor Mínimo Absoluto Entre Dos Números: MinAbsolute(A, B)
 
+// let a = 4
+// let b = 5
 
+// let Cerca = Math.min(a,b)
+// console.log(Cerca)
 
 // Genera Un Número Aleatorio Entre 0 Y 1: Random()
 
-
+// let a = 0
+// let b = 1
+// let cerca = Math.random(a,b)
+// console.log(cerca)
 
 // Genera Un Número Aleatorio Entre Dos Valores Dados: RandomInRange(Min, Max)
 
-
+// function randomIntInRange(min, max) {
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+//   }
+  
+//   let min = 1;
+//   let max = 100;
+  
+//   let randomInteger = randomIntInRange(min, max);
+//   console.log(randomInteger); 
+  
 
 // Convierte Un Ángulo De Grados A Radianes: DegreesToRadians(Degrees)
 
-
+// function degreesToRadians(degrees) {
+//     return (degrees * Math.PI) / 180;
+//   }
+  
 
 // Convierte Un Ángulo De Radianes A Grados: RadiansToDegrees(Radians)
 
-
+// function degreesToRadians(degrees) {
+//     return (degrees * Math.PI) / 180;
+//   }
 
 // Calcula El Logaritmo Natural De Un Número: NaturalLog(Num)
 
-
+// function naturalLog(num) {
+//     return Math.log(num);
+//   }
+  
 
 // Calcula El Logaritmo En Base 10 De Un Número: Log10(Num)
 
-
+// function log10(num) {
+//     return Math.log10(num);
+//   }
+  
 
 // Calcula El Logaritmo En Base 2 De Un Número: Log2(Num)
 
-
+// function log2(num) {
+//     return Math.log2(num);
+//   }
+  
 
 // let x;
 
