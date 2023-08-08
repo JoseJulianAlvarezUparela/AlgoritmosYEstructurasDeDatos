@@ -700,4 +700,43 @@
 
 
 
+// Seleccionar un elemento por su ID
+// const miDiv = document.getElementById("miDiv");
 
+// // Seleccionar elementos por su clase
+// const parrafos = document.getElementsByClassName("parrafo");
+
+// Cambiar el contenido de un elemento
+// miDiv.innerHTML = "¡Contenido cambiado!";
+
+// // Cambiar el contenido del primer párrafo
+// parrafos[0].textContent = "Nuevo texto para el primer párrafo";
+
+
+// Crear un nuevo párrafo
+// const nuevoParrafo = document.createElement("p");
+// nuevoParrafo.textContent = "¡Este es un nuevo párrafo!";
+// miDiv.appendChild(nuevoParrafo); // Agregar el nuevo párrafo al div
+
+
+// // Cambiar el atributo "class" de un elemento
+// miDiv.className = "miNuevoDiv";
+
+// // Agregar una clase a un párrafo existente
+// parrafos[1].classList.add("nuevaClase");
+
+// Eliminar un párrafo
+// miDiv.removeChild(parrafos[0]);
+
+// // Eliminar el segundo párrafo utilizando su clase
+// const segundoParrafo = document.querySelector(".nuevaClase");
+// miDiv.removeChild(segundoParrafo);
+
+
+
+const userDiv = document.querySelector('[data-user-id]');
+const userId = userDiv.dataset.userId;
+const username = userDiv.dataset.username;
+
+const deleteButton = document.querySelector('[data-action="eliminar"]');
+const itemId = deleteButton.dataset.itemId;

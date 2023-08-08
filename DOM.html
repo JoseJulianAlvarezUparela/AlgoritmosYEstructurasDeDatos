@@ -14,13 +14,144 @@
     
     <h1>Document Object Model</h1>
 
+    <p>El Modelo de Objetos del Documento (DOM) es una interfaz de programación de aplicaciones (API) para documentos HTML y XML. Define la estructura lógica de los documentos y el modo en que se accede y manipula.</p>
+
+    <p>El DOM representa un documento como un árbol de objetos. Cada nodo del árbol representa un elemento de documento, como un elemento, un atributo, un texto o un comentario. Los nodos se pueden relacionar entre sí mediante relaciones padre-hijo, hermano y vecino.</p>
+
+    <p>El DOM se puede utilizar para acceder a los elementos de un documento, modificarlos o crear nuevos elementos. También se puede utilizar para agregar eventos a los elementos de un documento, lo que permite que los elementos interactúen con el usuario.</p>
+
+    <p>El DOM es una herramienta poderosa que se puede utilizar para crear sitios web dinámicos e interactivos.</p>
+
+    <h2>Beneficios de usar el DOM</h2>
+
+    <ul>
+    <li>El DOM permite acceder y manipular documentos HTML y XML de forma programática.</li>
+    <li>El DOM se puede utilizar para agregar eventos a los elementos de un documento, lo que permite que los elementos interactúen con el usuario.</li>
+    <li>El DOM es una herramienta poderosa que se puede utilizar para crear sitios web dinámicos e interactivos.</li>
+    </ul>
+
+    <h2>Desventajas de usar el DOM</h2>
+
+    <ul>
+    <li>El DOM puede ser complejo de aprender y usar.</li>
+    <li>El DOM puede ser lento, especialmente para documentos grandes.</li>
+    <li>El DOM no se puede utilizar para todos los tipos de documentos HTML y XML.</li>
+    </ul>
 
 
     <h2>WEB APIs</h2>
-    <h2>Introducción al DOM</h2>
+
+    <h1>¿Qué son las API web?</h1>
+
+
+    <p>Una API web es una interfaz de programación de aplicaciones que permite a las aplicaciones comunicarse entre sí a través de Internet. Las API web se utilizan a menudo para compartir datos y funcionalidad entre aplicaciones web, aplicaciones móviles y servicios en la nube.</p>
+
+    <p>Las API web se basan en el protocolo HTTP, que es el mismo protocolo que se utiliza para cargar páginas web en un navegador web. Esto significa que las API web son muy fáciles de usar y pueden ser consumidas por una amplia gama de aplicaciones.</p>
+
+    <p>Las API web ofrecen una serie de ventajas, incluyendo:</p>
+
+    <ul>
+    <li>Facilidad de uso: Las API web son muy fáciles de usar y pueden ser consumidas por una amplia gama de aplicaciones.</li>
+
+    <li>Escalabilidad: Las API web son escalables y pueden manejar grandes volúmenes de tráfico.</li>
+
+    <li>Seguridad: Las API web pueden ser seguras y pueden proteger los datos de los usuarios.</li>
+
+    <li>Robustez: Las API web son robustas y pueden manejar errores y fallos.</li>
+    </ul>
+
+    <p>Las API web se utilizan en una amplia gama de aplicaciones, incluyendo:</p>
+
+    <ul>
+    <li>Social media: Las API web se utilizan para compartir datos y funcionalidad entre aplicaciones de redes sociales.</li>
+
+    <li>Comercio electrónico: Las API web se utilizan para procesar pagos y gestionar inventarios.</li>
+
+    <li>Servicios de mapas: Las API web se utilizan para mostrar mapas y obtener indicaciones.</li>
+
+    <li>Notificación push: Las API web se utilizan para enviar notificaciones push a los usuarios.</li>
+    </ul>
+
+    <p>Las API web son una herramienta poderosa que puede utilizarse para compartir datos y funcionalidad entre aplicaciones. Las API web son fáciles de usar, escalables, seguras y robustas, y se utilizan en una amplia gama de aplicaciones.</p>
+
+
     <h2>Nodos, Elementos y Selectores</h2>
+
+    <p>Un nodo es la unidad básica de un documento HTML. Un nodo puede ser un elemento, un atributo, un texto o un comentario.</p>
+
+    <p>Un elemento es un nodo que representa un componente de una página web. Por ejemplo, un elemento <p> representa un párrafo, un elemento representa una división y un elemento <a> representa un enlace.</p>
+
+    <p>Un selector es una cadena de caracteres que se utiliza para seleccionar uno o más elementos en un documento HTML. Los selectores se utilizan en CSS para aplicar estilos a los elementos seleccionados.</p>
+
+    <p>Aquí hay algunos ejemplos de selectores:</p>
+
+
+    <h3>Fragmento de HTML</h3>
+    
+    <img src="assets/DOM_1.png">
+    
+    <h3>Selección de elementos por ID y Clase</h3>
+    
+    <img src="assets/DOM_2.png">
+    
+    <h3>Manipulación de contenido de elementos</h3>
+    
+    <img src="assets/DOM_3.png">
+    
+    <h3>Creación de nuevos elementos y nodos</h3>
+    
+    <img src="assets/DOM_4.png">
+    
+    <h3>Modificación de atributos de elementos</h3>
+    
+    <img src="assets/DOM_5.png">
+    
+    <h3>Eliminación de elementos</h3>
+
+    <img src="assets/DOM_6.png">
+    
     <h2>Atributos y Data-Attributes</h2>
+
+    <p>
+      Los atributos y los data attributes (atributos de datos) son conceptos relacionados en HTML y JavaScript que permiten agregar información adicional a elementos HTML para diversos propósitos, como el estilo, la manipulación con JavaScript o para proporcionar datos contextuales.
+    </p>
+
+
+    <h3>Atributos en HTML</h3>
+
+    <ul>
+      <li>class: Se utiliza para asignar una o varias clases CSS a un elemento, permitiendo aplicar estilos específicos.</li>
+
+      <li>id: Proporciona una identificación única para un elemento en el documento.</li>
+
+      <li>src: Utilizado en elementos como <b>img</b> o  <b>script</b> para especificar la fuente de una imagen o un script, respectivamente.</li>
+
+      <li>href: Usado en enlaces <a> para indicar la dirección web a la que se redireccionará cuando se haga clic en el enlace.</li>
+    </ul>
+
+    <img src="assets/DOM_7.png">
+
+    <p>
+      Los atributos son características o propiedades que se pueden agregar a elementos HTML para modificar su comportamiento o apariencia. Algunos ejemplos de atributos en HTML son:
+    </p>
+
+    <h3>Data Attributes (Atributos de Datos) en HTML</h3>
+
+    <P>
+      Los data attributes son una forma de almacenar información personalizada en elementos HTML. Estos atributos comienzan con "data-" seguido de un nombre que elijas. Son útiles cuando deseas almacenar datos en el HTML para luego acceder o manipular con JavaScript sin afectar la semántica ni el comportamiento estándar del elemento.
+    </P>
+
+    <img src="assets/DOM_8.png">
+
+    <p>
+      Luego, puedes acceder a estos data attributes en JavaScript para realizar acciones específicas
+    </p>
+
+    <img src="assets/DOM_9.png" alt="">
+
     <h2>Estilos y Variables CSS</h2>
+
+
     <h2>Clases CSS</h2>
     <h2>Texto y HTML</h2>
     <h2>DOM Traversing: Recorriendo el DOM</h2>
@@ -137,6 +268,10 @@
     
     
     <script src="js/Script.js"></script>
+    <script src="js/TiposDeDatos.js"></script>
+    
+
+    
 
 
 </body>
