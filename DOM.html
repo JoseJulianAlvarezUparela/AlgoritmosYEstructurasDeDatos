@@ -207,7 +207,79 @@
     <img src="assets/DOM_15.png">
 
     <h2>Texto y HTML</h2>
+
+    <p>
+      Parece que quieres saber cómo manipular el contenido de un elemento HTML y el DOM usando JavaScript. Aquí tienes un ejemplo que muestra cómo cambiar el texto y agregar contenido HTML a un elemento <p> utilizando JavaScript
+    </p>
+
+    <img src="assets/DOM_16.png">
+
+    <p>
+      Utilizamos la propiedad textContent para cambiar el contenido de texto del elemento.
+    </p>
+
+    <p>
+      Utilizamos la propiedad innerHTML para agregar contenido HTML al elemento. En este caso, estamos agregando texto en negrita y en cursiva utilizando las etiquetas strong y em.
+    </p>
+
+    <p>
+      Es importante tener en cuenta que al utilizar innerHTML, estás manipulando el contenido HTML del elemento y permitiendo que se interpreten etiquetas HTML. Sin embargo, ten en cuenta que también existe el riesgo de inyección de código si se inserta contenido no seguro proveniente de fuentes no confiables.
+    </p>
+
     <h2>DOM Traversing: Recorriendo el DOM</h2>
+
+    <p>
+      El recorrido del DOM (DOM Traversing) es una técnica en la programación web que implica moverse a través de los elementos del Document Object Model (DOM) para acceder a diferentes partes de la estructura HTML y manipularlas con JavaScript. Esto es especialmente útil cuando deseas interactuar con elementos HTML que no tienen identificadores específicos (como IDs o clases), o cuando necesitas buscar elementos dentro de un contexto específico. Aquí tienes algunos métodos comunes para recorrer el DOM:
+    </p>
+
+    <h3>parentNode</h3>
+
+    <p>
+      El método parentNode te permite acceder al elemento padre del elemento actual.
+    </p>
+
+    <img src="assets/DOM_17.png">
+
+    <h3>childNodes y children</h3>
+
+    <p>
+      childNodes devuelve una lista de todos los nodos hijos (incluyendo nodos de texto y comentarios), mientras que children devuelve solo los nodos hijos que son elementos HTML.
+    </p>
+
+    <img src="assets/DOM_18.png">
+
+    <h3>nextSibling y previousSibling</h3>
+
+    <p>
+      nextSibling te da el siguiente nodo hermano, mientras que previousSibling te da el nodo hermano anterior (ambos pueden incluir nodos de texto y comentarios).
+    </p>
+
+    <img src="assets/DOM_19.png">
+
+    <h3>nextElementSibling y previousElementSibling</h3>
+
+    <p>
+      Estos métodos te proporcionan el siguiente y el anterior elemento hermano (excluyendo nodos de texto y comentarios)
+    </p>
+
+    <img src="assets/DOM_20.png" alt="">
+
+    <h3>querySelector y querySelectorAll</h3>
+
+    <p>
+      Estos métodos te permiten buscar elementos dentro de un elemento padre utilizando selectores CSS.
+    </p>
+
+    <img src="assets/DOM_21.png">
+
+    <h3>closest</h3>
+
+    <p>
+      closest busca el ancestro más cercano que cumpla con un selector dado.
+    </p>
+
+    <img src="assets/DOM_22.png">
+
     <h2>Creando Elementos y Fragmentos</h2>
     <h2>Templates HTML</h2>
     <h2>Modificando Elementos ( Old Style )</h2>
@@ -329,3 +401,4 @@
 
 </body>
 </html>
+

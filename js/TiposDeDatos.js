@@ -768,5 +768,29 @@
 // elemento.style.backgroundColor = 'blue'; // Cambiar color de fondo
 
 
+// const childElement = document.getElementById('child');
+// const parentElement = childElement.parentNode;
 
 
+// const parentElement = document.getElementById('parent');
+// const childNodesList = parentElement.childNodes;
+// const childrenList = parentElement.children;
+
+
+// const siblingElement = document.getElementById('sibling');
+// const nextSibling = siblingElement.nextSibling;
+// const previousSibling = siblingElement.previousSibling;
+
+
+// const siblingElement = document.getElementById('sibling');
+// const nextElementSibling = siblingElement.nextElementSibling;
+// const previousElementSibling = siblingElement.previousElementSibling;
+
+
+// const parentElement = document.getElementById('parent');
+// const specificChild = parentElement.querySelector('.specific-class');
+// const allSpecificChildren = parentElement.querySelectorAll('.specific-class');
+
+
+// const childElement = document.getElementById('child');
+// const closestParent = childElement.closest('.parent-class');
