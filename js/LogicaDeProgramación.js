@@ -5,7 +5,7 @@
 // let a = 5;
 // let b = 7;
 // let resultado = a + b;
-// console.log(resultado)
+// mpnsole.log(resultado)
 
 
 // Resta: Resta 9 A 15.
@@ -13,7 +13,7 @@
 // let a = 9;
 // let b = 15;
 // let resultado = a - b;
-// console.log(resultado)
+//nsole.log(resultado)
 
 // Multiplicación: Multiplica 4 Por 6.
 
@@ -1344,30 +1344,117 @@
 // }
 
 // Verifica Si 10 Es Igual A 10.
-// Verifica Si 7 Es Menor O Igual Que 9.
-// Verifica Si 4 Es Distinto De 6.
-// Verifica Si 8 Es Mayor Que 5 Y Menor Que 10.
-// Verifica Si 6 Es Par.
-// Verifica Si "Hola" Es Igual A "Hola" Y Distinto De "Adiós".
-// Verifica Si 20 Es Divisible Por 5 O 3.
-// Verifica Si Al Menos Uno De Los Siguientes Es Verdadero: True, False, True.
-// Verifica Si Todos Los Siguientes Son Verdaderos: True, True, True.
-// Verifica Si Al Menos Uno De Los Siguientes Es Falso: False, True, True.
-// Verifica Si Todos Los Siguientes Son Falsos: False, False, False.
-// Verifica Si Al Menos Uno De Los Siguientes Es Verdadero: 0, False, Null.
-// Verifica Si Todos Los Siguientes Son Verdaderos: "Hola", True, 1.
-// Verifica Si Al Menos Uno De Los Siguientes Es Falso: "", 0, Undefined.
-// Verifica Si Todos Los Siguientes Son Falsos: NaN, False, Null. 
-// Verifica Si Al Menos Uno De Los Siguientes Es Verdadero: !True, !!False, !!!True.
-// Verifica Si Todos Los Siguientes Son Verdaderos: !False, !!True, !!!False.
-// Verifica Si Al Menos Uno De Los Siguientes Es Falso: !True, !!False, !!!False.
-// Verifica Si Todos Los Siguientes Son Falsos: !True, !!False, !!!True.
-// Verifica Si Al Menos Uno De Los Siguientes Es Verdadero: Boolean(0), Boolean(""), Boolean(Null).
-// Verifica Si Todos Los Siguientes Son Verdaderos: Boolean(1), Boolean("Hola"), Boolean([]).
-// Verifica Si Al Menos Uno De Los Siguientes Es Falso: Boolean(Undefined), Boolean(NaN), Boolean("").
-// Verifica Si Todos Los Siguientes Son Falsos: Boolean(False), Boolean(Null), Boolean(0).
-// Verifica Si Al Menos Uno De Los Siguientes Es Verdadero: Boolean(Undefined) || Boolean(Null).
-// Verifica Si Todos Los Siguientes Son Verdaderos: Boolean(True) && Boolean(1).
+
+// let a = 0;
+
+// while(a <= 10){
+//     console.log(a++)
+// }
+
+// Imprime Los Múltiplos De 3 Del 0 Al 30 Usando Un Bucle `While`.
+
+// let a = 3;
+
+// while(a <= 30){
+//     console.log(a++)
+// }
+
+// Imprime Los Números Pares Del 0 Al 20 Utilizando Un Bucle `While`.
+
+// let a = 0;
+
+// while(a <= 20){
+//     if(a % 2 === 0){
+//       console.log(a++)
+//     }
+// }
+
+// Calcula La Suma De Los Números Del 1 Al 50 Utilizando Un Bucle `While`.
+
+// let a = 1;
+// let b = 0
+
+// while(a <= 50){
+//   b += a;
+//   a++ 
+// }
+
+// console.log(`la suma es ${b}`)
+
+
+// Imprime Los Números Del 10 Al 1 En Orden Descendente Utilizando BUn Bucle `While`.
+
+// let a = 10;
+
+// while(a >= 1){
+//   console.log(a--)
+// }
+
+// Imprime La Tabla De Multiplicar Del 5 Utilizando Un Bucle `While`.
+
+// let a = 1;
+// let b = 5;
+
+// while(a <= 10){
+//   console.log(a++ * 5)
+// }
+
+// Calcula El Factorial De Un Número Utilizando Un Bucle `While`.
+
+// function calcularFactorial(n) {
+//   let factorial = 1;
+//   let numero = n;
+
+//   while (numero > 1) {
+//     factorial *= numero;
+//     numero--;
+//   }
+
+//   return factorial;
+// }
+
+// const numero = 5;
+// const resultado = calcularFactorial(numero);
+// console.log(`El factorial de ${numero} es: ${resultado}`);
+
+
+// Imprime Los Dígitos De Un Número En Orden Inverso Utilizando Un Bucle `While`.
+
+
+
+// Lee Números Del Usuario Hasta Que Se Ingrese Un Número Negativo Utilizando Un Bucle `While`.
+
+// Imprime Los Primeros 20 Términos De La Serie De Fibonacci Utilizando Un Bucle `While`.
+
+// Encuentra El Número Más Grande En Una Lista De Números Utilizando Un Bucle `While`.
+
+// Calcula El Promedio De Una Lista De Números Utilizando Un Bucle `While`.
+
+// Imprime La Siguiente Secuencia: 1, -2, 3, -4, 5, -6, ... Utilizando Un Bucle `While`.
+
+// Imprime Los Primeros 10 Números Primos Utilizando Un Bucle `While`.
+
+// Imprime La Suma De Los Dígitos De Un Número Utilizando Un Bucle `While`.
+
+// Imprime Los Caracteres De Una Cadena En Orden Inverso Utilizando Un Bucle `While`.
+
+// Calcula El Número De Dígitos De Un Número Utilizando Un Bucle `While`.
+
+// Imprime Los Números Impares Del 1 Al 50 Utilizando Un Bucle `While`.
+
+// Calcula El Producto De Los Números Del 1 Al 10 Utilizando Un Bucle `While`.
+
+// Imprime Los Números Del 1 Al 100, Pero Reemplaza Los Múltiplos De 3 Por "Fizz" Y Los Múltiplos De 5 Por "Buzz". Utiliza Un Bucle `While`.
+
+// Imprime Los Primeros 10 Números Triangulares Utilizando Un Bucle `While`.
+
+// Imprime Los Números Del 1 Al 100, Pero Solo Los Que Son Divisibles Por 7 Utilizando Un Bucle `While`.
+
+// Imprime Los Números Del 1 Al 100, Pero Solo Los Que Contienen El Dígito 5 Utilizando Un Bucle `While`.
+
+// Imprime La Suma De Los Números Impares Del 1 Al 100 Utilizando Un Bucle `While`.
+
+// Imprime Los Números Perfectos Del 1 Al 1000 Utilizando Un Bucle `While`.
 
 // Operadores Ternarios
 // Comprueba Si Una Variable X Es Mayor Que 10. Si Es Cierto, Asigna 1 A Otra Variable Llamada Resultado; De Lo Contrario, Asigna 0.
@@ -1412,7 +1499,7 @@
 // Verifica Si Una Variable Es De Tipo Booleano Primitivo (True O False).
 // Verifica Si Una Variable Es De Tipo Objeto Primitivo.
 // Verifica Si Una Variable Es De Tipo Cadena De Texto Primitiva.
-// Verifica Si Una Variable Es De Tipo Número Primitivo.
+// Verifia Si Una Variable Es De Tipo Número Primitivo.
 // Verifica Si Una Variable Es De Tipo Símbolo Primitivo.
 // Verifica Si Una Variable Es De Tipo Función Primitiva.
 // Verifica Si Una Variable Es De Tipo Indefinido O Nulo.
@@ -1424,6 +1511,146 @@
 // Verifica Si Una Variable Es De Tipo Nulo O Símbolo.
 
 
+// Operaciones De Comparacion
+
+// Compara Si 5 Es Igual A 5.
+
+// let a = 5
+// let b = 5
+
+// if(a = b){
+//   console.log("Los numeros son iguales")
+// }else{
+//   console.log("Negativo")
+// }
+
+// Compara Si 10 Es Mayor Que 7.
+
+// let a = 10;
+// let b = 7;
+
+// if(a = b){
+//   console.log("10 Es Mayor Que 7")
+// }else{
+//   console.log("10 No Es Mayor Que 7")
+// }
+
+// Compara Si 3 Es Menor Que 5.
+
+// let a = 3;
+// let b = 5;
+
+// if(a = b){
+//   console.log("3 Es Menor Que 5")
+// }else{
+//   console.log("3 No Es Menor Que 5")
+// }
+
+// Compara Si "Hola" Es Igual A "Hola".
+
+
+
+// Compara Si True Es Igual A False.
+
+
+
+// Compara Si 10 Es Mayor O Igual Que 8.
+
+
+
+// Compara Si 4 Es Menor O Igual Que 2.
+
+
+
+// Compara Si "Perro" Es Distinto De "Gato".
+
+
+
+// Compara Si True Es Estrictamente Igual A True.
+
+
+
+// Compara Si 7 Es Estrictamente Menor Que "7".
+
+
+
+// Compara Si False Es Estrictamente Distinto De 0.
+
+
+
+// Compara Si "Hola" Es Estrictamente Igual A "Hola".
+
+
+
+// Compara Si 12 Es Estrictamente Mayor Que 12.
+
+
+
+// Compara Si 6 Es Estrictamente Menor O Igual Que 6.
+
+
+
+// Compara Si "Verde" Es Estrictamente Distinto De "Azul".
+
+
+
+// Compara Si True Es Igual A 1.
+
+
+
+// Compara Si 9 Es Mayor Que "8".
+
+
+
+// Compara Si Null Es Igual A Undefined.
+
+
+
+// Compara Si "Hola" Es Menor O Igual Que "Adios".
+
+
+
+// Compara Si NaN Es Distinto De NaN.
+
+
+
+// Compara Si True Es Estrictamente Igual A 1.
+
+
+
+// Compara Si 15 Es Estrictamente Menor Que 10.
+
+
+
+// Compara Si "Manzana" Es Estrictamente Distinto De "Manzana".
+
+
+
+// Compara Si False Es Estrictamente Mayor O Igual Que 0.
+
+
+
+// Compara Si Undefined Es Estrictamente Igual A Null.
+
+
+
+// Compara Si "Azul" Es Estrictamente Menor O Igual Que "Azul".
+
+
+
+// Conceptos Básicos JS
+
+
+
+// Estructuras de datos
+
+
+
+// Análisis de algoritmos
+
+
+
+// Ejercicios Logicos y pracicos
 
 
 

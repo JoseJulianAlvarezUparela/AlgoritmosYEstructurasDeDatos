@@ -734,9 +734,9 @@
 
 
 
-const userDiv = document.querySelector('[data-user-id]');
-const userId = userDiv.dataset.userId;
-const username = userDiv.dataset.username;
+// const userDiv = document.querySelector('[data-user-id]');
+// const userId = userDiv.dataset.userId;
+// const username = userDiv.dataset.username;
 
-const deleteButton = document.querySelector('[data-action="eliminar"]');
-const itemId = deleteButton.dataset.itemId;
+// const deleteButton = document.querySelector('[data-action="eliminar"]');
+// const itemId = deleteButton.dataset.itemId;
