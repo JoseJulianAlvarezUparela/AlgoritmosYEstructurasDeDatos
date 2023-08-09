@@ -740,3 +740,33 @@
 
 // const deleteButton = document.querySelector('[data-action="eliminar"]');
 // const itemId = deleteButton.dataset.itemId;
+
+
+
+// const elemento = document.getElementById('mi-elemento');
+// elemento.classList.add('mi-clase');
+
+// const elemento = document.getElementById('mi-elemento');
+// elemento.classList.add('mi-clase');
+
+
+// elemento.classList.remove('mi-clase');
+
+
+// elemento.classList.toggle('mi-clase');
+
+
+// if (elemento.classList.contains('mi-clase')) {
+//     // Realizar algo si el elemento tiene la clase
+// }
+
+// if (elemento.classList.contains('mi-clase')) {
+//     //     // Realizar algo si el elemento tiene la clase
+//     }
+
+// elemento.style.color = 'red'; // Cambiar color de texto
+// elemento.style.backgroundColor = 'blue'; // Cambiar color de fondo
+
+
+
+
