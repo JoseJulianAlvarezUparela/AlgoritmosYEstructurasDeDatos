@@ -262,7 +262,8 @@
       Estos métodos te proporcionan el siguiente y el anterior elemento hermano (excluyendo nodos de texto y comentarios)
     </p>
 
-    <img src="assets/DOM_20.png" alt="">
+    <img src="assets/DOM_20.png" >
+
 
     <h3>querySelector y querySelectorAll</h3>
 
@@ -281,16 +282,224 @@
     <img src="assets/DOM_22.png">
 
     <h2>Creando Elementos y Fragmentos</h2>
+
+    <p>
+      Puedes crear nuevos elementos HTML en JavaScript utilizando el método document.createElement() y luego personalizarlos según tus necesidades. Aquí hay un ejemplo de cómo crear un nuevo párrafo  p:
+    </p>
+
+    <img src="assets/DOM_23.png">
+
+    <h3>Creación de Fragmentos</h3>
+
+    <p>
+      Los fragmentos son útiles cuando deseas crear y manipular múltiples elementos sin afectar el rendimiento al realizar múltiples modificaciones en el DOM. Puedes utilizar un fragmento para agregar varios elementos antes de insertarlos en el DOM, lo que reduce la cantidad de operaciones de repintado.
+    </p>
+
+    <img src="assets/DOM_24.png">
+    
+
     <h2>Templates HTML</h2>
-    <h2>Modificando Elementos ( Old Style )</h2>
+    
+    <p>
+      Los templates en HTML son una característica que te permite definir fragmentos de contenido que no se renderizan cuando la página se carga inicialmente, pero que puedes clonar y activar más tarde utilizando JavaScript. Los templates son útiles cuando deseas reutilizar bloques de contenido en diferentes partes de tu página sin tener que crear elementos y fragmentos dinámicamente.
+    </p>
+
+    <img src="assets/DOM_25.png">
+
+    <p>
+      En este ejemplo, hemos definido un template dentro del elemento template. Luego, mediante JavaScript, hemos agregado un evento al botón "Mostrar Template". Cuando se hace clic en el botón, clonamos el contenido del template utilizando document.importNode() y lo agregamos al cuerpo del documento.
+    </p>
+
+    <p>
+      Los templates son especialmente útiles cuando necesitas generar elementos complejos o repetitivos en respuesta a eventos del usuario o para crear contenido dinámico en tu página web.
+    </p>
+  
+    
     <h2>Modificando Elementos ( Cool Style )</h2>
+    
+    <p>
+      Modificar elementos en JavaScript es una tarea común cuando trabajas con el DOM. Puedes cambiar propiedades, contenido, estilos y más. Aquí tienes algunos ejemplos de cómo modificar elementos.
+    </p>
+
+    <h3>Cambiar Contenido</h3>
+
+    <p>
+      Para cambiar el contenido de un elemento, puedes acceder a su propiedad textContent o innerHTML. Aquí tienes un ejemplo que cambia el contenido de un párrafo
+    </p>
+
+    <img src="assets/DOM_26.png">
+
+    <h3>Cambiar Atributos:</h3>
+
+    <p>
+      Puedes modificar los atributos de un elemento utilizando las propiedades del elemento. Aquí hay un ejemplo que cambia el atributo src de una imagen.
+    </p>
+
+    <img src="assets/DOM_27.png" >
+
+    <h3>Cambiar Estilos</h3>
+
+    <p>
+      Para cambiar los estilos de un elemento, puedes acceder a la propiedad style del elemento y asignar valores a sus propiedades CSS. Aquí hay un ejemplo que cambia el color de fondo de un elemento.
+    </p>
+
+    <img src="assets/DOM_28.png" >
+
+    <h3>Agregar/Quitar Clases</h3>
+
+    <p>
+      Puedes agregar o quitar clases de un elemento para aplicar estilos o funcionalidades específicas. Utiliza las propiedades classList.add() y classList.remove() para ello. Aquí tienes un ejemplo.
+    </p>
+
+    <img src="assets/DOM_29.png">
+    
     <h2>Manejadores de Eventos</h2>
+
+    <p>
+      Los manejadores de eventos en JavaScript son funciones que se ejecutan en respuesta a un evento específico que ocurre en un elemento del DOM, como hacer clic en un botón, mover el mouse sobre un elemento, presionar una tecla, etc. Aquí tienes algunos ejemplos de cómo trabajar con manejadores de eventos
+    </p>
+
+    <h3>Agregar un Manejador de Evento</h3>
+
+    <p>
+      Puedes agregar un manejador de evento a un elemento utilizando el método addEventListener(). Aquí tienes un ejemplo que agrega un manejador de evento de clic a un botón
+    </p>
+    
+    <img src="assets/DOM_30.png">
+
+    <h3>Pasar Parámetros a un Manejador de Evento</h3>
+  
+    <p>
+      Si necesitas pasar parámetros personalizados a tu manejador de evento, puedes hacerlo utilizando una función anónima. Aquí hay un ejemplo que muestra cómo pasar un mensaje personalizado al hacer clic en un botón
+    </p>
+
+    <img src="assets/DOM_31.png">
+
+    <h3>Remover un Manejador de Evento</h3>
+
+    <p>
+      Si deseas quitar un manejador de evento de un elemento, puedes utilizar el método removeEventListener(). Es importante que la función pasada al removeEventListener() sea la misma que se pasó al addEventListener(). Aquí tienes un ejemplo
+    </p>
+
+    <p>
+      Estos son solo ejemplos básicos de cómo trabajar con manejadores de eventos en JavaScript. Puedes utilizarlos para responder a una variedad de eventos en tus páginas web y aplicaciones. Si tienes más preguntas o necesitas más ejemplos, no dudes en preguntar.
+    </p>
+
+    <h2>Tipos de eventos</h2>
+
+
+    <h3>Evento de Clic (<code>click</code>):</h3>
+
+      <p>Se dispara cuando un elemento es clicado.</p>
+
+      <img src="assets/DOM_33.png">
+
+      <h3>Evento de Cambio (<code>change</code>):</h3>
+
+      <p>Se dispara cuando el valor de un elemento cambia, como en inputs de tipo texto o select.</p>
+
+      <img src="assets/DOM_34.png">
+
+      <h3>Evento de Teclado (<code>keydown</code>, <code>keyup</code>, <code>keypress</code>):</h3>
+
+      <p>Se disparan cuando se presiona o suelta una tecla del teclado.</p>
+
+      <img src="assets/DOM_35.png">
+
+      <h3>Evento de Enfoque (<code>focus</code>, <code>blur</code>):</h3>
+
+      <p>Se disparan cuando un elemento obtiene o pierde el enfoque.</p>
+
+      <img src="assets/DOM_36.png">
+
+      <h3>Evento de Mouse (<code>mouseover</code>, <code>mouseout</code>, <code>mousemove</code>):</h3>
+
+      <p>Se disparan cuando el mouse se mueve sobre un elemento, entra en él o sale de él.</p>
+
+      <img src="assets/DOM_37.png">
+
+      <h3>Evento de Carga (<code>load</code>):</h3>
+      <p>Se dispara cuando se completa la carga de un recurso, como una imagen o un documento.</p>
+
+      <img src="assets/DOM_38.png">
+
+      <h3>Evento de Envío de Formulario (<code>submit</code>):</h3>
+
+      <p>Se dispara cuando un formulario es enviado.</p>
+
+      <img src="assets/DOM_39.png">
+
+      <h3>Evento de Cambio de Tamaño de Ventana (<code>resize</code>):</h3>
+
+      <p>Se dispara cuando cambia el tamaño de la ventana del navegador.</p>
+
+      <img src="assets/DOM_40.png">
+    
+    
     <h2>Eventos con Parámetros y Remover Eventos</h2>
+
+    <img src="assets/DOM_41.png" >
+    
     <h2>Flujo de Eventos ( Burbuja y Captura )</h2>
+    
+    <p>
+      El flujo de eventos en JavaScript se refiere al orden en el que los eventos son capturados y propagados a través de los elementos del DOM. Hay dos fases principales en el flujo de eventos: la fase de captura y la fase de burbujeo. Aquí tienes una explicación y un ejemplo de cada una
+    </p>
+
+    <h3>Fase de Captura</h3>
+
+    <p>
+      En la fase de captura, el evento se propaga desde el nodo raíz (generalmente el documento) hacia el nodo objetivo. Es decir, los eventos se capturan en los elementos más externos antes de llegar al objetivo real del evento. Esto puede ser útil cuando deseas capturar eventos en elementos padres antes de que se propague al elemento hijo.
+    </p>
+
+    <h3>Ejemplo</h3>
+
+    <p>
+      Supongamos que tienes una estructura de elementos anidados: div p  button. Si haces clic en el botón, el evento pasará primero por el div, luego por el p y finalmente llegará al button. Esto es la fase de captura.
+    </p>
+
+    <img src="assets/DOM_42.png">
+    
     <h2>stopPropagation & preventDefault</h2>
+
+    <p>
+      stopPropagation y preventDefault son dos métodos importantes en JavaScript para controlar el flujo de eventos y evitar el comportamiento predeterminado de los eventos. Aquí te explico cómo funcionan y te proporciono ejemplos de su uso
+    </p>
+
+    <h3>stopPropagation</h3>
+
+    <p>
+      El método stopPropagation se utiliza para detener la propagación del evento en el flujo de eventos, lo que significa que el evento ya no se propagará a los elementos padre o hijo. Esto es útil cuando deseas evitar que un evento afecte a otros elementos en el DOM.
+    </p>
+
+    <img src="assets/DOM_43.png">
+
+    <h3>preventDefault</h3>
+
+    <p>
+      El método preventDefault se utiliza para evitar que el comportamiento predeterminado de un evento ocurra. Por ejemplo, cuando haces clic en un enlace, el comportamiento predeterminado es navegar a la URL especificada en el atributo href. Si deseas evitar que el enlace navegue a esa URL, puedes usar preventDefault.
+    </p>
+
+    <img src="assets/DOM_44.png">
+    
     <h2>Delegación de Eventos</h2>
+    
+    <P>
+      La delegación de eventos es una técnica en JavaScript que implica agregar un solo manejador de eventos a un elemento padre en lugar de agregar múltiples manejadores a elementos secundarios individuales. Esto es especialmente útil cuando tienes muchos elementos secundarios con el mismo tipo de evento, ya que ayuda a reducir la sobrecarga de memoria y mejora la eficiencia. 
+    </P>
+
+    <P>
+      Supongamos que tienes una lista de elementos li dentro de un elemento ul, y deseas que algo suceda cuando haces clic en cada elemento de la lista. En lugar de agregar un manejador de eventos a cada elemento li, puedes agregar un único manejador de eventos al elemento ul y determinar qué elemento li fue clicado.
+    </P>
+
+    <img src="assets/DOM_44.png">
+    
     <h2>BOM: Propiedades y Eventos</h2>
+    
+    
     <h2>BOM: Métodos</h2>
+
+    
     <h2>BOM: Objetos: URL, Historial y Navegador</h2>
 
       
@@ -401,4 +610,7 @@
 
 </body>
 </html>
+
+
+
 

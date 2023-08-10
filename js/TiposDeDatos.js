@@ -794,3 +794,138 @@
 
 // const childElement = document.getElementById('child');
 // const closestParent = childElement.closest('.parent-class');
+
+
+
+// // Crear un nuevo elemento <p>
+// var newParagraph = document.createElement("p");
+
+// // Agregar contenido al párrafo
+// newParagraph.textContent = "Este es un nuevo párrafo creado con JavaScript.";
+
+// // Agregar el párrafo al DOM
+// document.body.appendChild(newParagraph);
+
+
+// // Crear un fragmento
+// var fragment = document.createDocumentFragment();
+
+// // Crear varios elementos y agregarlos al fragmento
+// for (var i = 1; i <= 5; i++) {
+//     var listItem = document.createElement("li");
+//     listItem.textContent = "Elemento " + i;
+//     fragment.appendChild(listItem);
+// }
+
+// // Insertar el fragmento en una lista existente en el DOM
+// var list = document.getElementById("mi-lista");
+// list.appendChild(fragment);
+
+// Obtener el elemento de párrafo por su ID
+// var paragraph = document.getElementById("mi-parrafo");
+
+// // Cambiar el contenido usando textContent
+// paragraph.textContent = "Nuevo contenido del párrafo";
+
+// // Obtener la imagen por su ID
+// var image = document.getElementById("mi-imagen");
+
+// // Cambiar el atributo src
+// image.src = "nueva-imagen.jpg";
+
+
+// Obtener el elemento por su ID
+// var element = document.getElementById("mi-elemento");
+
+// // Cambiar el color de fondo
+// element.style.backgroundColor = "blue";
+
+// // Obtener el elemento por su ID
+// var box = document.getElementById("mi-caja");
+
+// // Agregar una clase
+// box.classList.add("nueva-clase");
+
+// // Quitar una clase
+// box.classList.remove("clase-antigua");
+
+// var boton = document.getElementById("mi-boton");
+
+// // Agregar un manejador de evento de clic al botón
+// boton.addEventListener("click", function() {
+//     alert("¡Hiciste clic en el botón!");
+// });
+
+
+// let boton = document.getElementById("mi-boton");
+// let mensaje = "¡Hola desde el botón!";
+
+// // Agregar un manejador de evento de clic al botón
+// boton.addEventListener("click", function() {
+//     alert(mensaje);
+// });
+
+
+// let boton = document.getElementById("mi-boton");
+
+// function miManejadorDeClic() {
+//     alert("¡Hiciste clic en el botón!");
+// }
+
+// // Agregar el manejador de evento de clic al botón
+// boton.addEventListener("click", miManejadorDeClic);
+
+// // Remover el manejador de evento de clic del botón
+// boton.removeEventListener("click", miManejadorDeClic);
+
+
+// let boton = document.getElementById("mi-boton");
+// boton.addEventListener("click", function() {
+//     alert("¡Hiciste clic en el botón!");
+// });
+
+
+// let input = document.getElementById("mi-input");
+// input.addEventListener("change", function() {
+//     console.log("El valor cambió a: " + input.value);
+// });
+
+// document.addEventListener("keydown", function(event) {
+//     if (event.key === "Enter") {
+//         console.log("Presionaste la tecla Enter");
+//     }
+// });
+
+
+// let input = document.getElementById("mi-input");
+// input.addEventListener("focus", function() {
+//     console.log("El input obtuvo el enfoque");
+// });
+
+
+// let elemento = document.getElementById("mi-elemento");
+// elemento.addEventListener("mouseover", function() {
+//     console.log("El mouse está sobre el elemento");
+// });
+
+
+// window.addEventListener("load", function() {
+//     console.log("La página se ha cargado completamente");
+// });
+
+
+// let formulario = document.getElementById("mi-formulario");
+// formulario.addEventListener("submit", function(event) {
+//     event.preventDefault(); // Evita que el formulario se envíe
+//     console.log("El formulario fue enviado");
+// });
+
+// window.addEventListener("resize", function() {
+//     console.log("El tamaño de la ventana cambió");
+// });
+
+
+
+
+
+
