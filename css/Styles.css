@@ -93,7 +93,10 @@ img{
     width: 30vw;
 } 
 
-
+hr{
+    height: .3rem;
+    background-color: #212121;
+}
 
 @media screen and (max-width: 1100px) {
     main{
@@ -284,6 +287,10 @@ section .content {
         background-color: #212121;
         border-radius: 5px; /* Radio de borde del thumb */
       }
+
+    hr{
+        height: .2rem;
+    }
       
     
 
