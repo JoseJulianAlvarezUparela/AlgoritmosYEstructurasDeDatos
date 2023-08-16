@@ -88,14 +88,64 @@
           <button class="delete">Eliminar</button>
         </td>
       </tr>
-    </template>
+    </template>  
 
     <h2>API REST: CRUD con Fetch</h2>
 
-    <section class="crud">
+    <img src="assets/AJAX_8.png" >
+    <img src="assets/AJAX_9.png" >
+
+    <section class="crud_2">
       <article>
-        <h2 class="crud-title">Agregar Santo</h2>
-        <form class="crud-form">
+        <h2 class="crud-title_2">Agregar Santo</h2>
+        <form class="crud-form_2">
+          <input type="text" name="nombre_2" placeholder="nombre" required>
+          <br>
+          <input type="text" name="constelacion_2" placeholder="constelación" required>
+          <br>
+          <input type="submit" value="Enviar">
+          <input type="hidden" name="id_2">
+        </form>
+      </article>
+
+
+      <article>
+        <h2>Ver Santos</h2>
+        <table class="crud-table_2">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Constelación</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </article>
+
+
+    </section>
+    <template id="crud-template_2">
+      <tr>
+        <td class="name_2"></td>
+        <td class="constellation_2"></td>
+        <td>
+          <button class="edit_2">Editar</button>
+          <button class="delete_2">Eliminar</button>
+        </td>
+      </tr>
+    </template>
+
+    <h2>API REST: CRUD con Axios</h2>
+
+    <img src="assets/AJAX_10.png">
+
+    <img src="assets/AJAX_11.png">
+
+    <section class="crud_3">
+      <article>
+        <h2 class="crud-title_3">Agregar Santo</h2>
+        <form class="crud-form_3">
           <input type="text" name="nombre" placeholder="nombre" required>
           <br>
           <input type="text" name="constelacion" placeholder="constelación" required>
@@ -106,7 +156,7 @@
       </article>
       <article>
         <h2>Ver Santos</h2>
-        <table class="crud-table">
+        <table class="crud-table_3">
           <thead>
             <tr>
               <th>Nombre</th>
@@ -118,21 +168,17 @@
         </table>
       </article>
     </section>
-    <template id="crud-template">
+    <template id="crud-template_3">
       <tr>
-        <td class="name"></td>
-        <td class="constellation"></td>
+        <td class="name_3"></td>
+        <td class="constellation_3"></td>
         <td>
-          <button class="edit">Editar</button>
-          <button class="delete">Eliminar</button>
+          <button class="edit_3">Editar</button>
+          <button class="delete_3">Eliminar</button>
         </td>
       </tr>
     </template>
 
-
-    <h2>API REST: CRUD con Axios</h2>
-
-      
 
     <div class="Nav">
         
@@ -240,6 +286,7 @@
     
     <script src="js/Script.js"></script>
     <script src="js/AJAX.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
 
 </body>
 </html>

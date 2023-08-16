@@ -200,158 +200,374 @@
 
   // Seleccionar elementos del DOM
 
+
+  const d = document,
+  $table = d.querySelector(".crud-table"),
+  $form = d.querySelector(".crud-form"),
+  $title = d.querySelector(".crud-title"),
+  $template = d.getElementById("crud-template").content,
+  $fragment = d.createDocumentFragment();
+
+  // Función para realizar peticiones AJAX
+  const ajax = (options) => {
+  let { url, method, success, error, data } = options;
+  const xhr = new XMLHttpRequest();
+
+  xhr.addEventListener("readystatechange", e => {
+  if (xhr.readyState !== 4) return;
+
+  if (xhr.status >= 200 && xhr.status < 300) {
+  let json = JSON.parse(xhr.responseText);
+  success(json);
+  } else {
+  let message = xhr.statusText || "Ocurrió un error";
+  error(`Error ${xhr.status}: ${message}`);
+  }
+  });
+
+  xhr.open(method || "GET", url);
+  xhr.setRequestHeader("Content-type", "application/json; charset=utf-8");
+  xhr.send(JSON.stringify(data));
+  }
+
+  // Función para obtener y mostrar todos los datos
+  const getAll = () => {
+  ajax({
+  url: "http://localhost:3000/santos",
+  success: (res) => {
+  console.log(res);
+
+  res.forEach(el => {
+  // Actualizar datos en la plantilla
+  $template.querySelector(".name").textContent = el.nombre;
+  $template.querySelector(".constellation").textContent = el.constelacion;
+  $template.querySelector(".edit").dataset.id = el.id;
+  $template.querySelector(".edit").dataset.name = el.nombre;
+  $template.querySelector(".edit").dataset.constellation = el.constelacion;
+  $template.querySelector(".delete").dataset.id = el.id;
+
+  // Clonar la plantilla y agregarla al fragmento
+  let $clone = d.importNode($template, true);
+  $fragment.appendChild($clone);
+  });
+
+  // Agregar el fragmento a la tabla
+  $table.querySelector("tbody").appendChild($fragment);
+  },
+  error: (err) => {
+  console.log(err);
+  // Mostrar error después de la tabla
+  $table.insertAdjacentHTML("afterend", `<p><b>${err}</b></p>`);
+  }
+  })
+  }
+
+  // Cargar datos al cargar el DOM
+  d.addEventListener("DOMContentLoaded", getAll);
+
+  // Escuchar eventos de envío en el formulario
+  d.addEventListener("submit", e => {
+  if (e.target === $form) {
+  e.preventDefault();
+
+  if (!e.target.id.value) {
+  // Crear un nuevo registro - POST
+  ajax({
+  url: "http://localhost:3000/santos",
+  method: "POST",
+  success: (res) => location.reload(),
+  error: (err) => $form.insertAdjacentHTML("afterend", `<p><b>${err}</b></p>`),
+  data: {
+      nombre: e.target.nombre.value,
+      constelacion: e.target.constelacion.value
+  }
+  });
+  } else {
+  // Actualizar un registro existente - PUT
+  ajax({
+  url: `http://localhost:3000/santos/${e.target.id.value}`,
+  method: "PUT",
+  success: (res) => location.reload(),
+  error: (err) => $form.insertAdjacentHTML("afterend", `<p><b>${err}</b></p>`),
+  data: {
+      nombre: e.target.nombre.value,
+      constelacion: e.target.constelacion.value
+  }
+  });
+  }
+  }
+  });
+
+  // Escuchar eventos de clic en la página
+  d.addEventListener("click", e => {
+  if (e.target.matches(".edit")) {
+  // Llenar el formulario con los datos del elemento clicado
+  $title.textContent = "Editar Santo";
+  $form.nombre.value = e.target.dataset.name;
+  $form.constelacion.value = e.target.dataset.constellation;
+  $form.id.value = e.target.dataset.id;
+  }
+
+  if (e.target.matches(".delete")) {
+  let isDelete = confirm(`¿Estás seguro de eliminar el id ${e.target.dataset.id}?`);
+
+  if (isDelete) {
+  // Eliminar un registro - DELETE
+  ajax({
+  url: `http://localhost:3000/santos/${e.target.dataset.id}`,
+  method: "DELETE",
+  success: (res) => location.reload(),
+  error: (err) => alert(err)
+  });
+  }
+  }
+  });
+
+
+
 (() => {
     const d = document,
-    $table = d.querySelector(".crud-table"),
-    $form = d.querySelector(".crud-form"),
-    $title = d.querySelector(".crud-title"),
-    $template = d.getElementById("crud-template").content,
-    $fragment = d.createDocumentFragment();
-
-    // Función para realizar peticiones AJAX
-    const ajax = (options) => {
-    let { url, method, success, error, data } = options;
-    const xhr = new XMLHttpRequest();
-
-    xhr.addEventListener("readystatechange", e => {
-    if (xhr.readyState !== 4) return;
-
-    if (xhr.status >= 200 && xhr.status < 300) {
-    let json = JSON.parse(xhr.responseText);
-    success(json);
-    } else {
-    let message = xhr.statusText || "Ocurrió un error";
-    error(`Error ${xhr.status}: ${message}`);
-    }
-    });
-
-    xhr.open(method || "GET", url);
-    xhr.setRequestHeader("Content-type", "application/json; charset=utf-8");
-    xhr.send(JSON.stringify(data));
-    }
-
-    // Función para obtener y mostrar todos los datos
-    const getAll = () => {
-    ajax({
-    url: "http://localhost:3000/santos",
-    success: (res) => {
-    console.log(res);
-
-    res.forEach(el => {
-    // Actualizar datos en la plantilla
-    $template.querySelector(".name").textContent = el.nombre;
-    $template.querySelector(".constellation").textContent = el.constelacion;
-    $template.querySelector(".edit").dataset.id = el.id;
-    $template.querySelector(".edit").dataset.name = el.nombre;
-    $template.querySelector(".edit").dataset.constellation = el.constelacion;
-    $template.querySelector(".delete").dataset.id = el.id;
-
-    // Clonar la plantilla y agregarla al fragmento
-    let $clone = d.importNode($template, true);
-    $fragment.appendChild($clone);
-    });
-
-    // Agregar el fragmento a la tabla
-    $table.querySelector("tbody").appendChild($fragment);
-    },
-    error: (err) => {
-    console.log(err);
-    // Mostrar error después de la tabla
-    $table.insertAdjacentHTML("afterend", `<p><b>${err}</b></p>`);
-    }
-    })
-    }
-
-    // Cargar datos al cargar el DOM
-    d.addEventListener("DOMContentLoaded", getAll);
-
-    // Escuchar eventos de envío en el formulario
-    d.addEventListener("submit", e => {
-    if (e.target === $form) {
-    e.preventDefault();
-
-    if (!e.target.id.value) {
-    // Crear un nuevo registro - POST
-    ajax({
-    url: "http://localhost:3000/santos",
-    method: "POST",
-    success: (res) => location.reload(),
-    error: (err) => $form.insertAdjacentHTML("afterend", `<p><b>${err}</b></p>`),
-    data: {
-        nombre: e.target.nombre.value,
-        constelacion: e.target.constelacion.value
-    }
-    });
-    } else {
-    // Actualizar un registro existente - PUT
-    ajax({
-    url: `http://localhost:3000/santos/${e.target.id.value}`,
-    method: "PUT",
-    success: (res) => location.reload(),
-    error: (err) => $form.insertAdjacentHTML("afterend", `<p><b>${err}</b></p>`),
-    data: {
-        nombre: e.target.nombre.value,
-        constelacion: e.target.constelacion.value
-    }
-    });
-    }
-    }
-    });
-
-    // Escuchar eventos de clic en la página
-    d.addEventListener("click", e => {
-    if (e.target.matches(".edit")) {
-    // Llenar el formulario con los datos del elemento clicado
-    $title.textContent = "Editar Santo";
-    $form.nombre.value = e.target.dataset.name;
-    $form.constelacion.value = e.target.dataset.constellation;
-    $form.id.value = e.target.dataset.id;
-    }
-
-    if (e.target.matches(".delete")) {
-    let isDelete = confirm(`¿Estás seguro de eliminar el id ${e.target.dataset.id}?`);
-
-    if (isDelete) {
-    // Eliminar un registro - DELETE
-    ajax({
-    url: `http://localhost:3000/santos/${e.target.dataset.id}`,
-    method: "DELETE",
-    success: (res) => location.reload(),
-    error: (err) => alert(err)
-    });
-    }
-    }
-    });
-})()
-
-(() => {
-    const d = document,
-    $table = d.querySelector(".crud-table"),
-    $form = d.querySelector(".crud-form"),
-    $title = d.querySelector(".crud-title"),
-    $template = d.getElementById("crud-template").content,
-    $fragment = d.createDocumentFragment();
+      $table = d.querySelector(".crud-table_2"),
+      $form = d.querySelector(".crud-form_2"),
+      $title = d.querySelector(".crud-title_2"),
+      $template = d.getElementById("crud-template_2").content,
+      $fragment = d.createDocumentFragment();
 
     const getAll = async () => {
-        try {
-            let res = await fetch("http://localhost:3000/santos")
+      try {
+        let res = await fetch("http://localhost:3000/santos"),
+          json = await res.json();
 
-            json = await res.json()
+        if (!res.ok) throw { status: res.status, statusText: res.statusText };
 
-            if(!res.ok) throw {status: res.status, statusText: res.statusText}
+        console.log(json);
+        json.forEach(el => {
+          $template.querySelector(".name_2").textContent = el.nombre;
+          $template.querySelector(".constellation_2").textContent = el.constelacion;
+          $template.querySelector(".edit_2").dataset.id_2 = el.id;
+          $template.querySelector(".edit_2").dataset.name_2 = el.nombre;
+          $template.querySelector(".edit_2").dataset.constellation_2 = el.constelacion;
+          $template.querySelector(".delete_2").dataset.id_2 = el.id;
 
-        } catch (err) {
-            let message = err.statusText || "Ocurrio un error"
+          let $clone = d.importNode($template, true);
+          $fragment.appendChild($clone);
+        });
 
-            $table.insertAdjacentHTML("afterend", `<p><b>${err.status}: ${message}</b></p>`)
-
-        }
+        $table.querySelector("tbody").appendChild($fragment);
+      } catch (err) {
+        let message = err.statusText || "Ocurrió un error";
+        $table.insertAdjacentHTML("afterend", `<p><b>Error ${err.status}: ${message}</b></p>`);
+      }
     }
 
-    d.addEventListener("DOMContentLoaded", getAll)
+    d.addEventListener("DOMContentLoaded", getAll);
 
     d.addEventListener("submit", async e => {
-        
-    })
+      if (e.target === $form) {
+        e.preventDefault();
 
-})()
+        if (!e.target.id_2.value) {
+          //Create - POST
+          try {
+            let options = {
+              method: "POST",
+              headers: {
+                "Content-type": "application/json; charset=utf-8"
+              },
+              body: JSON.stringify({
+                nombre: e.target.nombre_2.value,
+                constelacion: e.target.constelacion_2.value
+              })
+            };
+            let res = await fetch("http://localhost:3000/santos", options);
+            let json = await res.json();
+
+            if (!res.ok) throw { status: res.status, statusText: res.statusText };
+
+            location.reload();
+          } catch (err) {
+            let message = err.statusText || "Ocurrió un error";
+            $form.insertAdjacentHTML("afterend", `<p><b>Error ${err.status}: ${message}</b></p>`);
+          }
+        } else {
+          //Update - PUT
+          try {
+            let options = {
+              method: "PUT",
+              headers: {
+                "Content-type": "application/json; charset=utf-8"
+              },
+              body: JSON.stringify({
+                nombre: e.target.nombre_2.value,
+                constelacion: e.target.constelacion_2.value
+              })
+            };
+            let res = await fetch(`http://localhost:3000/santos/${e.target.id_2.value}`, options);
+            let json = await res.json();
+
+            if (!res.ok) throw { status: res.status, statusText: res.statusText };
+
+            location.reload();
+          } catch (err) {
+            let message = err.statusText || "Ocurrió un error";
+            $form.insertAdjacentHTML("afterend", `<p><b>Error ${err.status}: ${message}</b></p>`);
+          }
+        }
+      }
+    });
+
+    d.addEventListener("click", async e => {
+      if (e.target.matches(".edit_2")) {
+        $title.textContent = "Editar Santo";
+        $form.nombre_2.value = e.target.dataset.name_2;
+        $form.constelacion_2.value = e.target.dataset.constellation_2;
+        $form.id_2.value = e.target.dataset.id_2;
+      }
+
+      if (e.target.matches(".delete_2")) {
+        let isDelete = confirm(`¿Estás seguro de eliminar el id ${e.target.dataset.id_2}?`);
+
+        if (isDelete) {
+          //Delete - DELETE
+          try {
+            let options = {
+              method: "DELETE",
+              headers: {
+                "Content-type": "application/json; charset=utf-8"
+              }
+            };
+            let res = await fetch(`http://localhost:3000/santos/${e.target.dataset.id_2}`, options);
+            let json = await res.json();
+
+            if (!res.ok) throw { status: res.status, statusText: res.statusText };
+
+            location.reload();
+          } catch (err) {
+            let message = err.statusText || "Ocurrió un error";
+            alert(`Error ${err.status}: ${message}`);
+          }
+        }
+      }
+    });
+  })();
+
+
+
+(() => {
+  const d = document,
+    $table = d.querySelector(".crud-table_3"),
+    $form = d.querySelector(".crud-form_3"),
+    $title = d.querySelector(".crud-title_3"),
+    $template = d.getElementById("crud-template_3").content,
+    $fragment = d.createDocumentFragment();
+
+  const getAll = async () => {
+    try {
+      let res = await axios.get("http://localhost:3000/santos"),
+        json = await res.data;
+
+      console.log(json);
+
+      json.forEach(el => {
+        $template.querySelector(".name_3").textContent = el.nombre;
+        $template.querySelector(".constellation_3").textContent = el.constelacion;
+        $template.querySelector(".edit_3").dataset.id = el.id;
+        $template.querySelector(".edit_3").dataset.name = el.nombre;
+        $template.querySelector(".edit_3").dataset.constellation = el.constelacion;
+        $template.querySelector(".delete_3").dataset.id = el.id;
+
+        let $clone = d.importNode($template, true);
+        $fragment.appendChild($clone);
+      });
+
+      $table.querySelector("tbody").appendChild($fragment);
+    } catch (err) {
+      let message = err.statusText || "Ocurrió un error";
+      $table.insertAdjacentHTML("afterend", `<p><b>Error ${err.status}: ${message}</b></p>`);
+    }
+  };
+
+  d.addEventListener("DOMContentLoaded", getAll);
+
+  d.addEventListener("submit", async e => {
+    if (e.target === $form) {
+      e.preventDefault();
+
+      if (!e.target.id.value) {
+        // Create - POST
+        try {
+          let options = {
+            method: "POST",
+            headers: {
+              "Content-type": "application/json; charset=utf-8"
+            },
+            data: JSON.stringify({
+              nombre: e.target.nombre.value,
+              constelacion: e.target.constelacion.value
+            })
+          };
+          let res = await axios.post("http://localhost:3000/santos", options);
+          let json = await res.data;
+
+          location.reload();
+        } catch (err) {
+          let message = err.statusText || "Ocurrió un error";
+          $form.insertAdjacentHTML("afterend", `<p><b>Error ${err.status}: ${message}</b></p>`);
+        }
+      } else {
+        // Update - PUT
+        try {
+          let options = {
+            method: "PUT",
+            headers: {
+              "Content-type": "application/json; charset=utf-8"
+            },
+            data: JSON.stringify({
+              nombre: e.target.nombre.value,
+              constelacion: e.target.constelacion.value
+            })
+          };
+          let res = await axios.put(`http://localhost:3000/santos/${e.target.id.value}`, options);
+          let json = await res.data;
+
+          location.reload();
+        } catch (err) {
+          let message = err.statusText || "Ocurrió un error";
+          $form.insertAdjacentHTML("afterend", `<p><b>Error ${err.status}: ${message}</b></p>`);
+        }
+      }
+    }
+  });
+
+  d.addEventListener("click", async e => {
+    if (e.target.matches(".edit_3")) {
+      $title.textContent = "Editar Santo";
+      $form.nombre.value = e.target.dataset.name;
+      $form.constelacion.value = e.target.dataset.constellation;
+      $form.id.value = e.target.dataset.id;
+    }
+
+    if (e.target.matches(".delete_3")) {
+      let isDelete = confirm(`¿Estás seguro de eliminar el id ${e.target.dataset.id}?`);
+
+      if (isDelete) {
+        // Delete - DELETE
+        try {
+          let options = {
+            method: "DELETE",
+            headers: {
+              "Content-type": "application/json; charset=utf-8"
+            }
+          };
+          let res = await axios.delete(`http://localhost:3000/santos/${e.target.dataset.id}`, options);
+          let json = await res.data;
+
+          location.reload();
+        } catch (err) {
+          let message = err.statusText || "Ocurrió un error";
+          alert(`Error ${err.status}: ${message}`);
+        }
+      }
+    }
+  });
+})();

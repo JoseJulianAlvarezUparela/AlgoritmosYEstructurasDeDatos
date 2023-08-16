@@ -19,6 +19,21 @@
       "id": 5,
       "nombre": "Ikki",
       "constelacion": "Fénix"
+    },
+    {
+      "nombre": "hola",
+      "constelacion": "Julian",
+      "id": 6
+    },
+    {
+      "nombre": "Hola 2",
+      "constelacion": "Julian 5",
+      "id": 7
+    },
+    {
+      "nombre": "hola",
+      "constelacion": "Pega",
+      "id": 8
     }
   ],
   "dioses": [
