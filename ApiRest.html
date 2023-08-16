@@ -16,15 +16,121 @@
 
 
     <h2>Introducción a las API REST</h2>
+
+    <p><em>API REST</em> es un estilo arquitectónico para diseñar aplicaciones en red. Es un conjunto de restricciones y principios que definen cómo se exponen y acceden a recursos a través de la web. Las APIs (<em>Interfaces de Programación de Aplicaciones</em>) construidas utilizando el estilo arquitectónico REST se conocen comúnmente como <em>APIs RESTful</em>.</p>
+    <h2>Principios y Conceptos Clave</h2>
+    <ol>
+        <li><strong>Recursos:</strong> En REST, todo se considera un recurso. Los recursos pueden ser entidades tangibles como objetos o conceptos intangibles como servicios. Cada recurso se identifica mediante una URL única (Localizador de Recursos Uniforme).</li>
+        <li><strong>Métodos HTTP:</strong> Las APIs RESTful utilizan métodos estándar de HTTP para realizar operaciones en los recursos. Los métodos HTTP más comunes son:
+            <ul>
+                <li><strong>GET:</strong> Obtener una representación de un recurso.</li>
+                <li><strong>POST:</strong> Crear un nuevo recurso.</li>
+                <li><strong>PUT:</strong> Actualizar un recurso existente o crear un recurso si no existe.</li>
+                <li><strong>DELETE:</strong> Eliminar un recurso.</li>
+                <li><strong>PATCH:</strong> Actualizar parcialmente un recurso.</li>
+            </ul>
+        </li>
+        <li><strong>Sin Estado:</strong> Cada solicitud del cliente al servidor debe contener toda la información necesaria para entender y procesar la solicitud. El servidor no almacena ningún contexto del cliente entre solicitudes. Esto mejora la escalabilidad y simplifica el diseño del servidor.</li>
+        <li><strong>Interfaz Uniforme:</strong> La interfaz entre los clientes y los servidores debe ser consistente y bien definida. Esto generalmente implica el uso de métodos HTTP estándar y seguir una convención de nomenclatura de recursos.</li>
+        <li><strong>Representación:</strong> Los recursos pueden tener múltiples representaciones (por ejemplo, JSON, XML, HTML) para adaptarse a los diferentes requisitos del cliente. Los clientes especifican la representación deseada en las cabeceras de la solicitud HTTP.</li>
+        <li><strong>HATEOAS (Hipertexto como Motor del Estado de la Aplicación):</strong> Un principio que sugiere que la API debe proporcionar enlaces a recursos relacionados en la respuesta, permitiendo a los clientes descubrir y navegar por la API sin depender de conocimiento previo.</li>
+        <li><strong>Caché:</strong> Las respuestas pueden marcarse como cacheables o no cacheables, lo que permite a los clientes e intermediarios optimizar la eficiencia de la red.</li>
+        <li><strong>Sistema en Capas:</strong> Un cliente no puede determinar si está conectado directamente al servidor o a un intermediario, como un balanceador de carga. Esta separación de responsabilidades permite flexibilidad y escalabilidad.</li>
+    </ol>
+    <p>Las APIs RESTful se utilizan ampliamente para construir servicios web debido a su simplicidad, escalabilidad y facilidad de integración. Se utilizan comúnmente para desarrollar aplicaciones que requieren intercambio de datos e interacción entre diferentes sistemas o servicios. Las APIs proporcionadas por servicios web populares como Twitter, Facebook y Google siguen el estilo arquitectónico REST.</p>
+
+    
     <h2>JSON Server - API falsa local</h2>
-    <h2>Consumo de datos con cliente REST</h2>
-    <h2>API REST: CRUD</h2>
-    <h2>API REST: CRUD con AJAX ( 1 / 2 )</h2>
-    <h2>API REST: CRUD con AJAX ( 2 / 2 )</h2>
-    <h2>API REST: CRUD con Fetch ( 1 / 2 )</h2>
-    <h2>API REST: CRUD con Fetch ( 2 / 2 )</h2>
-    <h2>API REST: CRUD con Axios ( 1 / 2 )</h2>
-    <h2>API REST: CRUD con Axios ( 2 / 2 )</h2>
+
+    <img src="assets/dbjson.png">
+    
+    <h2>API REST: CRUD con AJAX</h2>
+
+    <img src="assets/Ajax_7.png">
+    <img src="assets/Ajax_6.png">
+
+    <section class="crud">
+      <article>
+        <h2 class="crud-title">Agregar Santo</h2>
+        <form class="crud-form">
+          <input type="text" name="nombre" placeholder="nombre" required>
+          <br>
+          <input type="text" name="constelacion" placeholder="constelación" required>
+          <br>
+          <input type="submit" value="Enviar">
+          <input type="hidden" name="id">
+        </form>
+      </article>
+
+
+      <article>
+        <h2>Ver Santos</h2>
+        <table class="crud-table">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Constelación</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </article>
+    </section>
+
+
+    <template id="crud-template">
+      <tr>
+        <td class="name"></td>
+        <td class="constellation"></td>
+        <td>
+          <button class="edit">Editar</button>
+          <button class="delete">Eliminar</button>
+        </td>
+      </tr>
+    </template>
+
+    <h2>API REST: CRUD con Fetch</h2>
+
+    <section class="crud">
+      <article>
+        <h2 class="crud-title">Agregar Santo</h2>
+        <form class="crud-form">
+          <input type="text" name="nombre" placeholder="nombre" required>
+          <br>
+          <input type="text" name="constelacion" placeholder="constelación" required>
+          <br>
+          <input type="submit" value="Enviar">
+          <input type="hidden" name="id">
+        </form>
+      </article>
+      <article>
+        <h2>Ver Santos</h2>
+        <table class="crud-table">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Constelación</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </article>
+    </section>
+    <template id="crud-template">
+      <tr>
+        <td class="name"></td>
+        <td class="constellation"></td>
+        <td>
+          <button class="edit">Editar</button>
+          <button class="delete">Eliminar</button>
+        </td>
+      </tr>
+    </template>
+
+
+    <h2>API REST: CRUD con Axios</h2>
 
       
 
@@ -133,6 +239,7 @@
     
     
     <script src="js/Script.js"></script>
+    <script src="js/AJAX.js"></script>
 
 </body>
 </html>

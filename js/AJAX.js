@@ -198,8 +198,160 @@
 
 
 
+  // Seleccionar elementos del DOM
 
+(() => {
+    const d = document,
+    $table = d.querySelector(".crud-table"),
+    $form = d.querySelector(".crud-form"),
+    $title = d.querySelector(".crud-title"),
+    $template = d.getElementById("crud-template").content,
+    $fragment = d.createDocumentFragment();
 
+    // Función para realizar peticiones AJAX
+    const ajax = (options) => {
+    let { url, method, success, error, data } = options;
+    const xhr = new XMLHttpRequest();
 
+    xhr.addEventListener("readystatechange", e => {
+    if (xhr.readyState !== 4) return;
 
+    if (xhr.status >= 200 && xhr.status < 300) {
+    let json = JSON.parse(xhr.responseText);
+    success(json);
+    } else {
+    let message = xhr.statusText || "Ocurrió un error";
+    error(`Error ${xhr.status}: ${message}`);
+    }
+    });
 
+    xhr.open(method || "GET", url);
+    xhr.setRequestHeader("Content-type", "application/json; charset=utf-8");
+    xhr.send(JSON.stringify(data));
+    }
+
+    // Función para obtener y mostrar todos los datos
+    const getAll = () => {
+    ajax({
+    url: "http://localhost:3000/santos",
+    success: (res) => {
+    console.log(res);
+
+    res.forEach(el => {
+    // Actualizar datos en la plantilla
+    $template.querySelector(".name").textContent = el.nombre;
+    $template.querySelector(".constellation").textContent = el.constelacion;
+    $template.querySelector(".edit").dataset.id = el.id;
+    $template.querySelector(".edit").dataset.name = el.nombre;
+    $template.querySelector(".edit").dataset.constellation = el.constelacion;
+    $template.querySelector(".delete").dataset.id = el.id;
+
+    // Clonar la plantilla y agregarla al fragmento
+    let $clone = d.importNode($template, true);
+    $fragment.appendChild($clone);
+    });
+
+    // Agregar el fragmento a la tabla
+    $table.querySelector("tbody").appendChild($fragment);
+    },
+    error: (err) => {
+    console.log(err);
+    // Mostrar error después de la tabla
+    $table.insertAdjacentHTML("afterend", `<p><b>${err}</b></p>`);
+    }
+    })
+    }
+
+    // Cargar datos al cargar el DOM
+    d.addEventListener("DOMContentLoaded", getAll);
+
+    // Escuchar eventos de envío en el formulario
+    d.addEventListener("submit", e => {
+    if (e.target === $form) {
+    e.preventDefault();
+
+    if (!e.target.id.value) {
+    // Crear un nuevo registro - POST
+    ajax({
+    url: "http://localhost:3000/santos",
+    method: "POST",
+    success: (res) => location.reload(),
+    error: (err) => $form.insertAdjacentHTML("afterend", `<p><b>${err}</b></p>`),
+    data: {
+        nombre: e.target.nombre.value,
+        constelacion: e.target.constelacion.value
+    }
+    });
+    } else {
+    // Actualizar un registro existente - PUT
+    ajax({
+    url: `http://localhost:3000/santos/${e.target.id.value}`,
+    method: "PUT",
+    success: (res) => location.reload(),
+    error: (err) => $form.insertAdjacentHTML("afterend", `<p><b>${err}</b></p>`),
+    data: {
+        nombre: e.target.nombre.value,
+        constelacion: e.target.constelacion.value
+    }
+    });
+    }
+    }
+    });
+
+    // Escuchar eventos de clic en la página
+    d.addEventListener("click", e => {
+    if (e.target.matches(".edit")) {
+    // Llenar el formulario con los datos del elemento clicado
+    $title.textContent = "Editar Santo";
+    $form.nombre.value = e.target.dataset.name;
+    $form.constelacion.value = e.target.dataset.constellation;
+    $form.id.value = e.target.dataset.id;
+    }
+
+    if (e.target.matches(".delete")) {
+    let isDelete = confirm(`¿Estás seguro de eliminar el id ${e.target.dataset.id}?`);
+
+    if (isDelete) {
+    // Eliminar un registro - DELETE
+    ajax({
+    url: `http://localhost:3000/santos/${e.target.dataset.id}`,
+    method: "DELETE",
+    success: (res) => location.reload(),
+    error: (err) => alert(err)
+    });
+    }
+    }
+    });
+})()
+
+(() => {
+    const d = document,
+    $table = d.querySelector(".crud-table"),
+    $form = d.querySelector(".crud-form"),
+    $title = d.querySelector(".crud-title"),
+    $template = d.getElementById("crud-template").content,
+    $fragment = d.createDocumentFragment();
+
+    const getAll = async () => {
+        try {
+            let res = await fetch("http://localhost:3000/santos")
+
+            json = await res.json()
+
+            if(!res.ok) throw {status: res.status, statusText: res.statusText}
+
+        } catch (err) {
+            let message = err.statusText || "Ocurrio un error"
+
+            $table.insertAdjacentHTML("afterend", `<p><b>${err.status}: ${message}</b></p>`)
+
+        }
+    }
+
+    d.addEventListener("DOMContentLoaded", getAll)
+
+    d.addEventListener("submit", async e => {
+        
+    })
+
+})()
