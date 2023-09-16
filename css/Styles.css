@@ -199,10 +199,10 @@ a{
 
 .navegation {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
 }
 
 .navegation i {
