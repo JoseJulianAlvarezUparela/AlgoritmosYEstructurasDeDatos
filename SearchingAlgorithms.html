@@ -15,19 +15,265 @@
 
     <h1>Algoritmos de Busqueda</h1>
 
+    <p>
+      Un algoritmo de búsqueda es un conjunto de instrucciones que están diseñadas para localizar un elemento con ciertas propiedades dentro de una estructura de datos. Por ejemplo, un algoritmo de búsqueda podría utilizarse para encontrar un registro correspondiente a cierta persona en una base de datos, o el mejor movimiento en una partida de ajedrez.
+    </p>
+
     <h2>Tipos de algoritmos de busqueda</h2>
 
     <ul>
         <li>Búsqueda lineal</li>
-        <li>Búsqueda lineal centinela</li>
+
+        <p>
+          Un algoritmo de búsqueda lineal es un algoritmo que busca un elemento en una estructura de datos secuencial, comparando cada elemento de la estructura con el elemento buscado.
+      </p>
+      
+      <p>
+          Una analogía sencilla para entender el concepto de búsqueda lineal es la siguiente: imagínate que tienes una lista de números ordenados, como [1, 2, 3, 4, 5]. Si quieres encontrar el número 3, puedes empezar por el primer elemento de la lista y compararlo con el número buscado. Si son iguales, has encontrado el elemento. Si no son iguales, comparas el siguiente elemento de la lista, y así sucesivamente. Si llegas al final de la lista sin haber encontrado el elemento buscado, significa que el elemento no está presente en la lista.
+      </p>
+      
+      <img src="assets/Busqueda Lineal.png">
+
+      <p>La búsqueda lineal es un algoritmo de búsqueda simple y fácil de implementar. Funciona comparando cada elemento de una estructura de datos secuencial con el elemento buscado. Si el elemento buscado se encuentra en la estructura, el algoritmo devuelve la posición del elemento en la estructura. Si el elemento buscado no se encuentra en la estructura, el algoritmo devuelve un valor especial, como None o -1.</p>
+
+      <p>La complejidad temporal de la búsqueda lineal es O(n), donde n es el tamaño de la estructura de datos. Esto significa que el tiempo de ejecución del algoritmo es proporcional al tamaño de la estructura de datos.</p>
+  
+      <p>La búsqueda lineal es un algoritmo eficiente para estructuras de datos pequeñas. Sin embargo, para estructuras de datos grandes, la búsqueda lineal puede ser ineficiente. En estos casos, es preferible utilizar algoritmos de búsqueda más eficientes, como la búsqueda binaria.</p>
+  
+
+        <li><strong>Búsqueda lineal centinela</strong></li>
+
+        <p>La búsqueda lineal centinela es una variante de la búsqueda lineal que añade un elemento especial al final de la estructura de datos que se está buscando. Este elemento especial, llamado centinela, tiene un valor mayor que cualquier otro elemento de la estructura de datos.</p>
+
+        <p>La búsqueda lineal centinela funciona de la siguiente manera:</p>
+
+        <img src="assets/BusquedaLinealCentinela.png">
+
+        <ul>
+            <li>El algoritmo comienza comparando el elemento actual con el elemento centinela. Si el elemento actual es igual al centinela, el algoritmo devuelve -1, lo que indica que el elemento buscado no se encuentra en la estructura de datos.</li>
+            <li>Si el elemento actual no es igual al centinela, el algoritmo compara el elemento actual con el elemento buscado. Si los elementos coinciden, el algoritmo devuelve la posición del elemento actual en la estructura de datos.</li>
+            <li>Si los elementos no coinciden, el algoritmo avanza al siguiente elemento de la estructura de datos.</li>
+        </ul>
+
+        <p>La búsqueda lineal centinela tiene las siguientes ventajas sobre la búsqueda lineal:</p>
+
+        <ul>
+            <li>Garantiza que el algoritmo siempre terminará, incluso si el elemento buscado no se encuentra en la estructura de datos. Esto se debe a que el algoritmo siempre compara el elemento actual con el centinela, y el centinela tiene un valor mayor que cualquier otro elemento de la estructura de datos.</li>
+            <li>Reduce la cantidad de comparaciones necesarias en algunos casos. Esto se debe a que el algoritmo puede terminar la búsqueda antes de llegar al final de la estructura de datos si encuentra un elemento que es mayor o igual que el elemento buscado.</li>
+        </ul>
+
+        <p>La búsqueda lineal centinela tiene las siguientes desventajas sobre la búsqueda lineal:</p>
+
+        <ul>
+            <li>Añade un elemento adicional a la estructura de datos. Esto puede ser un inconveniente en algunos casos.</li>
+            <li>El algoritmo puede ser ligeramente más lento que la búsqueda lineal en algunos casos. Esto se debe a que el algoritmo debe comparar el elemento actual con el centinela en cada iteración.</li>
+        </ul>
+
+
         <li>Búsqueda binaria</li>
+
+        <h1>La Búsqueda Binaria</h1>
+        <p>La búsqueda binaria es un algoritmo de búsqueda eficiente que funciona con listas ordenadas. El algoritmo funciona dividiendo la lista en dos mitades, comparando el elemento buscado con el elemento en el medio de la lista. Si el elemento buscado es igual al elemento del medio, el algoritmo ha encontrado el elemento. Si el elemento buscado es menor que el elemento del medio, el algoritmo busca en la mitad inferior de la lista. Si el elemento buscado es mayor que el elemento del medio, el algoritmo busca en la mitad superior de la lista.</p>
+        
+        <p>El algoritmo continúa dividiendo la lista en dos mitades hasta que encuentra el elemento buscado o hasta que la lista se haya reducido a un solo elemento.</p>
+        
+        <p>La búsqueda binaria tiene una complejidad temporal de O(log n), donde n es el tamaño de la lista. Esto significa que el tiempo de ejecución del algoritmo es proporcional al logaritmo del tamaño de la lista.</p>
+        
+        <p>Aquí hay un ejemplo de código de la búsqueda binaria en JavaScript:</p>
+
+        <img src="assets/BusquedaBinaria.png">
+
         <li>Búsqueda meta binaria | Búsqueda binaria unilateral</li>
+
+        <p>La búsqueda meta binaria es un algoritmo de búsqueda que funciona de manera similar a la búsqueda binaria, pero con una diferencia clave: la búsqueda meta binaria puede comenzar en cualquier punto de la lista, en lugar de siempre comenzar en el principio.</p>
+
+        <p>La búsqueda meta binaria funciona de la siguiente manera:</p>
+        <ol>
+            <li>El algoritmo comienza en el punto especificado por el usuario.</li>
+            <li>El algoritmo compara el elemento en el punto actual con el elemento buscado.</li>
+            <li>Si el elemento en el punto actual es igual al elemento buscado, el algoritmo devuelve el índice del punto actual.</li>
+            <li>Si el elemento en el punto actual es menor que el elemento buscado, el algoritmo busca en la mitad superior de la lista.</li>
+            <li>Si el elemento en el punto actual es mayor que el elemento buscado, el algoritmo busca en la mitad inferior de la lista.</li>
+            <li>El algoritmo continúa dividiendo la lista en dos mitades hasta que encuentra el elemento buscado o hasta que la lista se haya reducido a un solo elemento.</li>
+        </ol>
+    
+        <p>La búsqueda meta binaria tiene una complejidad temporal de O(log n), donde n es el tamaño de la lista. Esto significa que el tiempo de ejecución del algoritmo es proporcional al logaritmo del tamaño de la lista.</p>
+    
+        <p>Imagina que estás buscando un libro en una biblioteca. La biblioteca está ordenada alfabéticamente, y sabes que el libro que estás buscando está en algún lugar de la biblioteca.</p>
+    
+        <p>La búsqueda binaria sería como empezar a buscar en el principio de la biblioteca y seguir dividiendo la biblioteca en dos mitades hasta que encuentres el libro que estás buscando.</p>
+    
+        <p>La búsqueda meta binaria sería como empezar a buscar en cualquier lugar de la biblioteca que elijas. Por ejemplo, podrías empezar por el estante del medio, o por el estante más alto. Luego, seguirías dividiendo la biblioteca en dos mitades hasta que encontraras el libro que estás buscando.</p>
+    
+    
+        <p>Aquí hay un ejemplo de código de la búsqueda meta binaria en JavaScript:</p>
+
+        <img src="assets/busquedaMetaBinaria.png" >
+
         <li>Búsqueda ternaria</li>
+
+        <p>La búsqueda ternaria es un algoritmo de búsqueda que funciona de manera similar a la búsqueda binaria, pero con una diferencia clave: la búsqueda ternaria divide la lista en tres partes en lugar de dos.</p>
+
+        <p>La búsqueda ternaria funciona de la siguiente manera:</p>
+        <ol>
+            <li>El algoritmo encuentra el punto medio de la lista.</li>
+            <li>El algoritmo compara el elemento en el punto medio con el elemento buscado.</li>
+            <li>Si el elemento en el punto medio es igual al elemento buscado, el algoritmo devuelve el índice del punto medio.</li>
+            <li>Si el elemento en el punto medio es menor que el elemento buscado, el algoritmo busca en la mitad superior de la lista.</li>
+            <li>Si el elemento en el punto medio es mayor que el elemento buscado, el algoritmo busca en la mitad inferior de la lista.</li>
+            <li>El algoritmo continúa dividiendo la lista en tres partes hasta que encuentra el elemento buscado o hasta que la lista se haya reducido a un solo elemento.</li>
+        </ol>
+    
+        <p>La búsqueda ternaria tiene una complejidad temporal de O(log3 n), donde n es el tamaño de la lista. Esto significa que el tiempo de ejecución del algoritmo es proporcional al logaritmo del tamaño de la lista.</p>
+    
+        <p>Imagina que estás buscando un libro en una biblioteca. La biblioteca está ordenada alfabéticamente, y sabes que el libro que estás buscando está en algún lugar de la biblioteca.</p>
+    
+        <p>La búsqueda binaria sería como empezar a buscar en el principio de la biblioteca y seguir dividiendo la biblioteca en dos mitades hasta que encuentres el libro que estás buscando.</p>
+    
+        <p>La búsqueda ternaria sería como empezar a buscar en el estante del medio de la biblioteca. Luego, seguirías dividiendo la biblioteca en tres partes hasta que encontraras el libro que estás buscando.</p>
+    
+        <p>Aquí hay un ejemplo de código de la búsqueda ternaria en JavaScript:</p>
+    
+        <img src="assets/busquedaTernaria.png">
+
         <li>Salto de búsqueda</li>
+
+        <p>La búsqueda de salto es un algoritmo de búsqueda que funciona de manera similar a la búsqueda binaria, pero con una diferencia clave: la búsqueda de salto utiliza un salto inicial para reducir el rango de búsqueda.</p>
+
+        <p>La búsqueda de salto funciona de la siguiente manera:</p>
+    
+        <ol>
+            <li>El algoritmo calcula el salto inicial, que es una función del tamaño de la lista.</li>
+            <li>El algoritmo compara el elemento en la posición del salto inicial con el elemento buscado.</li>
+            <li>Si el elemento en la posición del salto inicial es igual al elemento buscado, el algoritmo devuelve el índice del salto inicial.</li>
+            <li>Si el elemento en la posición del salto inicial es menor que el elemento buscado, el algoritmo busca en la mitad superior de la lista.</li>
+            <li>Si el elemento en la posición del salto inicial es mayor que el elemento buscado, el algoritmo busca en la mitad inferior de la lista.</li>
+            <li>El algoritmo continúa dividiendo la lista en dos mitades hasta que encuentra el elemento buscado o hasta que la lista se haya reducido a un solo elemento.</li>
+        </ol>
+    
+        <p>La búsqueda de salto tiene una complejidad temporal de O(log n / log log n), donde n es el tamaño de la lista. Esto significa que el tiempo de ejecución del algoritmo es proporcional al logaritmo del logaritmo del tamaño de la lista.</p>
+    
+    
+        <p>Imagina que estás buscando un libro en una biblioteca. La biblioteca está ordenada alfabéticamente, y sabes que el libro que estás buscando está en algún lugar de la biblioteca.</p>
+    
+        <p>La búsqueda binaria sería como empezar a buscar en el principio de la biblioteca y seguir dividiendo la biblioteca en dos mitades hasta que encuentres el libro que estás buscando.</p>
+    
+        <p>La búsqueda de salto sería como empezar a buscar en el estante del medio de la biblioteca. Luego, seguirías dividiendo la biblioteca en dos mitades hasta que encontraras el libro que estás buscando.</p>
+    
+        <p>Aquí hay un ejemplo de código de la búsqueda de salto en JavaScript:</p>
+    
+        <img src="assets/busquedaSalto.png">
+
         <li>Búsqueda de interpolación</li>
+
+        <p>La búsqueda de interpolación es un algoritmo de búsqueda que funciona de manera similar a la búsqueda binaria, pero con una diferencia clave: la búsqueda de interpolación utiliza una fórmula para estimar la posición del elemento buscado.</p>
+
+        <p>La búsqueda de interpolación funciona de la siguiente manera:</p>
+    
+        <ol>
+            <li>El algoritmo calcula la posición estimada del elemento buscado.</li>
+            <li>El algoritmo compara el elemento en la posición estimada con el elemento buscado.</li>
+            <li>Si el elemento en la posición estimada es igual al elemento buscado, el algoritmo devuelve el índice de la posición estimada.</li>
+            <li>Si el elemento en la posición estimada es menor que el elemento buscado, el algoritmo busca en la mitad superior de la lista.</li>
+            <li>Si el elemento en la posición estimada es mayor que el elemento buscado, el algoritmo busca en la mitad inferior de la lista.</li>
+            <li>El algoritmo continúa dividiendo la lista en dos mitades hasta que encuentra el elemento buscado o hasta que la lista se haya reducido a un solo elemento.</li>
+        </ol>
+    
+        <p>La búsqueda de interpolación tiene una complejidad temporal de O(log log n), donde n es el tamaño de la lista. Esto significa que el tiempo de ejecución del algoritmo es proporcional al logaritmo del logaritmo del tamaño de la lista.</p>
+    
+        <h2>Analogía</h2>
+    
+        <p>Imagina que estás buscando un libro en una biblioteca. La biblioteca está ordenada alfabéticamente, y sabes que el libro que estás buscando está en algún lugar de la lista.</p>
+    
+        <p>La búsqueda binaria sería como empezar a buscar en el principio de la biblioteca y seguir dividiendo la biblioteca en dos mitades hasta que encuentres el libro que estás buscando.</p>
+    
+        <p>La búsqueda de interpolación sería como empezar a buscar en el estante del medio de la biblioteca y luego seguir dividiendo la biblioteca en dos mitades, pero utilizando una fórmula para estimar la posición del libro que estás buscando.</p>
+    
+        <h2>Código JavaScript</h2>
+    
+        <p>Aquí hay un ejemplo de código de la búsqueda de interpolación en JavaScript:</p>
+    
+        <img src="assets/busquedaInterpolación.png">
+
         <li>Búsqueda exponencial</li>
+
+        <p>La búsqueda exponencial es un algoritmo de búsqueda que funciona de manera similar a la búsqueda binaria, pero con una diferencia clave: la búsqueda exponencial utiliza un factor de salto exponencial para reducir el rango de búsqueda.</p>
+
+        <p>La búsqueda exponencial funciona de la siguiente manera:</p>
+    
+        <ol>
+            <li>El algoritmo calcula el factor de salto.</li>
+            <li>El algoritmo compara el elemento en la posición del factor de salto con el elemento buscado.</li>
+            <li>Si el elemento en la posición del factor de salto es igual al elemento buscado, el algoritmo devuelve el índice del factor de salto.</li>
+            <li>Si el elemento en la posición del factor de salto es menor que el elemento buscado, el algoritmo busca en la mitad superior de la lista.</li>
+            <li>Si el elemento en la posición del factor de salto es mayor que el elemento buscado, el algoritmo busca en la mitad inferior de la lista.</li>
+            <li>El algoritmo continúa dividiendo la lista en dos mitades hasta que encuentra el elemento buscado o hasta que la lista se haya reducido a un solo elemento.</li>
+        </ol>
+    
+        <p>La búsqueda exponencial tiene una complejidad temporal de O(log(log n)), donde n es el tamaño de la lista. Esto significa que el tiempo de ejecución del algoritmo es proporcional al logaritmo del logaritmo del tamaño de la lista.</p>
+    
+        <h2>Analogía</h2>
+    
+        <p>Imagina que estás buscando un libro en una biblioteca. La biblioteca está ordenada alfabéticamente, y sabes que el libro que estás buscando está en algún lugar de la lista.</p>
+    
+        <p>La búsqueda binaria sería como empezar a buscar en el principio de la biblioteca y seguir dividiendo la biblioteca en dos mitades hasta que encuentres el libro que estás buscando.</p>
+    
+        <p>La búsqueda exponencial sería como empezar a buscar en el estante del medio de la biblioteca y luego seguir dividiendo la biblioteca en dos mitades, pero utilizando un factor de salto exponencial para reducir el rango de búsqueda.</p>
+
+        <img src="assets/busquedaExponencial.png">
+
         <li>Búsqueda de Fibonacci</li>
+
+        <p>La búsqueda de Fibonacci es un algoritmo de búsqueda que funciona de manera similar a la búsqueda binaria, pero con una diferencia clave: la búsqueda de Fibonacci utiliza una secuencia de Fibonacci para reducir el rango de búsqueda.</p>
+
+        <p>La búsqueda de Fibonacci funciona de la siguiente manera:</p>
+        <ol>
+            <li>El algoritmo calcula los primeros números de Fibonacci.</li>
+            <li>El algoritmo compara el elemento en la posición del número de Fibonacci actual con el elemento buscado.</li>
+            <li>Si el elemento en la posición del número de Fibonacci actual es igual al elemento buscado, el algoritmo devuelve el índice del número de Fibonacci actual.</li>
+            <li>Si el elemento en la posición del número de Fibonacci actual es menor que el elemento buscado, el algoritmo busca en la mitad superior de la lista.</li>
+            <li>Si el elemento en la posición del número de Fibonacci actual es mayor que el elemento buscado, el algoritmo busca en la mitad inferior de la lista.</li>
+            <li>El algoritmo continúa dividiendo la lista en dos mitades hasta que encuentra el elemento buscado o hasta que la lista se haya reducido a un solo elemento.</li>
+        </ol>
+    
+        <p>La búsqueda de Fibonacci tiene una complejidad temporal de O(log(log n)), donde n es el tamaño de la lista. Esto significa que el tiempo de ejecución del algoritmo es proporcional al logaritmo del logaritmo del tamaño de la lista.</p>
+    
+    
+        <p>Imagina que estás buscando un libro en una biblioteca. La biblioteca está ordenada alfabéticamente, y sabes que el libro que estás buscando está en algún lugar de la lista.</p>
+    
+        <p>La búsqueda binaria sería como empezar a buscar en el principio de la biblioteca y seguir dividiendo la biblioteca en dos mitades hasta que encuentres el libro que estás buscando.</p>
+    
+        <p>La búsqueda de Fibonacci sería como empezar a buscar en el estante del medio de la biblioteca y luego seguir dividiendo la biblioteca en dos mitades, pero utilizando una secuencia de Fibonacci para reducir el rango de búsqueda.</p>
+    
+    
+        <p>Aquí hay un ejemplo de código de la búsqueda de Fibonacci en JavaScript:</p>
+    
+        <img src="assets/busquedaFibonacci.png">
+
         <li>La búsqueda binaria ubicua</li>
+
+        <p>La búsqueda binaria ubicua es una variante de la búsqueda binaria que permite encontrar el índice de un elemento en una lista ordenada, incluso si el elemento no está presente en la lista.</p>
+        
+        <p>La búsqueda binaria ubicua funciona de la siguiente manera:</p>
+
+        <img src="assets/busquedaBinariaUbicua.png">
+
+        <ul>
+          <li>El algoritmo encuentra el índice del elemento más cercano al elemento buscado.</li>
+          <li>Si el elemento más cercano es igual al elemento buscado, el algoritmo devuelve el índice del elemento.</li>
+            <li>Si el elemento más cercano es menor que el elemento buscado, el algoritmo devuelve -1.</li>
+            <li>Si el elemento más cercano es mayor que el elemento buscado, el algoritmo devuelve el índice del elemento más cercano más 1.</li>
+          </ul>
+
+        <p>La búsqueda binaria ubicua tiene una complejidad temporal de O(log n), donde n es el tamaño de la lista. Esto significa que el tiempo de ejecución del algoritmo es proporcional al logaritmo del tamaño de la lista.</p>
+
+        <p>Imagina que estás buscando un libro en una biblioteca. La biblioteca está ordenada alfabéticamente, y sabes que el libro que estás buscando está en algún lugar de la lista.</p>
+
+        <p>La búsqueda binaria sería como empezar a buscar en el principio de la biblioteca y seguir dividiendo la biblioteca en dos mitades hasta que encuentres el libro que estás buscando. Si no encuentras el libro, el algoritmo devuelve -1.</p>
+
+        <p>La búsqueda binaria ubicua sería como empezar a buscar en el principio de la biblioteca y seguir dividiendo la biblioteca en dos mitades hasta que encuentres el libro más cercano al libro que estás buscando. Si el libro más cercano es igual al libro que estás buscando, el algoritmo devuelve el índice del libro. Si el libro más cercano es menor que el libro que estás buscando, el algoritmo devuelve -1. Si el libro más cercano es mayor que el libro que estás buscando, el algoritmo devuelve el índice del libro más cercano más 1.</p>
+
+        
     </ul>
 
     <h2>Comparaciones</h2>
@@ -170,10 +416,10 @@
     </section> 
 
     <section id="menu5">
-        <a href="#menu5" class="submenu">Ejercicios Practicos Con Orientación</a>
+        <a href="#menu5" class="submenu">Ejercicios Practicos Con Orientación y Componentes</a>
       <div class="submenu-content">
-        <a href="PracticasAJAX.html">PracticasAJAX</a>
-        <a href="PracticasDOM.html">PracticasDOM</a>
+        <a href="PracticasAJAX.html">Practicas AJAX</a>
+        <a href="PracticasDOM.html">Practicas DOM</a>
       </div>
     </section> 
 
@@ -196,6 +442,7 @@
     
     
     <script src="js/Script.js"></script>
+    <script src="js/AnalisisAlgoritmico.js"></script>
 
 
 </body>
