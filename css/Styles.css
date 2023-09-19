@@ -197,6 +197,104 @@ a{
 
 
 
+/************** .cards  ****************/
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+}
+
+.flipCard {
+    background-color: transparent;
+    width: 190px;
+    height: 254px;
+    perspective: 1000px;
+    font-family: sans-serif;
+  }
+  
+  .flipCardContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flipCard:hover .flipCardContent {
+      transform: rotateY(180deg);
+    }
+  
+  .Front, .Back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid #212121;
+    border-radius: 1rem;
+  }
+
+  .Back a {
+    color: #212121;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+  .Back a:hover {
+    border-radius: 20px;
+    margin: 20px;
+    transition-duration: .7s;
+    transform: scale(1.1) rotate(-10deg);
+  }
+  
+  
+  .Front:hover {
+    background: linear-gradient(120deg, #FF8C00 60%, #FF9900 88%,
+       rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
+    color: coral;
+  }
+  
+  .Back {
+    background: linear-gradient(120deg, #FF5C00 30%, #FF8C00 88%,
+       #FF9900 40%, rgb(255, 185, 160) 78%);
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+
+  .FrontCSS:hover {
+    background: linear-gradient(120deg, #0000FF 60%, #007AFF 88%, rgb(195, 211, 255) 40%, rgba(80, 127, 255, 0.603) 48%);
+    color: coral;
+}
+
+.BackCSS {
+    background: linear-gradient(120deg, #0000FF 60%, #007AFF 88%, rgb(195, 211, 255) 40%, rgba(80, 127, 255, 0.603) 48%);
+    color: coral;
+    transform: rotateY(180deg);
+}
+
+
+
+.FrontJS:hover {
+    background: linear-gradient(120deg, #FFFF00 60%, #FFD700 88%, rgb(255, 211, 195) 40%, rgba(255, 252, 80, 0.603) 48%);
+    color: #FFFF00;
+}
+
+.BackJs {
+    background: linear-gradient(120deg, #FFFF00 60%, #FFD700 88%, rgb(255, 211, 195) 40%, rgba(255, 252, 80, 0.603) 48%);
+    color: #FFFF00;
+    transform: rotateY(180deg);
+}
+
+  
+
+/* ************.Navegation  ****************/
+
 .navegation {
     display: flex;
     justify-content: space-between;
