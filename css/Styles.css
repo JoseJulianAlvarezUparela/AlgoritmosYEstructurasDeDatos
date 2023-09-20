@@ -201,7 +201,9 @@ a{
 
 .container{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+    margin-right: 2rem;
 }
 
 .flipCard {
@@ -254,13 +256,13 @@ a{
   
   
   .Front:hover {
-    background: linear-gradient(120deg, #FF8C00 60%, #FF9900 88%,
+    background: linear-gradient(120deg, #FFd900  30%, #FF5C00  88%,
        rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
     color: coral;
   }
   
   .Back {
-    background: linear-gradient(120deg, #FF5C00 30%, #FF8C00 88%,
+    background: linear-gradient(120deg, #ffd900  30%, #FF5C00  88%,
        #FF9900 40%, rgb(255, 185, 160) 78%);
     color: white;
     transform: rotateY(180deg);
@@ -268,12 +270,12 @@ a{
   
 
   .FrontCSS:hover {
-    background: linear-gradient(120deg, #0000FF 60%, #007AFF 88%, rgb(195, 211, 255) 40%, rgba(80, 127, 255, 0.603) 48%);
+    background: linear-gradient(120deg, #007AFF 60%, #0027d4 88%, rgb(195, 211, 255) 40%, rgba(80, 127, 255, 0.603) 48%);
     color: coral;
 }
 
 .BackCSS {
-    background: linear-gradient(120deg, #0000FF 60%, #007AFF 88%, rgb(195, 211, 255) 40%, rgba(80, 127, 255, 0.603) 48%);
+    background: linear-gradient(120deg, #007AFF 60%, #0027d4 88%, rgb(195, 211, 255) 40%, rgba(80, 127, 255, 0.603) 48%);
     color: coral;
     transform: rotateY(180deg);
 }
@@ -291,9 +293,47 @@ a{
     transform: rotateY(180deg);
 }
 
+.FrontNode:hover {
+    background: linear-gradient(120deg, #3cbe3c 60%, #06ee7a 88%, rgb(109, 255, 116) 40%, rgba(80, 255, 118, 0.603) 48%);
+    color: #00FF00;
+}
   
+.BackNode {
+    background: linear-gradient(120deg, #3cbe3c 60%, #389c6a 88%, rgb(57, 255, 90) 40%, rgba(80, 255, 118, 0.603) 48%);
+    color: #00FF00;
+    transform: rotateY(180deg);
+}
 
-/* ************.Navegation  ****************/
+.FrontReact:hover {
+    background: linear-gradient(120deg, #00aeff 60%, #0091aa 88%, rgb(255, 211, 195) 40%, rgba(80, 214, 255, 0.603) 48%);
+    color: #0000FF;
+}
+  
+.BackReact {
+    background: linear-gradient(120deg, #00aeFF 60%, #0d97af 88%, rgb(255, 211, 195) 40%, rgba(80, 214, 255, 0.603) 48%);
+    color: #0000FF;
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+
+  
+  /* **********************************************/
+  /* **********************************************/
+  /* **********************************************/
+  /* ************.Navegation  ****************/
+  /* **********************************************/
+  /* **********************************************/
+  /* **********************************************/
+
+
+
+
+
+
 
 .navegation {
     display: flex;
@@ -384,6 +424,9 @@ section .content {
     max-height: 40px;
     padding: 10px;
   }
+
+  
+  
   
 @media screen and (max-width: 700px) {
     .navegation i {
