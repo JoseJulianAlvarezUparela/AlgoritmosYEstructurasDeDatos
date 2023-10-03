@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/Styles.css">
+    <title>IntroduccionASistemasOperativos</title>
+</head>
+<body>
+
+    <header>
+
+    </header>
+
+    <main>
+
+      <h1>Introduccion ASistemas Operativos</h1>
+
+      <p>Un sistema operativo es un software fundamental que actúa como intermediario entre el hardware de una computadora y las aplicaciones de software que se ejecutan en ella. Es el programa principal que controla y coordina las actividades del hardware de la computadora, proporcionando una interfaz para que los usuarios interactúen con la máquina de manera eficiente.</p>
+    
+      <h2>Funciones principales de un Sistema Operativo:</h2>
+      <ol>
+          <li>Gestión de recursos: Controlan y asignan recursos de hardware como CPU, memoria RAM, dispositivos de entrada y salida, almacenamiento, etc., a las aplicaciones y procesos que se ejecutan en la computadora.</li>
+          <li>Interfaz de usuario: Proporcionan una interfaz gráfica de usuario (GUI) o una interfaz de línea de comandos (CLI) que permite a los usuarios interactuar con la computadora de una manera más amigable y eficiente.</li>
+          <li>Administración de archivos y sistemas de archivos: Organizan y gestionan los archivos y directorios en el almacenamiento de datos, permitiendo el acceso y la manipulación de datos de manera estructurada.</li>
+          <li>Control de procesos: Gestionan la ejecución de múltiples procesos o programas simultáneamente, asignando recursos, programando tareas y administrando la comunicación entre ellos.</li>
+          <li>Seguridad y protección: Garantizan la seguridad y protección de los datos y recursos del sistema, mediante la autenticación de usuarios, la implementación de permisos y la prevención de acceso no autorizado.</li>
+          <li>Administración de dispositivos: Controlan y gestionan dispositivos de hardware como impresoras, discos duros, unidades USB, tarjetas de red y otros periféricos.</li>
+          <li>Administración de memoria: Administran el uso de la memoria RAM, asegurando que los programas tengan acceso a la memoria que necesitan y evitando conflictos de memoria.</li>
+      </ol>
+      
+      <p>Algunos ejemplos de sistemas operativos populares incluyen Microsoft Windows, macOS, Linux, Android y iOS, cada uno adaptado a diferentes tipos de dispositivos y necesidades de usuario. Los sistemas operativos son una parte fundamental de cualquier computadora o dispositivo digital, ya que permiten que todas las demás aplicaciones y servicios funcionen de manera coherente y eficiente.</p>
+
+
+      <h2>¿Como se crean los sistemas operativos?</h2>
+
+
+      <p>La creación de un sistema operativo es un proceso altamente complejo que involucra múltiples disciplinas de la informática y la ingeniería. Los pasos generales incluyen:</p>
+    
+      <ol>
+          <li><strong>Diseño del sistema</strong></li>
+          <li><strong>Desarrollo del kernel</strong></li>
+          <li><strong>Programación de controladores</strong> </li>
+          <li><strong>Desarrollo de utilidades</strong></li>
+          <li><strong>Pruebas y depuración</strong></li>
+          <li><strong>Documentación</strong> </li>
+      </ol>
+
+
+      <h2>Diseño de un sistema operativo</h2>
+
+        <p>El diseño de un sistema operativo es un proceso complejo que requiere la consideración de una serie de factores, como los requisitos del sistema, la arquitectura del hardware, las características del software, y las necesidades de los usuarios.</p>
+
+        <p>En general, un diseño de sistema operativo puede dividirse en las siguientes etapas:</p>
+
+        <ul>
+        <li><strong>Análisis de los requisitos</strong>: En esta etapa, se identifican las necesidades del sistema operativo, tanto a nivel funcional como no funcional. Los requisitos funcionales describen las funciones que debe realizar el sistema operativo, mientras que los requisitos no funcionales describen las propiedades que debe tener el sistema operativo, como el rendimiento, la seguridad, la confiabilidad, etc.</li>
+        <li><strong>Diseño arquitectónico</strong>: En esta etapa, se define la estructura general del sistema operativo. Se identifican los componentes principales del sistema operativo y se describe cómo interactúan entre sí.</li>
+        <li><strong>Diseño detallado</strong>: En esta etapa, se definen los detalles de cada componente del sistema operativo. Se especifican los algoritmos, las estructuras de datos, y las interfaces de programación.</li>
+        <li><strong>Implementación</strong>: En esta etapa, se codifica el sistema operativo.</li>
+        <li><strong>Pruebas</strong>: En esta etapa, se prueba el sistema operativo para garantizar que cumple con los requisitos.</li>
+        </ul>
+
+        <h3>Consideraciones de diseño</h3>
+
+        <ul>
+        <li><strong>Eficiencia</strong>: El sistema operativo debe ser eficiente en el uso de los recursos de hardware.</li>
+        <li><strong>Seguridad</strong>: El sistema operativo debe proteger el sistema de los ataques externos.</li>
+        <li><strong>Confiabilidad</strong>: El sistema operativo debe ser confiable y evitar fallos inesperados.</li>
+        <li><strong>Extensibilidad</strong>: El sistema operativo debe ser extensible para poder añadir nuevas características y funcionalidades.</li>
+        <li><strong>Portabilidad</strong>: El sistema operativo debe ser portable para poder ser ejecutado en diferentes plataformas de hardware.</li>
+        </ul>
+
+        <h3>Modelos de diseño</h3>
+
+        <ul>
+        <li><strong>Modelo monolítico</strong>: En este modelo, todos los componentes del sistema operativo se implementan en un único módulo.</li>
+        <li><strong>Modelo de capas</strong>: En este modelo, el sistema operativo se divide en una serie de capas, cada una de las cuales proporciona un conjunto de servicios.</li>
+        <li><strong>Modelo microkernel</strong>: En este modelo, el núcleo del sistema operativo es muy pequeño y solo proporciona los servicios básicos. El resto de las funciones se implementan en módulos externos.</li>
+        <li><strong>Modelo híbrido</strong>: Este modelo combina características de los modelos anteriores.</li>
+        </ul>
+
+        <p>El modelo de diseño que se elija dependerá de los requisitos del sistema operativo y de las preferencias del equipo de desarrollo.</p>
+
+
+        <h2>Desarrollo del kernel</h2>
+
+        <p>El desarrollo del kernel es el proceso de creación, mantenimiento y mejora del kernel de un sistema operativo. El kernel es el componente principal de un sistema operativo, y es responsable de gestionar los recursos de hardware y software del sistema.</p>
+        
+        <p>El desarrollo del kernel es un proceso complejo y desafiante, ya que requiere un profundo conocimiento de la arquitectura de hardware, el software y los sistemas operativos. El equipo de desarrollo del kernel debe trabajar en estrecha colaboración para garantizar que el kernel sea eficiente, seguro y confiable.</p>
+        
+        <h3>Etapas del Desarrollo del Kernel</h3>
+        <ol>
+            <li><strong>Planificación:</strong> En esta etapa, se identifican los requisitos del kernel y se establece un plan de desarrollo.</li>
+            <li><strong>Diseño:</strong> En esta etapa, se define la estructura y el funcionamiento del kernel.</li>
+            <li><strong>Implementación:</strong> En esta etapa, se escribe el código fuente del kernel.</li>
+            <li><strong>Pruebas:</strong> En esta etapa, se prueba el kernel para garantizar que cumple con los requisitos.</li>
+            <li><strong>Liberación:</strong> En esta etapa, se libera el kernel al público.</li>
+        </ol>
+        
+        <p>El desarrollo del kernel es un proceso continuo, ya que el kernel está constantemente siendo mejorado para añadir nuevas características y funcionalidades.</p>
+        
+        <h3>Consideraciones de Diseño del Kernel</h3>
+
+        <p>Al diseñar un kernel, se deben tener en cuenta una serie de factores, como:</p>
+        <ul>
+            <li>Eficiencia: El kernel debe ser eficiente en el uso de los recursos de hardware.</li>
+            <li>Seguridad: El kernel debe proteger el sistema de los ataques externos.</li>
+            <li>Confiabilidad: El kernel debe ser confiable y evitar fallos inesperados.</li>
+            <li>Extensibilidad: El kernel debe ser extensible para poder añadir nuevas características y funcionalidades.</li>
+            <li>Portabilidad: El kernel debe ser portable para poder ser ejecutado en diferentes plataformas de hardware.</li>
+        </ul>
+        
+        <h3>Modelos de Diseño del Kernel</h3>
+
+        <p>Existen diferentes modelos de diseño para kernels. Los modelos más comunes son:</p>
+        <ul>
+            <li>Modelo monolítico: En este modelo, todos los componentes del kernel se implementan en un único módulo.</li>
+            <li>Modelo de capas: En este modelo, el kernel se divide en una serie de capas, cada una de las cuales proporciona un conjunto de servicios.</li>
+            <li>Modelo microkernel: En este modelo, el kernel es muy pequeño y solo proporciona los servicios básicos. El resto de las funciones se implementan en módulos externos.</li>
+            <li>Modelo híbrido: Este modelo combina características de los modelos anteriores.</li>
+        </ul>
+        
+        <p>El modelo de diseño que se elija dependerá de los requisitos del sistema operativo y de las preferencias del equipo de desarrollo.</p>
+        
+        <h3>Herramientas de Desarrollo del Kernel</h3>
+
+        <p>Existen una serie de herramientas que pueden ayudar en el desarrollo del kernel, como:</p>
+        <ul>
+            <li>Entornos de desarrollo integrados (IDE): Los IDE proporcionan una interfaz gráfica de usuario que facilita la escritura y el depurado del código fuente del kernel.</li>
+            <li>Compiladores: Los compiladores convierten el código fuente del kernel en código máquina que puede ser ejecutado por el hardware.</li>
+            <li>Enrutadores: Los enrutadores vinculan los módulos del kernel entre sí.</li>
+            <li>Herramientas de depuración: Las herramientas de depuración permiten al desarrollador identificar y corregir errores en el código fuente del kernel.</li>
+        </ul>
+        
+        <h3>Ejemplos de Kernels</h3>
+
+        <p>Algunos ejemplos de kernels son:</p>
+        <ul>
+            <li>Linux: El kernel de Linux es un kernel monolítico que es utilizado por una amplia gama de sistemas operativos, incluidos ordenadores personales, servidores y dispositivos móviles.</li>
+            <li>Windows NT: El kernel de Windows NT es un kernel híbrido que es utilizado por el sistema operativo Windows NT y sus derivados.</li>
+            <li>macOS: El kernel de macOS es un kernel monolítico que es utilizado por el sistema operativo macOS.</li>
+            <li>Android: El kernel de Android es un kernel monolítico que es utilizado por el sistema operativo Android.</li>
+        </ul>
+        
+        <p>El desarrollo del kernel es un proceso importante que permite crear sistemas operativos eficientes, seguros y confiables.</p>
+
+
+
+
+        <h2>Programación de Controladores</h2>
+
+        <p>La programación de controladores es el proceso de escribir código para controlar un sistema físico. Los controladores se utilizan en una amplia gama de aplicaciones, incluidas la automatización industrial, el control de procesos y la robótica.</p>
+        
+        <p>Existen diferentes tipos de controladores, cada uno con sus propias características y funcionalidades. Los controladores más comunes son los controladores lógicos programables (PLC), los controladores de lógica programable a bordo (PAC) y los controladores de automatización programables (PAC).</p>
+        
+        <p>Los PLC son dispositivos de propósito general que se utilizan para controlar procesos industriales. Los PAC son dispositivos de propósito específico que se utilizan para controlar procesos específicos. Los PAC son una combinación de PLC y PAC.</p>
+        
+        <p>La programación de controladores se puede realizar en diferentes lenguajes, incluidos:</p>
+        
+        <ul>
+            <li><strong>LADDER:</strong> Un lenguaje gráfico que se basa en diagramas de relés.</li>
+            <li><strong>Structured Text (ST):</strong> Un lenguaje de programación estructurado.</li>
+            <li><strong>Function Block Diagram (FBD):</strong> Un lenguaje gráfico que se basa en bloques de función.</li>
+            <li><strong>Sequential Function Chart (SFC):</strong> Un lenguaje gráfico que se basa en diagramas de flujo.</li>
+        </ul>
+        
+        <p>La elección del lenguaje de programación dependerá de la aplicación y de las preferencias del programador.</p>
+        
+        <p>El proceso de programación de controladores se puede dividir en las siguientes etapas:</p>
+        
+        <ol>
+            <li><strong>Recolección de requisitos:</strong> En esta etapa, se identifican los requisitos del sistema de control.</li>
+            <li><strong>Diseño del sistema:</strong> En esta etapa, se define la estructura y el funcionamiento del sistema de control.</li>
+            <li><strong>Implementación del código:</strong> En esta etapa, se escribe el código para el sistema de control.</li>
+            <li><strong>Pruebas del sistema:</strong> En esta etapa, se prueba el sistema de control para garantizar que funcione correctamente.</li>
+        </ol>
+        
+        <p>La programación de controladores es un proceso complejo que requiere un profundo conocimiento de la automatización industrial, el control de procesos y los lenguajes de programación.</p>
+        
+        <h3>Lenguajes de Programación de Controladores</h3>
+        
+        <p>Los lenguajes de programación de controladores se pueden dividir en dos categorías principales:</p>
+        
+        <ul>
+            <li><strong>Lenguajes gráficos:</strong> Estos lenguajes utilizan diagramas y símbolos para representar el código. Los lenguajes gráficos son más fáciles de aprender y usar que los lenguajes de texto.</li>
+            <li><strong>Lenguajes de texto:</strong> Estos lenguajes utilizan palabras y símbolos para representar el código. Los lenguajes de texto son más poderosos que los lenguajes gráficos, pero son más difíciles de aprender y usar.</li>
+        </ul>
+        
+        <p>Los lenguajes de programación de controladores más comunes son:</p>
+        
+        <ul>
+            <li><strong>LADDER:</strong> Es un lenguaje gráfico que se basa en diagramas de relés. Es el lenguaje de programación de controladores más popular.</li>
+            <li><strong>Structured Text (ST):</strong> Es un lenguaje de programación de texto que es similar al lenguaje de programación C.</li>
+            <li><strong>Function Block Diagram (FBD):</strong> Es un lenguaje gráfico que se basa en bloques de función.</li>
+            <li><strong>Sequential Function Chart (SFC):</strong> Es un lenguaje gráfico que se basa en diagramas de flujo.</li>
+        </ul>
+        
+        <h3>Herramientas de Programación de Controladores</h3>
+        
+        <p>Existen una serie de herramientas que pueden ayudar en la programación de controladores, como:</p>
+        
+        <ul>
+            <li><strong>Entornos de desarrollo integrados (IDE):</strong> Los IDE proporcionan una interfaz gráfica de usuario que facilita la escritura y el depurado del código.</li>
+            <li><strong>Compiladores:</strong> Los compiladores convierten el código fuente en código máquina que puede ser ejecutado por el hardware.</li>
+            <li><strong>Herramientas de depuración:</strong> Las herramientas de depuración permiten al desarrollador identificar y corregir errores en el código.</li>
+        </ul>
+        
+        <h3>Ejemplos de Programación de Controladores</h3>
+        
+        <p>Algunos ejemplos de programación de controladores son:</p>
+        
+        <ul>
+            <li><strong>Control de un motor:</strong> En este ejemplo, el controlador se utiliza para controlar la velocidad de un motor.</li>
+            <li><strong>Control de un proceso industrial:</strong> En este ejemplo, el controlador se utiliza para controlar un proceso industrial, como la producción de una bebida o la fabricación de un producto.</li>
+            <li><strong>Control de un robot:</strong> En este ejemplo, el controlador se utiliza para controlar un robot.</li>
+        </ul>
+        
+        <p>La programación de controladores es una habilidad importante para los ingenieros y técnicos que trabajan en la automatización industrial.</p>
+
+
+        <!-- ********************************* -->
+
+
+        <h2>Desarrollo de Utilidades</h2>
+
+        <p>El desarrollo de utilidades es el proceso de crear programas informáticos que realizan tareas específicas, como formatear un disco duro, comprimir un archivo o descomprimir un archivo. Las utilidades son herramientas esenciales para los usuarios de ordenadores, ya que les permiten realizar tareas que de otro modo serían difíciles o imposibles.</p>
+        
+        <p>El desarrollo de utilidades es un proceso complejo que requiere un profundo conocimiento de la programación de ordenadores. El desarrollador de utilidades debe tener un buen conocimiento de los diferentes lenguajes de programación, así como de las estructuras de datos y algoritmos necesarios para realizar las tareas requeridas.</p>
+        
+        <p>El proceso de desarrollo de utilidades se puede dividir en las siguientes etapas:</p>
+        
+        <ul>
+            <li><strong>Recolección de requisitos:</strong> En esta etapa, se identifican los requisitos de la utilidad.</li>
+            <li><strong>Diseño de la utilidad:</strong> En esta etapa, se define la estructura y el funcionamiento de la utilidad.</li>
+            <li><strong>Implementación de la utilidad:</strong> En esta etapa, se escribe el código fuente de la utilidad.</li>
+            <li><strong>Pruebas de la utilidad:</strong> En esta etapa, se prueba la utilidad para garantizar que funcione correctamente.</li>
+        </ul>
+        
+        <p>El desarrollo de utilidades es un proceso continuo, ya que las utilidades están constantemente siendo mejoradas para añadir nuevas características y funcionalidades.</p>
+        
+        <h3>Tipos de utilidades</h3>
+        
+        <p>Existen diferentes tipos de utilidades, cada una con sus propias características y funcionalidades. Los tipos de utilidades más comunes son:</p>
+        
+        <ul>
+            <li><strong>Utilidades de sistema:</strong> Estas utilidades se utilizan para realizar tareas relacionadas con el sistema operativo, como formatear un disco duro o desfragmentar un disco duro.</li>
+            <li><strong>Utilidades de red:</strong> Estas utilidades se utilizan para realizar tareas relacionadas con la red, como verificar la conectividad de la red o solucionar problemas de red.</li>
+            <li><strong>Utilidades de seguridad:</strong> Estas utilidades se utilizan para realizar tareas relacionadas con la seguridad, como escanear el ordenador en busca de malware o cifrar archivos.</li>
+            <li><strong>Utilidades de productividad:</strong> Estas utilidades se utilizan para realizar tareas relacionadas con la productividad, como comprimir archivos o descomprimir archivos.</li>
+        </ul>
+        
+        <h3>Herramientas de desarrollo de utilidades</h3>
+        
+        <p>Existen una serie de herramientas que pueden ayudar en el desarrollo de utilidades, como:</p>
+        
+        <ul>
+            <li><strong>Entornos de desarrollo integrados (IDE):</strong> Los IDE proporcionan una interfaz gráfica de usuario que facilita la escritura y el depurado del código.</li>
+            <li><strong>Compiladores:</strong> Los compiladores convierten el código fuente en código máquina que puede ser ejecutado por el hardware.</li>
+            <li><strong>Herramientas de depuración:</strong> Las herramientas de depuración permiten al desarrollador identificar y corregir errores en el código.</li>
+        </ul>
+        
+        <h3>Ejemplos de utilidades</h3>
+        
+        <p>Algunos ejemplos de utilidades son:</p>
+        
+        <ul>
+            <li><strong>Formateador de disco duro:</strong> Esta utilidad se utiliza para formatear un disco duro.</li>
+            <li><strong>Compresor de archivos:</strong> Esta utilidad se utiliza para comprimir archivos.</li>
+            <li><strong>Descomprimir archivos:</strong> Esta utilidad se utiliza para descomprimir archivos.</li>
+            <li><strong>Scanear en busca de malware:</strong> Esta utilidad se utiliza para escanear el ordenador en busca de malware.</li>
+            <li><strong>Cifrar archivos:</strong> Esta utilidad se utiliza para cifrar archivos.</li>
+        </ul>
+        
+        <p>El desarrollo de utilidades es una habilidad importante para los programadores informáticos. Los desarrolladores de utilidades pueden encontrar trabajo en una amplia gama de industrias, como la informática, la ingeniería y la tecnología.</p>
+
+
+        <!-- *************************** -->
+
+
+        <h3>Pruebas y Depuración en el Desarrollo de Software</h2>
+
+        <p>Las pruebas y la depuración son dos procesos esenciales en el desarrollo de software. Las pruebas se utilizan para garantizar que el software funcione correctamente, mientras que la depuración se utiliza para identificar y corregir errores en el software.</p>
+
+        <h2>Pruebas</h2>
+
+        <p>Las pruebas se pueden dividir en dos categorías principales:</p>
+
+        <ul>
+            <li>Pruebas unitarias: Las pruebas unitarias se utilizan para probar unidades individuales de código, como funciones o clases.</li>
+            <li>Pruebas de integración: Las pruebas de integración se utilizan para probar cómo interactúan las unidades individuales de código.</li>
+            <li>Pruebas de sistema: Las pruebas de sistema se utilizan para probar el software como un todo.</li>
+            <li>Pruebas de aceptación: Las pruebas de aceptación se utilizan para garantizar que el software cumpla con los requisitos del usuario.</li>
+        </ul>
+
+        <p>Existen una serie de técnicas de prueba que se pueden utilizar, como:</p>
+
+        <ul>
+            <li>Pruebas de caja negra: En las pruebas de caja negra, los probadores no tienen acceso al código fuente del software.</li>
+            <li>Pruebas de caja blanca: En las pruebas de caja blanca, los probadores tienen acceso al código fuente del software.</li>
+            <li>Pruebas de regresión: Las pruebas de regresión se utilizan para garantizar que los cambios realizados en el software no hayan introducido nuevos errores.</li>
+        </ul>
+
+        <h3>Depuración</h3>
+
+        <p>La depuración es el proceso de identificar y corregir errores en el software. Los errores pueden ser causados por una variedad de factores, como errores de codificación, errores de lógica y errores de datos.</p>
+
+        <p>Existen una serie de herramientas de depuración que se pueden utilizar, como:</p>
+
+        <ul>
+            <li>Puntos de interrupción: Los puntos de interrupción permiten al depurador detener la ejecución del software en un punto específico.</li>
+            <li>Variables locales: Las variables locales permiten al depurador ver el valor de las variables en un punto específico.</li>
+            <li>Verificadores de tipo: Los verificadores de tipo permiten al depurador comprobar que los tipos de datos se utilizan correctamente.</li>
+        </ul>
+
+        <h3>Importancia de las pruebas y la depuración</h3>
+
+        <p>Las pruebas y la depuración son esenciales para garantizar la calidad del software. Un software sin pruebas o depuración es probable que contenga errores que puedan causar problemas a los usuarios.</p>
+
+        <p>Los desarrolladores de software deben dedicar tiempo y esfuerzo a las pruebas y la depuración para garantizar que el software sea confiable y seguro.</p>
+
+        <h3>Beneficios de las pruebas y la depuración</h3>
+
+        <p>Las pruebas y la depuración ofrecen una serie de beneficios, como:</p>
+
+        <ul>
+            <li>Garantizan que el software funcione correctamente.</li>
+            <li>Identifican y corrigen errores en el software.</li>
+            <li>Mejoran la calidad del software.</li>
+            <li>Reducen el tiempo y el coste de desarrollo del software.</li>
+            <li>Mejoran la satisfacción del usuario.</li>
+        </ul>
+
+        <h3>Documentación</h3>
+
+        <p>La documentación es una parte esencial del proceso de desarrollo de software. Proporciona información detallada sobre cómo usar, mantener y extender el software. Los elementos clave de la documentación incluyen:</p>
+    
+        <ul>
+            <li><strong>Manual del usuario:</strong> Un manual que describe cómo utilizar el software desde la perspectiva del usuario final.</li>
+            <li><strong>Documentación técnica:</strong> Documentos técnicos que explican la arquitectura, los componentes y las interfaces del software para desarrolladores y administradores del sistema.</li>
+            <li><strong>Ejemplos de código:</strong> Fragmentos de código y ejemplos que ilustran cómo utilizar las funciones y características del software.</li>
+            <li><strong>Notas de versión:</strong> Información sobre las versiones del software, incluyendo cambios, mejoras y problemas conocidos.</li>
+        </ul>
+    
+        <p>Una documentación completa y precisa es fundamental para facilitar la adopción exitosa del software y brindar soporte a los usuarios y desarrolladores.</p>
+        
+
+
+
+
+
+  </body>
+
+  
+      <nav class="Nav">
+        
+      <section id="menu1">
+        <a href="#menu1" class="submenu">Conceptos Básicos JS</a>
+        <div class="submenu-content">
+          <a href="IntroduccionJs.html">Introducción a JavaScript</a>
+          <a href="TiposDeDatos.html">Tipos de Datos</a>
+          <a href="EstructurasdeControl.html">Estructuras de Control</a>
+          <a href="ProgramaciónOrientadaaObjetos.html">Programación Orientada a Objetos</a>
+          <a href="ObjetosyFuncionesDeLenguaje.html">Objetos y Funciones del Lenguaje</a>
+          <a href="ProgrmacionAsincrona.html">Programación Asíncrona</a>
+          <a href="NuevosTiposYCaracteristicas.html">Nuevos Tipos y Características</a>
+          <a href="this.html">this en JavaScript</a>
+          <a href="JSON.html">JSON: JavaScript Object Notation</a>
+          <a href="DOM.html">DOM: Document Object Model</a>
+          <a href="AJAX.html">AJAX: Asynchronous JavaScript And XML</a>
+          <a href="ApiRest.html">APIs REST</a>
+      </section>
+    
+      <section id="menu2">
+        <a href="#menu2" class="submenu">Estructuras de datos</a>
+        <div class="submenu-content">
+          <a href="Arrays.html">Arrays</a>
+          <a href="LinkedList.html">Lista enlazada</a>
+          <a href="Stack.html">Pila</a>
+          <a href="Queve.html">Cola</a>
+          <a href="BinaryTree.html">Árbol binario</a>
+          <a href="BinarySearchTree.html">Árbol de búsqueda binario</a>
+          <a href="Heap.html">Montículo</a>
+          <a href="Hashing.html">Hashing</a>
+          <a href="Graph.html">Grafo</a>
+          <a href="Matriz.html">Matriz</a>
+        </div>
+      </section>
+
+        
+      <section id="menu3">
+          <a href="#menu3" class="submenu">Análisis de algoritmos</a>
+          <div class="submenu-content">
+              <a href="SearchingAlgorithms.html">Búsqueda y ordenamiento</a>
+              <a href="GreedyAlgorithms.html">Algoritmos codiciosos</a>
+              <a href="DynamicProgramming.html">Programación dinámica</a>
+              <a href="PatternSearching.html">Búsqueda de patrones</a>
+              <a href="Backtracking.html">Algoritmos de Retroceso</a>
+              <a href="DivideAndConquer.html">Divide y conquista</a>
+              <a href="GeometricAlgorithms.html">Algoritmos geométricos</a>
+              <a href="MathematicalAlgorithms.html">Algoritmos matemáticos</a>
+              <a href="BitwiseAlgorithms.html">Algoritmos de bits</a>
+          </div>
+      </section>
+
+      <section id="menu4">
+        <a href="#menu4" class="submenu">Ejercicios Logicos y pracicos</a>
+      <div class="submenu-content">
+            <a href="OperadoresString.html">Operadores string</a>
+            <a href="EjerciciosArrays.html">Ejercicios Arrays</a>
+            <a href="EjerciciosTemplateString.html">Ejercicios Template String</a>
+            <a href="EjercicosObjetos.html">Ejercicios Objetos</a>
+            <a href="EjerciciosFunciones.html">Ejercicios Funciones</a>
+            <a href="EjerciciosAritmeticos.html">Ejercicios Aritmeticos</a>
+            <a href="OperadoresDeAsignacion.html">Operadores De Asignacion</a>
+            <a href="OperadoresDeComparacion.html">Operadores De Comparacion</a>
+            <a href="OperadoresLogicos.html">Operadores Logicos</a>
+            <a href="OperadoresTernarios.html">Operadores Ternarios</a>
+            <a href="OperadoresDeTipo.html">Operadores de Tipo</a>
+            <a href="CondicionalIf.html">Condicional If</a>
+            <a href="CondicionalIfElse.html">Codicional If Else</a>
+            <a href="CicloFor.html">Ciclo For</a>
+            <a href="CicloWhile.html">Ciclo While</a>
+            <a href="CicloDoWhile.html">Ciclo Do While</a>
+            <a href="CicloSwitch.html">Ciclo Switch</a>
+            <a href="EjerciciosPOO.html">Ejercicios de Progrmacion Orientada A Objetos</a>
+            <a href="EjerciciosDOM.html">EjerciciosDOM</a>
+            <a href="EjerciciosAJAX.html">EjerciciosAJAX</a>
+        </div>
+    </section> 
+
+    <section id="menu5">
+        <a href="#menu5" class="submenu">Ejercicios Practicos Con Orientación y Componentes</a>
+      <div class="submenu-content">
+        <a href="PracticasAJAX.html">Practicas AJAX</a>
+        <a href="PracticasDOM.html">Practicas DOM</a>
+      </div>
+    </section> 
+
+
+    <section id="menu6">
+      <a href="#menu6" class="submenu">Seguridad informática</a>
+      <div class="submenu-content">
+        <a href="FundamentosDeLaSeguridadInformatica.html">Fundamentos de la Seguridad Informática</a>
+        <a href="SeguridadDeLosSistemasOperativos.html">Seguridad de los Sistemas Operativos</a>
+        <a href="SeguridadDeLasRedes.html">Seguridad de las Redes</a>
+        <a href="SeguridadDeLasAplicaciones.html">Seguridad de las Aplicaciones</a>
+        <a href="SeguridadDeLosDatos.html">Seguridad de los Datos</a>
+        <a href="SeguridadDeLaNube.html">Seguridad de la Nube</a>
+        <a href="SeguridadDeLosSistemasEmbebidos.html">Seguridad de los Sistemas Embebidos</a>
+        <a href="SeguridadDeLaAuditoria.html">Seguridad de la Auditoría</a>
+        <a href="SeguridadDeLaGestionDeIncidentes.html">Seguridad de la Gestión de Incidentes</a>
+        <a href="SeguridadDeLaEtica.html">Seguridad de la Ética</a>
+        <a href="SeguridadDeLaLegislacion.html">Seguridad de la Legislación</a>
+      </div>
+    </section>
+    
+
+    <section id="menu7">
+      <a href="#menu7" class="submenu">Arquitectura de las computadoras</a>
+      <div class="submenu-content">
+        <a href="IntroduccionArquitecturaComputadoras.html">Introducción a la Arquitectura de Computadoras</a>
+        <a href="ComponentesFundamentales.html">Componentes Fundamentales</a>
+        <a href="ArquitecturaCPU.html">Arquitectura de CPU</a>
+        <a href="MemoriaAlmacenamiento.html">Memoria y Almacenamiento</a>
+        <a href="SistemaGrafico.html">Sistema Grafico</a>
+        <a href="SistemasEntradaSalida.html">Sistemas de Entrada/Salida (E/S)</a>
+        <a href="BusesConexiones.html">Buses y Conexiones</a>
+        <a href="OrganizacionDatos.html">Organización de Datos</a>
+        <a href="ArquitecturasComputadorasModernas.html">Arquitecturas de Computadoras Modernas</a>
+        <a href="Microprocesadores.html">Microprocesadores</a>
+        <a href="SistemasMultiprocesador.html">Sistemas Multiprocesador</a>
+        <a href="MemoriaCache.html">Memoria Caché</a>
+        <a href="ArquitecturaRedesComputadoras.html">Arquitectura de Redes y Computadoras</a>
+        <a href="ArquitecturaComputadorasCuanticas.html">Arquitectura de Computadoras Cuánticas</a>
+        <a href="TendenciasFuturasArquitecturaComputadoras.html">Tendencias Futuras en Arquitectura de Computadoras</a>
+        
+      </div>
+    </section>
+
+    <section id="menu8">
+      <a href="#menu8" class="submenu">Sistemas Operativos</a>
+      <div class="submenu-content">
+        <a href="introduccionASistemasOperativos.html">Introducción a los Sistemas Operativos</a>
+        <a href="tiposDeSistemasOperativos.html">Tipos de Sistemas Operativos</a>
+        <a href="interfazDeUsuario.html">Interfaz de Usuario</a>
+        <a href="gestionDeArchivosYDirectorios.html">Gestión de Archivos y Directorios</a>
+        <a href="procesosYTareas.html">Procesos y Tareas</a>
+        <a href="gestionDeMemoria.html">Gestión de Memoria</a>
+        <a href="sistemasDeArchivos.html">Sistemas de Archivos</a>
+        <a href="seguridadYControlDeAcceso.html">Seguridad y Control de Acceso</a>
+        <a href="redesYComunicaciones.html">Redes y Comunicaciones</a>
+        <a href="administracionDelSistema.html">Administración del Sistema</a>
+        <a href="virtualizacionYContenedores.html">Virtualización y Contenedores</a>
+        <a href="sistemasDeArchivosAvanzados.html">Sistemas de Archivos Avanzados</a>
+        <a href="rendimientoYOptimizacion.html">Rendimiento y Optimización</a>
+        <a href="sistemasOperativosEspeciales.html">Sistemas Operativos Especiales</a>
+        <a href="tendenciasActuales.html">Tendencias Actuales</a>
+      </div>
+    </section>
+    
+    <section id="menu9">
+      <a href="#menu9" class="submenu">Arquitectura de Redes</a>
+      <div class="submenu-content">
+        <a href="IntroduccionArquitecturaRedes.html">Introducción a la Arquitectura de Redes</a>
+        <a href="TopologiasRed.html">Topologías de Red</a>
+        <a href="ModeloOSI.html">Modelo OSI (Open Systems Interconnection)</a>
+        <a href="ProtocoloInternet.html">Protocolo de Internet (IP)</a>
+        <a href="ProtocolosTransporte.html">Protocolos de Transporte (TCP/UDP)</a>
+        <a href="RedesLocales.html">Redes Locales (LAN)</a>
+        <a href="RedesAreaExtensa.html">Redes de Área Extensa (WAN)</a>
+        <a href="ArquitecturaClienteServidor.html">Arquitectura Cliente-Servidor</a>
+        <a href="RedesInalambricas.html">Redes Inalámbricas (Wi-Fi)</a>
+        <a href="RedesDefinidasSoftware.html">Redes Definidas por Software (SDN)</a>
+        <a href="RedesAreaAmpliaDefinidasSoftware.html">Redes de Área Amplia Definidas por Software (SD-WAN)</a>
+        <a href="SeguridadRed.html">Seguridad de Red</a>
+        <a href="ArquitecturaRedesNube.html">Arquitectura de Redes para la Nube</a>
+        <a href="Redes5GFuturasTecnologias.html">Redes 5G y Futuras Tecnologías</a>
+      </div>
+    </section>
+
+
+    <section id="menu10">
+      <a href="#menu10" class="submenu">Bases De Datos</a>
+      <div class="submenu-content">
+        <a href="introduccionALasBasesDeDatos.html">Introducción a las Bases de Datos</a>
+        <a href="modelosDeDatos.html">Modelos de Datos</a>
+        <a href="sistemasDeGestionDeBasesDeDatos.html">Sistemas de Gestión de Bases de Datos (DBMS)</a>
+        <a href="disenoDeBasesDeDatosRelacionales.html">Diseño de Bases de Datos Relacionales</a>
+        <a href="sqlYConsultasABasesDeDatos.html">SQL y Consultas a Bases de Datos</a>
+        <a href="normalizacionDeBasesDeDatos.html">Normalización de Bases de Datos</a>
+        <a href="indicesYOptimizacionDeConsultas.html">Índices y Optimización de Consultas</a>
+        <a href="transaccionesYControlDeConcurrencia.html">Transacciones y Control de Concurrencia</a>
+        <a href="seguridadYPrivacidadDeDatos.html">Seguridad y Privacidad de Datos</a>
+        <a href="basesDeDatosNoRelacionalesNoSQL.html">Bases de Datos No Relacionales (NoSQL)</a>
+        <a href="basesDeDatosDistribuidas.html">Bases de Datos Distribuidas</a>
+        <a href="almacenamientoYCopiaDeSeguridadBackup.html">Almacenamiento y Copia de Seguridad (Backup)</a>
+        <a href="integracionDeBasesDeDatosEnAplicaciones.html">Integración de Bases de Datos en Aplicaciones</a>
+        <a href="tendenciasFuturasEnBasesDeDatos.html">Tendencias Futuras en Bases de Datos</a>
+      </div>
+    </section>
+
+    <section id="menu11">
+      <a href="#menu11" class="submenu">Lenguajes de Programación</a>
+      <div class="submenu-content">
+        <a href="fundamentos.html">Fundamentos de Programación y Sintaxis</a><br>
+        <a href="tipos_datos.html">Tipos de Datos y Variables</a><br>
+        <a href="estructuras_control.html">Estructuras de Control</a><br>
+        <a href="funciones.html">Funciones y Procedimientos</a><br>
+        <a href="estructuras_datos.html">Estructuras de Datos Básicas</a><br>
+        <a href="poo_intro.html">Introducción a la Programación Orientada a Objetos (POO)</a><br>
+        <a href="encapsulamiento.html">Encapsulamiento y Modificadores de Acceso</a><br>
+        <a href="herencia_polimorfismo.html">Herencia y Polimorfismo</a><br>
+        <a href="abstraccion_interfaces.html">Abstracción y Interfaces</a><br>
+        <a href="excepciones.html">Excepciones y Manejo de Errores</a><br>
+        <a href="hilos_concurrencia.html">Hilos y Concurrencia</a><br>
+        <a href="programacion_funcional.html">Programación Funcional</a><br>
+        <a href="gestion_memoria.html">Gestión de Memoria y Rendimiento</a><br>
+        <a href="diseno_lenguajes.html">Diseño de Lenguajes de Programación</a><br>
+        <a href="compiladores_interpretes.html">Compiladores e Intérpretes</a><br>
+        <a href="paradigmas_avanzados.html">Paradigmas de Programación Avanzados</a><br>
+        <a href="seguridad_criptografia.html">Seguridad y Criptografía en Lenguajes</a><br>
+        <a href="tendencias.html">Futuras Tendencias en Lenguajes de Programación</a><br>
+      </div>
+    </section>
+
+
+     </nav>
+
+      
+
+    </main>
+
+
+
+    <footer>
+        <nav class="navegation">
+            <a href="Index.html"><i class="fa-solid fa-arrow-left"></i></a>
+            <a href="IntroduccionJs.html"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="Index.html"><i class="fa-solid fa-house"></i></a>
+            <a class="toogleMenu" id="toogleMenu" href="#"><i class="fa-solid fa-bars"></i></a>
+        </nav>
+    </footer>
+    
+    
+    <script type="module" src="js/Script.js"></script>
+
+
+</body>
+</html>
+
+
+</body>
+</html>
