@@ -48,7 +48,7 @@ h1{
 }
 
 h2{
-    font-size: 2.6rem;
+    font-size: 2.8rem;
     text-transform: capitalize;
 }
 
@@ -116,6 +116,8 @@ hr{
     height: .3rem;
     background-color: #212121;
 }
+
+
 
 @media screen and (max-width: 1100px) {
     main{
@@ -201,6 +203,8 @@ a{
 
 /************** .cards  ****************/
 
+
+
 .container{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -244,9 +248,9 @@ a{
   }
 
   .Back a {
-    color: #212121;
+    color: #000000;
     text-decoration: none;
-    font-size: 2rem;
+    text-transform: capitalize;
 }
 
   .Back a:hover {
@@ -316,6 +320,16 @@ a{
     color: #0000FF;
     transform: rotateY(180deg);
 }
+
+
+.FrontTarjeta:hover {
+    background: linear-gradient(120deg, #00ffff 60%, #00cccc 88%, rgb(255, 211, 195) 40%, rgba(128, 255, 255, 0.603) 48%);
+}
+  
+.BackTarjeta {
+    background: linear-gradient(120deg, #00ffff 60%, #00cccc 88%, rgb(255, 211, 195) 40%, rgba(128, 255, 255, 0.603) 48%)
+}
+
 
 
 
@@ -506,7 +520,6 @@ section .content {
     background-color: #8bfaeb;
     color: black;
 }
-
 
 .scrollLeftButton{
     position: fixed;
