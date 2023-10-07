@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="assets/idea.svg" type="assets/svg">
+    <link rel="stylesheet" href="css/Styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+      
+      <button class="scrollLeftButton" id="scrollLeftButton">👈</button>
+      
+
+        <div class="headerNav">
+            <a href="#Fundamentos">Fundamentos</a>
+            <a href="#UnidadesyEstilos">Unidades y Estilos</a>
+            <a href="#EfectosVisalesyMovimientos">Efectos Visales y Movimientos</a>
+            <a href="#ResponsiveDesing">Responsive Desing Y Arquitectura Css</a>
+        </div>
+
+        <button class="scrollRightButton" id="scrollRightButton">👉</button>
+
+    </header>
+
+    <main>
+
+      <h1>CSS</h1>
+
+      <p>
+        CSS, o Cascading Style Sheets, es un lenguaje de hojas de estilo que se utiliza para controlar el aspecto de los documentos HTML. CSS permite a los desarrolladores web especificar el tamaño, el color, la fuente y otros atributos de los elementos HTML.
+      </p>
+
+      <p>
+        CSS es un lenguaje de programación relativamente sencillo de aprender. Sin embargo, hay muchos conceptos que los desarrolladores web deben comprender para poder utilizarlo de manera efectiva.
+      </p>
+
+      <h2 id="Fundamentos">Fundamentos css</h2>
+
+      <ul>
+        <li><a href="Introduccion_a_CSS.html">Introducción a CSS</a></li>
+        <li><a href="Sintaxis_basica.html">Sintaxis básica</a></li>
+        <li><a href="Comentarios_en_CSS.html">Comentarios en CSS</a></li>
+        <li><a href="Formas_de_invocacion_CSS.html">Formas de invocación CSS</a></li>
+        <li><a href="Versiones_documentacion_y_enlaces_de_referencia.html">Versiones, documentación y enlaces de referencia</a></li>
+        <li><a href="Selectores_basicos_Etiquetas_Identificadores_y_Clases.html">Selectores básicos: Etiquetas, Identificadores y Clases</a></li>
+        <li><a href="Dando_orden_y_estructura_a_nuestro_codigo_HTML_y_CSS.html">Dando orden y estructura a nuestro código HTML y CSS</a></li>
+        <li><a href="Selector_de_hijos_directos_y_descendientes.html">Selector de hijos directos y descendientes</a></li>
+        <li><a href="Selector_de_hermanos_y_adyacente.html">Selector de hermanos y adyacente</a></li>
+        <li><a href="Selectores_de_atributos.html">Selectores de atributos</a></li>
+        <li><a href="Selector_Universal.html">Selector Universal</a></li>
+        <li><a href="Pseudoclases_de_estado.html">Pseudoclases de estado</a></li>
+        <li><a href="Pseudoclases_por_posicion_y_tipo.html">Pseudoclases por posición y tipo</a></li>
+        <li><a href="Pseudoelementos.html">Pseudoelementos</a></li>
+        <li><a href="Agrupacion_de_selectores.html">Agrupación de selectores</a></li>
+        <li><a href="El_Algoritmo_de_CSS.html">El Algoritmo de CSS</a></li>
+        <li><a href="La_Cascada.html">La Cascada</a></li>
+        <li><a href="Especificidad.html">Especificidad</a></li>
+        <li><a href="Practicando_cascada_y_especificidad.html">Practicando cascada y especificidad</a></li>
+        <li><a href="Herencia.html">Herencia</a></li>
+        <li><a href="Reseteo_y_Normalizacion_de_estilos.html">Reseteo y Normalización de estilos</a></li>
+        <li><a href="Prefijos_de_los_navegadores.html">Prefijos de los navegadores</a></li>
+        <li><a href="Modelo_de_Caja.html">Modelo de Caja</a></li>
+        <li><a href="Width_&_Height.html">Width & Height</a></li>
+        <li><a href="Border.html">Border</a></li>
+        <li><a href="Margin_&_Padding.html">Margin & Padding</a></li>
+        <li><a href="Cajas_de_Linea_VS_Cajas_de_Bloque.html">Cajas de Línea VS Cajas de Bloque</a></li>
+        <li><a href="Propiedad_display.html">Propiedad display</a></li>
+        <li><a href="Propiedad_visibility.html">Propiedad visibility</a></li>
+        <li><a href="Propiedad_overflow.html">Propiedad overflow</a></li>
+        <li><a href="Tamano_de_caja.html">Tamaño de caja</a></li>
+        <li><a href="Propiedades_float_&_clear.html">Propiedades float & clear</a></li>
+        <li><a href="Colapso_de_margenes_verticales.html">Colapso de márgenes verticales</a></li>
+        <li><a href="Adicion_de_margenes_horizontales.html">Adición de márgenes horizontales</a></li>
+        <li><a href="Centrado_de_Cajas.html">Centrado de Cajas</a></li>
+        <li><a href="Posicionamiento_CSS.html">Posicionamiento CSS</a></li>
+        <li><a href="Posicionamiento_static.html">Posicionamiento static</a></li>
+        <li><a href="Posicionamiento_relative.html">Posicionamiento relative</a></li>
+        <li><a href="Posicionamiento_absolute.html">Posicionamiento absolute</a></li>
+        <li><a href="Posicionamiento_fixed.html">Posicionamiento fixed</a></li>
+        <li><a href="Posicionamiento_sticky.html">Posicionamiento sticky</a></li>
+        <li><a href="Propiedad_z-index.html">Propiedad z-index</a></li>
+        <li><a href="Cabecera_fixed_VS_Cabecera_sticky.html">Cabecera fixed VS Cabecera sticky</a></li>
+        <li><a href="Efecto_de_slides_con_position_sticky.html">Efecto de slides con position sticky</a></li>
+        <li><a href="Ventana_Modal_Menu_Movil_con_posicionamiento_fixed.html">Ventana Modal / Menú Móvil con posicionamiento fixed</a></li>
+        <li><a href="Margenes_negativos.html">Márgenes negativos</a></li>
+      </ul>
+      
+
+      <h2 id="UnidadesyEstilos">Unidades y estilos</h2>
+
+
+      <ul>
+        <li><a href="Colores-en-CSS.html">Colores en CSS</a></li>
+        <li><a href="Colores-por-Nombres.html">Colores por Nombres</a></li>
+        <li><a href="Convertidor-de-Colores.html">Convertidor de Colores</a></li>
+        <li><a href="Sistema-Hexadecimal.html">Sistema Hexadecimal</a></li>
+        <li><a href="Sistema-RGB.html">Sistema RGB</a></li>
+        <li><a href="Sistema-HSL.html">Sistema HSL</a></li>
+        <li><a href="¿Qué-sistema-de-colores-uso.html">¿Qué sistema de colores uso?</a></li>
+        <li><a href="transparent-y-currentColor.html">transparent & currentColor</a></li>
+        <li><a href="Propiedad-opacity.html">Propiedad opacity</a></li>
+        <li><a href="Unidades-de-Medida-en-CSS.html">Unidades de Medida en CSS</a></li>
+        <li><a href="Pixeles.html">Pixeles</a></li>
+        <li><a href="EMs.html">EMs</a></li>
+        <li><a href="REMs.html">REMs</a></li>
+        <li><a href="EXs.html">EXs</a></li>
+        <li><a href="CHs.html">CHs</a></li>
+        <li><a href="Porcentajes.html">Porcentajes</a></li>
+        <li><a href="Unidades-del-Viewport.html">Unidades del Viewport</a></li>
+        <li><a href="¿Cuándo-usar-cada-unidad-de-medida.html">¿Cuándo usar cada unidad de medida?</a></li>
+        <li><a href="Variables-y-Funciones-en-CSS.html">Variables y Funciones en CSS</a></li>
+        <li><a href="Custom-Properties-y-Función-var.html">Custom Properties y Función var()</a></li>
+        <li><a href="Función-url.html">Función url()</a></li>
+        <li><a href="Función-calc.html">Función calc()</a></li>
+        <li><a href="Función-min-y-max.html">Función min() & max()</a></li>
+        <li><a href="Función-clamp.html">Función clamp()</a></li>
+        <li><a href="Estilos-de-Fuentes-y-Textos.html">Estilos de Fuentes y Textos</a></li>
+        <li><a href="Estilos-de-Fuentes.html">Estilos de Fuentes</a></li>
+        <li><a href="Fuentes-externas.html">Fuentes externas (@font-face & font-display)</a></li>
+        <li><a href="Google-Fonts.html">Google Fonts</a></li>
+        <li><a href="Estilos-de-Texto.html">Estilos de Texto</a></li>
+        <li><a href="Iconos-Tipográficos.html">Iconos Tipográficos</a></li>
+        <li><a href="Propiedad-border-radius.html">Propiedad border-radius</a></li>
+        <li><a href="Propiedad-outline.html">Propiedad outline</a></li>
+        <li><a href="Estilos-del-Fondo.html">Estilos del Fondo</a></li>
+        <li><a href="Propiedad-background-color.html">Propiedad background-color</a></li>
+        <li><a href="Propiedad-background-image.html">Propiedad background-image</a></li>
+        <li><a href="Propiedad-background-size.html">Propiedad background-size</a></li>
+        <li><a href="Propiedad-background-repeat.html">Propiedad background-repeat</a></li>
+        <li><a href="Propiedad-background-position.html">Propiedad background-position</a></li>
+        <li><a href="Propiedad-background-clip.html">Propiedad background-clip</a></li>
+        <li><a href="Propiedad-background-origin.html">Propiedad background-origin</a></li>
+        <li><a href="Diferencias-entre-clip-y-origin.html">Diferencias entre clip y origin</a></li>
+        <li><a href="Propiedad-background-attachment.html">Propiedad background-attachment</a></li>
+        <li><a href="Propiedad-background.html">Propiedad background</a></li>
+        <li><a href="Fondos-Múltiples.html">Fondos Múltiples</a></li>
+        <li><a href="Estilos-de-Imágenes.html">Estilos de Imágenes</a></li>
+        <li><a href="Estilos-de-Listas.html">Estilos de Listas</a></li>
+        <li><a href="Texto-en-Columnas.html">Texto en Columnas</a></li>
+        <li><a href="Estilos-de-Tablas.html">Estilos de Tablas</a></li>
+        <li><a href="Estilos-de-Formularios.html">Estilos de Formularios</a></li>
+        <li><a href="Formulario-de-Contacto-con-CSS.html">Formulario de Contacto con CSS</a></li>
+      </ul>
+
+      <h2 id="EfectosVisalesyMovimientos">Efectos visuales y movimientos</h2>
+
+      <ul>
+        <li><a href="EstilosIniciales.html">Estilos iniciales para nuestro documento</a></li>
+        <li><a href="SombraCajas.html">Sombra a las cajas (box-shadow)</a></li>
+        <li><a href="SombraTextos.html">Sombra a los textos (text-shadow)</a></li>
+        <li><a href="SombrasMultiples.html">Sombras múltiples</a></li>
+        <li><a href="FiltroSombras.html">Filtro de sombras (drop-shadow)</a></li>
+        <li><a href="DegradadosLineales.html">Degradados lineales (linear-gradient)</a></li>
+        <li><a href="DegradadosRadiales.html">Degradados radiales (radial-gradient)</a></li>
+        <li><a href="DegradadosConicos.html">Degradados cónicos (conic-gradient)</a></li>
+        <li><a href="PatronesDegradados.html">Patrones con degradados</a></li>
+        <li><a href="GraficasDegradados.html">Gráficas con degradados</a></li>
+        <li><a href="Filtros.html">Filtros (filter)</a></li>
+        <li><a href="FiltrosMultiples.html">Filtros múltiples</a></li>
+        <li><a href="FiltrosFondos.html">Filtros a fondos (backdrop-filter)</a></li>
+        <li><a href="ModoDarkLight.html">Modo Dark/Light con filtros</a></li>
+        <li><a href="ModosMezcla.html">Modos de Mezcla (mix-blend-mode)</a></li>
+        <li><a href="ModosMezclaFondos.html">Modos de Mezcla a fondos (background-blend-mode)</a></li>
+        <li><a href="Mascaras.html">Máscaras (clip-path)</a></li>
+        <li><a href="Formas.html">Formas (shape-outside)</a></li>
+        <li><a href="OnePageScroll.html">Sitio One Page Scroll (scroll-margin & scroll-behavior)</a></li>
+        <li><a href="AjusteScrollSlides.html">Ajuste del Scroll Efecto Slides Verticales (scroll-snap-type & scroll-snap-align)</a></li>
+        <li><a href="AjusteScrollCarrusel.html">Ajuste del Scroll Efecto Carrusel Horizontal (scroll-snap-type & scroll-snap-align)</a></li>
+        <li><a href="TextoDegradado.html">Texto con Degradado</a></li>
+        <li><a href="MovimientoCSS.html">Movimiento en CSS</a></li>
+        <li><a href="Transiciones.html">Transiciones</a></li>
+        <li><a href="PropiedadesAnimacion.html">Propiedades Animables</a></li>
+        <li><a href="TransicionesMultiples.html">Transiciones Múltiples</a></li>
+        <li><a href="NoUsarAllTransiciones.html">Porqué no usar la palabra all en tus transiciones</a></li>
+        <li><a href="AlgoritmoCSS.html">El Algoritmo de CSS y su efecto sobre las transiciones</a></li>
+        <li><a href="Transformaciones2D.html">Transformaciones en 2D</a></li>
+        <li><a href="TransformacionMatrix2D.html">Transformación Matrix 2D</a></li>
+        <li><a href="Transformaciones2DMultiples.html">Transformaciones 2D Múltiples</a></li>
+        <li><a href="ActivandoPerspectiva3D.html">Activando la Perspectiva 3D</a></li>
+        <li><a href="Transformaciones3D.html">Transformaciones en 3D</a></li>
+        <li><a href="TransformacionMatrix3D.html">Transformación Matrix 3D</a></li>
+        <li><a href="Transformaciones3DMultiples.html">Transformaciones 3D Múltiples</a></li>
+        <li><a href="OrigenTransformacion.html">Origen de Transformación (transform-origin)</a></li>
+        <li><a href="FlipCards.html">Flip Cards con transiciones y transformaciones</a></li>
+        <li><a href="Animaciones.html">Animaciones</a></li>
+        <li><a href="PropiedadesAnimacionCSS.html">Propiedades de Animación en CSS</a></li>
+        <li><a href="LineaTiempoFotogramas.html">Linea de tiempo y fotogramas claves en CSS</a></li>
+        <li><a href="EfectoFadeInFadeOut.html">Efecto fadein & fadeout</a></li>
+        <li><a href="EfectoShake.html">Efecto shake</a></li>
+        <li><a href="EfectoPulse.html">Efecto pulse</a></li>
+      </ul>
+      
+
+      <h2 id="ResponsiveDesing">Responsive desing y arquitectura css</h2>
+      
+
+      <ul>
+        <li><a href="Introducción_al_Responsive_Design.html">Introducción al Responsive Design</a></li>
+        <li><a href="Contenedore_Flexibles.html">Contenedore Flexibles</a></li>
+        <li><a href="Propiedades_max-width_min-width_max-height_min-height.html">Propiedades max-width, min-width, max-height y min-height</a></li>
+        <li><a href="Tamaños_fijos_VS_Tamaños_máximos_y_mínimos.html">Tamaños fijos VS Tamaños máximos y mínimos</a></li>
+        <li><a href="Multimedia_Flexible.html">Multimedia Flexible</a></li>
+        <li><a href="Atributo_srcset_y_sizes.html">Atributo srcset y sizes</a></li>
+        <li><a href="Etiqueta_picture.html">Etiqueta picture</a></li>
+        <li><a href="Videos_responsivos.html">Videos responsivos</a></li>
+        <li><a href="Iframes_responsivos.html">Iframes responsivos</a></li>
+        <li><a href="Media_Queries_versión_2.1.html">Media Queries versión 2.1</a></li>
+        <li><a href="Media_Queries_versión_3.html">Media Queries versión 3</a></li>
+        <li><a href="Breakpoints.html">Breakpoints</a></li>
+        <li><a href="Viewport.html">Viewport</a></li>
+        <li><a href="Grid_Responsiva_Artesanal_con_Flexbox.html">Grid Responsiva Artesanal con Flexbox</a></li>
+        <li><a href="Feature_Queries.html">Feature Queries</a></li>
+        <li><a href="Container_Queries.html">Container Queries</a></li>
+        <li><a href="SEO.html">SEO</a></li>
+        <li><a href="Desktop_First_VS_Mobile_First.html">Desktop First VS Mobile First</a></li>
+        <li><a href="Adaptive_Design.html">Adaptive Design</a></li>
+        <li><a href="Responsive_Design_y_Server_Side_Components_RESS.html">Responsive Design + Server Side Components (RESS)</a></li>
+        <li><a href="Responsible_Responsive_Design.html">Responsible Responsive Design</a></li>
+        <li><a href="Fluid_Design.html">Fluid Design</a></li>
+        <li><a href="Grid_Fluida.html">Grid Fluida</a></li>
+        <li><a href="Textos_Fluidos.html">Textos Fluidos</a></li>
+        <li><a href="Contenedores_Fluidos.html">Contenedores Fluidos</a></li>
+        <li><a href="Introducción_a_la_Arquitectura_CSS.html">Introducción a la Arquitectura CSS</a></li>
+        <li><a href="Metodologías_CSS.html">Metodologías CSS</a></li>
+        <li><a href="BEM.html">BEM</a></li>
+        <li><a href="SMACSS.html">SMACSS</a></li>
+        <li><a href="OOCSS.html">OOCSS</a></li>
+        <li><a href="ITCSS.html">ITCSS</a></li>
+        <li><a href="AMCSS.html">AMCSS</a></li>
+        <li><a href="SUITCSS.html">SUITCSS</a></li>
+        <li><a href="Atomic_Design.html">Atomic Design</a></li>
+        <li><a href="Conclusiones_Metodologías_CSS.html">Conclusiones Metodologías CSS</a></li>
+        <li><a href="Frameworks_CSS.html">Frameworks CSS</a></li>
+        <li><a href="960_Grid_System.html">960 Grid System</a></li>
+        <li><a href="Skeleton.html">Skeleton</a></li>
+        <li><a href="Pure_CSS.html">Pure CSS</a></li>
+        <li><a href="Ink.html">Ink</a></li>
+        <li><a href="MUI.html">MUI</a></li>
+        <li><a href="Semantic_UI.html">Semantic UI</a></li>
+        <li><a href="Bulma.html">Bulma</a></li>
+        <li><a href="UI_kit.html">UI kit</a></li>
+        <li><a href="Materialize.html">Materialize</a></li>
+        <li><a href="Foundation.html">Foundation</a></li>
+        <li><a href="Tailwind.html">Tailwind</a></li>
+        <li><a href="Bootstrap.html">Bootstrap</a></li>
+        <li><a href="Conclusiones_Frameworks_CSS.html">Conclusiones Frameworks CSS</a></li>
+        <li><a href="Cómo_elegir_un_Framework_CSS.html">¿Cómo elegir un Framework CSS?</a></li>
+        <li><a href="Pre_procesadores_CSS.html">Pre procesadores CSS</a></li>
+        <li><a href="Stylus.html">Stylus</a></li>
+        <li><a href="Less.html">Less</a></li>
+        <li><a href="Sass.html">Sass</a></li>
+        <li><a href="Post_procesadores_CSS.html">Post procesadores CSS</a></li>
+        <li><a href="PostCSS.html">PostCSS</a></li>
+        <li><a href="CSSNext.html">CSSNext</a></li>
+        <li><a href="CSS_in_JS.html">CSS in JS</a></li>
+        <li><a href="Conclusiones_Procesadores_CSS.html">Conclusiones Procesadores CSS</a></li>
+        <li><a href="Herramientas_de_Automatización.html">Herramientas de Automatización</a></li>
+        <li><a href="Guías_de_Estilos.html">Guías de Estilos</a></li>
+        <li><a href="Qué_herramientas_uso.html">¿Qué herramientas uso?</a></li>
+        <li><a href="Arquitectura_Minimalista.html">Arquitectura Minimalista</a></li>
+      </ul>
+      
+
+
+
+  
+      <nav class="Nav">
+        
+      <section id="menu1">
+        <a href="#menu1" class="submenu">Conceptos Básicos JS</a>
+        <div class="submenu-content">
+          <a href="IntroduccionJs.html">Introducción a JavaScript</a>
+          <a href="TiposDeDatos.html">Tipos de Datos</a>
+          <a href="EstructurasdeControl.html">Estructuras de Control</a>
+          <a href="ProgramaciónOrientadaaObjetos.html">Programación Orientada a Objetos</a>
+          <a href="ObjetosyFuncionesDeLenguaje.html">Objetos y Funciones del Lenguaje</a>
+          <a href="ProgrmacionAsincrona.html">Programación Asíncrona</a>
+          <a href="NuevosTiposYCaracteristicas.html">Nuevos Tipos y Características</a>
+          <a href="this.html">this en JavaScript</a>
+          <a href="JSON.html">JSON: JavaScript Object Notation</a>
+          <a href="DOM.html">DOM: Document Object Model</a>
+          <a href="AJAX.html">AJAX: Asynchronous JavaScript And XML</a>
+          <a href="ApiRest.html">APIs REST</a>
+      </section>
+    
+      <section id="menu2">
+        <a href="#menu2" class="submenu">Estructuras de datos</a>
+        <div class="submenu-content">
+          <a href="Arrays.html">Arrays</a>
+          <a href="LinkedList.html">Lista enlazada</a>
+          <a href="Stack.html">Pila</a>
+          <a href="Queve.html">Cola</a>
+          <a href="BinaryTree.html">Árbol binario</a>
+          <a href="BinarySearchTree.html">Árbol de búsqueda binario</a>
+          <a href="Heap.html">Montículo</a>
+          <a href="Hashing.html">Hashing</a>
+          <a href="Graph.html">Grafo</a>
+          <a href="Matriz.html">Matriz</a>
+        </div>
+      </section>
+
+        
+      <section id="menu3">
+          <a href="#menu3" class="submenu">Análisis de algoritmos</a>
+          <div class="submenu-content">
+              <a href="SearchingAlgorithms.html">Búsqueda y ordenamiento</a>
+              <a href="GreedyAlgorithms.html">Algoritmos codiciosos</a>
+              <a href="DynamicProgramming.html">Programación dinámica</a>
+              <a href="PatternSearching.html">Búsqueda de patrones</a>
+              <a href="Backtracking.html">Algoritmos de Retroceso</a>
+              <a href="DivideAndConquer.html">Divide y conquista</a>
+              <a href="GeometricAlgorithms.html">Algoritmos geométricos</a>
+              <a href="MathematicalAlgorithms.html">Algoritmos matemáticos</a>
+              <a href="BitwiseAlgorithms.html">Algoritmos de bits</a>
+          </div>
+      </section>
+
+      <section id="menu4">
+        <a href="#menu4" class="submenu">Ejercicios Logicos y pracicos</a>
+      <div class="submenu-content">
+            <a href="OperadoresString.html">Operadores string</a>
+            <a href="EjerciciosArrays.html">Ejercicios Arrays</a>
+            <a href="EjerciciosTemplateString.html">Ejercicios Template String</a>
+            <a href="EjercicosObjetos.html">Ejercicios Objetos</a>
+            <a href="EjerciciosFunciones.html">Ejercicios Funciones</a>
+            <a href="EjerciciosAritmeticos.html">Ejercicios Aritmeticos</a>
+            <a href="OperadoresDeAsignacion.html">Operadores De Asignacion</a>
+            <a href="OperadoresDeComparacion.html">Operadores De Comparacion</a>
+            <a href="OperadoresLogicos.html">Operadores Logicos</a>
+            <a href="OperadoresTernarios.html">Operadores Ternarios</a>
+            <a href="OperadoresDeTipo.html">Operadores de Tipo</a>
+            <a href="CondicionalIf.html">Condicional If</a>
+            <a href="CondicionalIfElse.html">Codicional If Else</a>
+            <a href="CicloFor.html">Ciclo For</a>
+            <a href="CicloWhile.html">Ciclo While</a>
+            <a href="CicloDoWhile.html">Ciclo Do While</a>
+            <a href="CicloSwitch.html">Ciclo Switch</a>
+            <a href="EjerciciosPOO.html">Ejercicios de Progrmacion Orientada A Objetos</a>
+            <a href="EjerciciosDOM.html">EjerciciosDOM</a>
+            <a href="EjerciciosAJAX.html">EjerciciosAJAX</a>
+        </div>
+    </section> 
+
+    <section id="menu5">
+        <a href="#menu5" class="submenu">Ejercicios Practicos Con Orientación y Componentes</a>
+      <div class="submenu-content">
+        <a href="PracticasAJAX.html">Practicas AJAX</a>
+        <a href="PracticasDOM.html">Practicas DOM</a>
+      </div>
+    </section> 
+
+
+    <section id="menu6">
+      <a href="#menu6" class="submenu">Seguridad informática</a>
+      <div class="submenu-content">
+        <a href="FundamentosDeLaSeguridadInformatica.html">Fundamentos de la Seguridad Informática</a>
+        <a href="SeguridadDeLosSistemasOperativos.html">Seguridad de los Sistemas Operativos</a>
+        <a href="SeguridadDeLasRedes.html">Seguridad de las Redes</a>
+        <a href="SeguridadDeLasAplicaciones.html">Seguridad de las Aplicaciones</a>
+        <a href="SeguridadDeLosDatos.html">Seguridad de los Datos</a>
+        <a href="SeguridadDeLaNube.html">Seguridad de la Nube</a>
+        <a href="SeguridadDeLosSistemasEmbebidos.html">Seguridad de los Sistemas Embebidos</a>
+        <a href="SeguridadDeLaAuditoria.html">Seguridad de la Auditoría</a>
+        <a href="SeguridadDeLaGestionDeIncidentes.html">Seguridad de la Gestión de Incidentes</a>
+        <a href="SeguridadDeLaEtica.html">Seguridad de la Ética</a>
+        <a href="SeguridadDeLaLegislacion.html">Seguridad de la Legislación</a>
+      </div>
+    </section>
+    
+
+    <section id="menu7">
+      <a href="#menu7" class="submenu">Arquitectura de las computadoras</a>
+      <div class="submenu-content">
+        <a href="IntroduccionArquitecturaComputadoras.html">Introducción a la Arquitectura de Computadoras</a>
+        <a href="ComponentesFundamentales.html">Componentes Fundamentales</a>
+        <a href="ArquitecturaCPU.html">Arquitectura de CPU</a>
+        <a href="MemoriaAlmacenamiento.html">Memoria y Almacenamiento</a>
+        <a href="SistemaGrafico.html">Sistema Grafico</a>
+        <a href="SistemasEntradaSalida.html">Sistemas de Entrada/Salida (E/S)</a>
+        <a href="BusesConexiones.html">Buses y Conexiones</a>
+        <a href="OrganizacionDatos.html">Organización de Datos</a>
+        <a href="ArquitecturasComputadorasModernas.html">Arquitecturas de Computadoras Modernas</a>
+        <a href="Microprocesadores.html">Microprocesadores</a>
+        <a href="SistemasMultiprocesador.html">Sistemas Multiprocesador</a>
+        <a href="MemoriaCache.html">Memoria Caché</a>
+        <a href="ArquitecturaRedesComputadoras.html">Arquitectura de Redes y Computadoras</a>
+        <a href="ArquitecturaComputadorasCuanticas.html">Arquitectura de Computadoras Cuánticas</a>
+        <a href="TendenciasFuturasArquitecturaComputadoras.html">Tendencias Futuras en Arquitectura de Computadoras</a>
+        
+      </div>
+    </section>
+
+    <section id="menu8">
+      <a href="#menu8" class="submenu">Sistemas Operativos</a>
+      <div class="submenu-content">
+        <a href="introduccionASistemasOperativos.html">Introducción a los Sistemas Operativos</a>
+        <a href="tiposDeSistemasOperativos.html">Tipos de Sistemas Operativos</a>
+        <a href="interfazDeUsuario.html">Interfaz de Usuario</a>
+        <a href="gestionDeArchivosYDirectorios.html">Gestión de Archivos y Directorios</a>
+        <a href="procesosYTareas.html">Procesos y Tareas</a>
+        <a href="gestionDeMemoria.html">Gestión de Memoria</a>
+        <a href="sistemasDeArchivos.html">Sistemas de Archivos</a>
+        <a href="seguridadYControlDeAcceso.html">Seguridad y Control de Acceso</a>
+        <a href="redesYComunicaciones.html">Redes y Comunicaciones</a>
+        <a href="administracionDelSistema.html">Administración del Sistema</a>
+        <a href="virtualizacionYContenedores.html">Virtualización y Contenedores</a>
+        <a href="sistemasDeArchivosAvanzados.html">Sistemas de Archivos Avanzados</a>
+        <a href="rendimientoYOptimizacion.html">Rendimiento y Optimización</a>
+        <a href="sistemasOperativosEspeciales.html">Sistemas Operativos Especiales</a>
+        <a href="tendenciasActuales.html">Tendencias Actuales</a>
+      </div>
+    </section>
+    
+    <section id="menu9">
+      <a href="#menu9" class="submenu">Arquitectura de Redes</a>
+      <div class="submenu-content">
+        <a href="IntroduccionArquitecturaRedes.html">Introducción a la Arquitectura de Redes</a>
+        <a href="TopologiasRed.html">Topologías de Red</a>
+        <a href="ModeloOSI.html">Modelo OSI (Open Systems Interconnection)</a>
+        <a href="ProtocoloInternet.html">Protocolo de Internet (IP)</a>
+        <a href="ProtocolosTransporte.html">Protocolos de Transporte (TCP/UDP)</a>
+        <a href="RedesLocales.html">Redes Locales (LAN)</a>
+        <a href="RedesAreaExtensa.html">Redes de Área Extensa (WAN)</a>
+        <a href="ArquitecturaClienteServidor.html">Arquitectura Cliente-Servidor</a>
+        <a href="RedesInalambricas.html">Redes Inalámbricas (Wi-Fi)</a>
+        <a href="RedesDefinidasSoftware.html">Redes Definidas por Software (SDN)</a>
+        <a href="RedesAreaAmpliaDefinidasSoftware.html">Redes de Área Amplia Definidas por Software (SD-WAN)</a>
+        <a href="SeguridadRed.html">Seguridad de Red</a>
+        <a href="ArquitecturaRedesNube.html">Arquitectura de Redes para la Nube</a>
+        <a href="Redes5GFuturasTecnologias.html">Redes 5G y Futuras Tecnologías</a>
+      </div>
+    </section>
+
+
+    <section id="menu10">
+      <a href="#menu10" class="submenu">Bases De Datos</a>
+      <div class="submenu-content">
+        <a href="introduccionALasBasesDeDatos.html">Introducción a las Bases de Datos</a>
+        <a href="modelosDeDatos.html">Modelos de Datos</a>
+        <a href="sistemasDeGestionDeBasesDeDatos.html">Sistemas de Gestión de Bases de Datos (DBMS)</a>
+        <a href="disenoDeBasesDeDatosRelacionales.html">Diseño de Bases de Datos Relacionales</a>
+        <a href="sqlYConsultasABasesDeDatos.html">SQL y Consultas a Bases de Datos</a>
+        <a href="normalizacionDeBasesDeDatos.html">Normalización de Bases de Datos</a>
+        <a href="indicesYOptimizacionDeConsultas.html">Índices y Optimización de Consultas</a>
+        <a href="transaccionesYControlDeConcurrencia.html">Transacciones y Control de Concurrencia</a>
+        <a href="seguridadYPrivacidadDeDatos.html">Seguridad y Privacidad de Datos</a>
+        <a href="basesDeDatosNoRelacionalesNoSQL.html">Bases de Datos No Relacionales (NoSQL)</a>
+        <a href="basesDeDatosDistribuidas.html">Bases de Datos Distribuidas</a>
+        <a href="almacenamientoYCopiaDeSeguridadBackup.html">Almacenamiento y Copia de Seguridad (Backup)</a>
+        <a href="integracionDeBasesDeDatosEnAplicaciones.html">Integración de Bases de Datos en Aplicaciones</a>
+        <a href="tendenciasFuturasEnBasesDeDatos.html">Tendencias Futuras en Bases de Datos</a>
+      </div>
+    </section>
+
+    <section id="menu11">
+      <a href="#menu11" class="submenu">Lenguajes de Programación</a>
+      <div class="submenu-content">
+        <a href="fundamentos.html">Fundamentos de Programación y Sintaxis</a><br>
+        <a href="tipos_datos.html">Tipos de Datos y Variables</a><br>
+        <a href="estructuras_control.html">Estructuras de Control</a><br>
+        <a href="funciones.html">Funciones y Procedimientos</a><br>
+        <a href="estructuras_datos.html">Estructuras de Datos Básicas</a><br>
+        <a href="poo_intro.html">Introducción a la Programación Orientada a Objetos (POO)</a><br>
+        <a href="encapsulamiento.html">Encapsulamiento y Modificadores de Acceso</a><br>
+        <a href="herencia_polimorfismo.html">Herencia y Polimorfismo</a><br>
+        <a href="abstraccion_interfaces.html">Abstracción y Interfaces</a><br>
+        <a href="excepciones.html">Excepciones y Manejo de Errores</a><br>
+        <a href="hilos_concurrencia.html">Hilos y Concurrencia</a><br>
+        <a href="programacion_funcional.html">Programación Funcional</a><br>
+        <a href="gestion_memoria.html">Gestión de Memoria y Rendimiento</a><br>
+        <a href="diseno_lenguajes.html">Diseño de Lenguajes de Programación</a><br>
+        <a href="compiladores_interpretes.html">Compiladores e Intérpretes</a><br>
+        <a href="paradigmas_avanzados.html">Paradigmas de Programación Avanzados</a><br>
+        <a href="seguridad_criptografia.html">Seguridad y Criptografía en Lenguajes</a><br>
+        <a href="tendencias.html">Futuras Tendencias en Lenguajes de Programación</a><br>
+      </div>
+    </section>
+
+
+     </nav>
+
+      
+
+    </main>
+
+
+
+    <footer>
+        <nav class="navegation">
+            <a href="Index.html"><i class="fa-solid fa-arrow-left"></i></a>
+            <a href="IntroduccionJs.html"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="Index.html"><i class="fa-solid fa-house"></i></a>
+            <a class="toogleMenu" id="toogleMenu" href="#"><i class="fa-solid fa-bars"></i></a>
+        </nav>
+    </footer>
+    
+    
+    <script type="module" src="js/Script.js"></script>
+
+
+</body>
+</html>
+
+
+</body>
