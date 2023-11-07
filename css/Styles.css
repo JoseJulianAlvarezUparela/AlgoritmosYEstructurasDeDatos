@@ -379,6 +379,9 @@ a{
     transition: .5s ease;
     transform: scale3d(0,0,0);
 
+    margin-right: auto;
+    margin-left: auto;
+
 }
 
 .show-nav{
